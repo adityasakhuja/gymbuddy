@@ -1,0 +1,516 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		11DE4F2986BD9AED729A57E4159A2F66 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ABB5CD706AF090F48DEC03A7F4D261 /* IGLDropDownMenu.m */; };
+		15BD61A7A6A96368522370ECF0FE6B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		3D00E8F98B2355007A15C484BDA12329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
+		4B8202738DF04DA596BBB2342C06EA5B /* IGLDropDownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE5B141DE5104C212DC50C9E0B5A7436 /* IGLDropDownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		616D1851DD358B371A24C5ECCBD6D2DA /* Pods-GymBuddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E52DF947B848513910A1D5D56F01027 /* IGLDropDownMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E54ACBA79C5D6CF8CA4D491503EF3F /* IGLDropDownMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7E232EC8190C36B337695974CA4EA306 /* Pods-GymBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */; };
+		8F068D59AB3A8B48DF1947A952D5A298 /* IGLDropDownItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E547E9101E2FB782BFF3FE0F3380242 /* IGLDropDownItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C63DAD099DD1F653B71AE03C0720AB3 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDF26662DEB7EAC482961F088F8DC /* IGLDropDownItem.m */; };
+		B142CFC297FB38B6ECAA7BF1C1AB08D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
+		F4F40FA5A473271E12127E0DF2A63881 /* IGLDropDownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3E8C6DE8F3206CE4EA49D7033EF5D /* IGLDropDownMenu-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C25C88911270ABA518C537EBBAB7D30E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D38700903AE3E9C8224AE34BD3B2DC6;
+			remoteInfo = IGLDropDownMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0862E533E2A75338A03C8882C5049E77 /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GymBuddy-umbrella.h"; sourceTree = "<group>"; };
+		1BD3E8C6DE8F3206CE4EA49D7033EF5D /* IGLDropDownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGLDropDownMenu-dummy.m"; sourceTree = "<group>"; };
+		24E54ACBA79C5D6CF8CA4D491503EF3F /* IGLDropDownMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownMenu.h; path = IGLDropDownMenu/IGLDropDownMenu.h; sourceTree = "<group>"; };
+		3D036984F4508732BE3122D2D5EEB176 /* IGLDropDownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-prefix.pch"; sourceTree = "<group>"; };
+		3E547E9101E2FB782BFF3FE0F3380242 /* IGLDropDownItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownItem.h; path = IGLDropDownMenu/IGLDropDownItem.h; sourceTree = "<group>"; };
+		42291E3340198D90417665ABDDE7713E /* Pods-GymBuddy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBuddy-frameworks.sh"; sourceTree = "<group>"; };
+		449BB0525CD086353DA1BC732CDE999C /* IGLDropDownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGLDropDownMenu.xcconfig; sourceTree = "<group>"; };
+		4A65D5F3FCA58F1CA21093DDCF1316D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		568D99DDA8D4BCFE206ECBED1D6B59F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A9EDF26662DEB7EAC482961F088F8DC /* IGLDropDownItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownItem.m; path = IGLDropDownMenu/IGLDropDownItem.m; sourceTree = "<group>"; };
+		641E82C49A090E783F89AFC0C11B6034 /* IGLDropDownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IGLDropDownMenu.modulemap; sourceTree = "<group>"; };
+		6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBuddy.debug.xcconfig"; sourceTree = "<group>"; };
+		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		9BD39A955A9215AE1A94A0EDACA1BEA2 /* Pods-GymBuddy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymBuddy-acknowledgements.plist"; sourceTree = "<group>"; };
+		A8787A58189160937780570C52D7C37C /* Pods-GymBuddy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GymBuddy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AE7E54168581CA7AF42B96B66D64EF1F /* Pods-GymBuddy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GymBuddy.modulemap"; sourceTree = "<group>"; };
+		AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GymBuddy-dummy.m"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C3ABB5CD706AF090F48DEC03A7F4D261 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownMenu.m; path = IGLDropDownMenu/IGLDropDownMenu.m; sourceTree = "<group>"; };
+		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		C8A4A1F70F2AE06E09C7B558EDDE1750 /* IGLDropDownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGLDropDownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE5B141DE5104C212DC50C9E0B5A7436 /* IGLDropDownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-umbrella.h"; sourceTree = "<group>"; };
+		F6024E026CA4CEDD47FAB2E5825DF5DF /* Pods-GymBuddy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBuddy-resources.sh"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EB9F45AAA59E3335CFB86EE20D47C74D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				15BD61A7A6A96368522370ECF0FE6B20 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FA73434FA0481803FEBEC9456880DD57 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B142CFC297FB38B6ECAA7BF1C1AB08D5 /* Foundation.framework in Frameworks */,
+				3D00E8F98B2355007A15C484BDA12329 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
+				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		1FC0E69A7933AACEBA3A166B29ACC566 /* IGLDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				3E547E9101E2FB782BFF3FE0F3380242 /* IGLDropDownItem.h */,
+				5A9EDF26662DEB7EAC482961F088F8DC /* IGLDropDownItem.m */,
+				24E54ACBA79C5D6CF8CA4D491503EF3F /* IGLDropDownMenu.h */,
+				C3ABB5CD706AF090F48DEC03A7F4D261 /* IGLDropDownMenu.m */,
+				4A27D925A44F6E77E5D2B8BE2B736086 /* Support Files */,
+			);
+			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
+		36720E87E0EDA3E572351C3F162B0BC2 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				46FC83DEE285AB41E968FD32C1BC18FF /* Pods-GymBuddy */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		39A848921580F60A7B64A228B88BFABD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C8A4A1F70F2AE06E09C7B558EDDE1750 /* IGLDropDownMenu.framework */,
+				0862E533E2A75338A03C8882C5049E77 /* Pods_GymBuddy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18340F12838DEE43507667CC74401EB1 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		46FC83DEE285AB41E968FD32C1BC18FF /* Pods-GymBuddy */ = {
+			isa = PBXGroup;
+			children = (
+				568D99DDA8D4BCFE206ECBED1D6B59F6 /* Info.plist */,
+				AE7E54168581CA7AF42B96B66D64EF1F /* Pods-GymBuddy.modulemap */,
+				A8787A58189160937780570C52D7C37C /* Pods-GymBuddy-acknowledgements.markdown */,
+				9BD39A955A9215AE1A94A0EDACA1BEA2 /* Pods-GymBuddy-acknowledgements.plist */,
+				AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */,
+				42291E3340198D90417665ABDDE7713E /* Pods-GymBuddy-frameworks.sh */,
+				F6024E026CA4CEDD47FAB2E5825DF5DF /* Pods-GymBuddy-resources.sh */,
+				16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */,
+				6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */,
+				7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */,
+			);
+			name = "Pods-GymBuddy";
+			path = "Target Support Files/Pods-GymBuddy";
+			sourceTree = "<group>";
+		};
+		4A27D925A44F6E77E5D2B8BE2B736086 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				641E82C49A090E783F89AFC0C11B6034 /* IGLDropDownMenu.modulemap */,
+				449BB0525CD086353DA1BC732CDE999C /* IGLDropDownMenu.xcconfig */,
+				1BD3E8C6DE8F3206CE4EA49D7033EF5D /* IGLDropDownMenu-dummy.m */,
+				3D036984F4508732BE3122D2D5EEB176 /* IGLDropDownMenu-prefix.pch */,
+				EE5B141DE5104C212DC50C9E0B5A7436 /* IGLDropDownMenu-umbrella.h */,
+				4A65D5F3FCA58F1CA21093DDCF1316D8 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IGLDropDownMenu";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				FD017A5D6FFAEA0415C58366575F47F5 /* Pods */,
+				39A848921580F60A7B64A228B88BFABD /* Products */,
+				36720E87E0EDA3E572351C3F162B0BC2 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		FD017A5D6FFAEA0415C58366575F47F5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FC0E69A7933AACEBA3A166B29ACC566 /* IGLDropDownMenu */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		5CE5CA929C00ACCF844AF0DB35C9D16A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F068D59AB3A8B48DF1947A952D5A298 /* IGLDropDownItem.h in Headers */,
+				4B8202738DF04DA596BBB2342C06EA5B /* IGLDropDownMenu-umbrella.h in Headers */,
+				6E52DF947B848513910A1D5D56F01027 /* IGLDropDownMenu.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E81F60584FB262FD6047E6E1D7E724B7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				616D1851DD358B371A24C5ECCBD6D2DA /* Pods-GymBuddy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD11BE46F279134F35997A7780A531BA /* Build configuration list for PBXNativeTarget "IGLDropDownMenu" */;
+			buildPhases = (
+				5EDB4F2D34BFA2D0107693021CFC8114 /* Sources */,
+				FA73434FA0481803FEBEC9456880DD57 /* Frameworks */,
+				5CE5CA929C00ACCF844AF0DB35C9D16A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IGLDropDownMenu;
+			productName = IGLDropDownMenu;
+			productReference = C8A4A1F70F2AE06E09C7B558EDDE1750 /* IGLDropDownMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		9C06A1009AF7562A6B06F072B45267C4 /* Pods-GymBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 634AFA283BADE50090F9141356E7F883 /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */;
+			buildPhases = (
+				B10A33B597B0D957255A5B01B4C6C069 /* Sources */,
+				EB9F45AAA59E3335CFB86EE20D47C74D /* Frameworks */,
+				E81F60584FB262FD6047E6E1D7E724B7 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E2370C3C560801ECE12CB817C3B3D780 /* PBXTargetDependency */,
+			);
+			name = "Pods-GymBuddy";
+			productName = "Pods-GymBuddy";
+			productReference = 0862E533E2A75338A03C8882C5049E77 /* Pods_GymBuddy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 39A848921580F60A7B64A228B88BFABD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */,
+				9C06A1009AF7562A6B06F072B45267C4 /* Pods-GymBuddy */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EDB4F2D34BFA2D0107693021CFC8114 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9C63DAD099DD1F653B71AE03C0720AB3 /* IGLDropDownItem.m in Sources */,
+				F4F40FA5A473271E12127E0DF2A63881 /* IGLDropDownMenu-dummy.m in Sources */,
+				11DE4F2986BD9AED729A57E4159A2F66 /* IGLDropDownMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B10A33B597B0D957255A5B01B4C6C069 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E232EC8190C36B337695974CA4EA306 /* Pods-GymBuddy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E2370C3C560801ECE12CB817C3B3D780 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IGLDropDownMenu;
+			target = 5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */;
+			targetProxy = C25C88911270ABA518C537EBBAB7D30E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		323FB7A9329DC1D32F2A01CEDBA202E6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GymBuddy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		518D7EEFEAC1F765E4F483F7B1B125A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449BB0525CD086353DA1BC732CDE999C /* IGLDropDownMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IGLDropDownMenu/IGLDropDownMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IGLDropDownMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IGLDropDownMenu/IGLDropDownMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = IGLDropDownMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		9380F93B930AEB00122FB407066B849A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GymBuddy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E68A62AC290B8691FBFC64A9F7E2E888 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 449BB0525CD086353DA1BC732CDE999C /* IGLDropDownMenu.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/IGLDropDownMenu/IGLDropDownMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/IGLDropDownMenu/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/IGLDropDownMenu/IGLDropDownMenu.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = IGLDropDownMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D1534490D941DCA47C62AC4314182AF /* Debug */,
+				C5A18280E9321A9268D1C80B7DA43967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		634AFA283BADE50090F9141356E7F883 /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				323FB7A9329DC1D32F2A01CEDBA202E6 /* Debug */,
+				9380F93B930AEB00122FB407066B849A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD11BE46F279134F35997A7780A531BA /* Build configuration list for PBXNativeTarget "IGLDropDownMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				518D7EEFEAC1F765E4F483F7B1B125A4 /* Debug */,
+				E68A62AC290B8691FBFC64A9F7E2E888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

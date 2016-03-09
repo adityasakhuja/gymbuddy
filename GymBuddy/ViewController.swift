@@ -45,12 +45,8 @@ class ViewController: UIViewController {
         if connected
         {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-            let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ListViewController") as UIViewController
+            let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileViewController") as UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
-            
-            
-//            let listViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ListViewController") as! ListViewController
-//            self.navigationController?.pushViewController(listViewController, animated: true)
         }
     }
 

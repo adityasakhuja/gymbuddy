@@ -13,12 +13,11 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBOutlet weak var tableView: UITableView!
-    var items: [String] = ["We", "Heart", "Swift"]
+    var items: [String] = ["Forearm curl", "Bicep curl", "Bench press"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.items.count;
