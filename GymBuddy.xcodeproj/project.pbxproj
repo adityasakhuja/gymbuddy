@@ -21,6 +21,7 @@
 		A50B189E1C90878000ADD607 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B189D1C90878000ADD607 /* ListViewController.swift */; };
 		A5DC273F1C90C612000793A6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC273E1C90C612000793A6 /* ProfileViewController.swift */; };
 		A5DC27411C90D606000793A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27401C90D606000793A6 /* User.swift */; };
+		A5DC27451C90EE3F000793A6 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27441C90EE3F000793A6 /* StatusViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		A50B189D1C90878000ADD607 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A5DC273E1C90C612000793A6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A5DC27401C90D606000793A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A5DC27441C90EE3F000793A6 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
 		B66B6C827A10F3EADB24E26A /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -115,6 +117,7 @@
 				A50B189D1C90878000ADD607 /* ListViewController.swift */,
 				A5DC273E1C90C612000793A6 /* ProfileViewController.swift */,
 				A5DC27401C90D606000793A6 /* User.swift */,
+				A5DC27441C90EE3F000793A6 /* StatusViewController.swift */,
 			);
 			path = GymBuddy;
 			sourceTree = "<group>";
@@ -242,6 +245,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5DC27451C90EE3F000793A6 /* StatusViewController.swift in Sources */,
 				A5DC273F1C90C612000793A6 /* ProfileViewController.swift in Sources */,
 				A50B18981C904E5D00ADD607 /* GLKitPolyfill.m in Sources */,
 				A50B187D1C9044D600ADD607 /* ViewController.swift in Sources */,
