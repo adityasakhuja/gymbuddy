@@ -17,6 +17,7 @@
 		A50B18981C904E5D00ADD607 /* GLKitPolyfill.m in Sources */ = {isa = PBXBuildFile; fileRef = A50B18971C904E5D00ADD607 /* GLKitPolyfill.m */; };
 		A50B189A1C9058AA00ADD607 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B18991C9058AA00ADD607 /* CoreBluetooth.framework */; };
 		A50B189C1C9058E200ADD607 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */; };
+		A50B189E1C90878000ADD607 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B189D1C90878000ADD607 /* ListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		A50B18971C904E5D00ADD607 /* GLKitPolyfill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLKitPolyfill.m; path = "../../HelloMyoSwift-master/HelloMyoSwift/GLKitPolyfill.m"; sourceTree = "<group>"; };
 		A50B18991C9058AA00ADD607 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		A50B189D1C90878000ADD607 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				A50B18891C9044D600ADD607 /* Info.plist */,
 				A50B18811C9044D600ADD607 /* GymBuddy.xcdatamodeld */,
 				A50B18921C904B7A00ADD607 /* GymBuddy-Bridging-Header.h */,
+				A50B189D1C90878000ADD607 /* ListViewController.swift */,
 			);
 			path = GymBuddy;
 			sourceTree = "<group>";
@@ -163,6 +166,7 @@
 				A50B18981C904E5D00ADD607 /* GLKitPolyfill.m in Sources */,
 				A50B187D1C9044D600ADD607 /* ViewController.swift in Sources */,
 				A50B18831C9044D600ADD607 /* GymBuddy.xcdatamodeld in Sources */,
+				A50B189E1C90878000ADD607 /* ListViewController.swift in Sources */,
 				A50B187B1C9044D600ADD607 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
