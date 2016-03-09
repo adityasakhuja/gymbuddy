@@ -13,6 +13,7 @@
 		A50B18831C9044D600ADD607 /* GymBuddy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A50B18811C9044D600ADD607 /* GymBuddy.xcdatamodeld */; };
 		A50B18851C9044D600ADD607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50B18841C9044D600ADD607 /* Assets.xcassets */; };
 		A50B18881C9044D600ADD607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50B18861C9044D600ADD607 /* LaunchScreen.storyboard */; };
+		A50B18901C90486E00ADD607 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B188F1C90486E00ADD607 /* MyoKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		A50B18841C9044D600ADD607 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A50B18871C9044D600ADD607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50B18891C9044D600ADD607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A50B188F1C90486E00ADD607 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyoKit.framework; path = Frameworks/MyoKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50B18901C90486E00ADD607 /* MyoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 		A50B186E1C9044D600ADD607 = {
 			isa = PBXGroup;
 			children = (
+				A50B188F1C90486E00ADD607 /* MyoKit.framework */,
 				A50B18791C9044D600ADD607 /* GymBuddy */,
 				A50B18781C9044D600ADD607 /* Products */,
 			);
@@ -253,6 +257,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = GymBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DT.GymBuddy;
@@ -265,6 +273,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				INFOPLIST_FILE = GymBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DT.GymBuddy;
