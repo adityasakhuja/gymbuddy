@@ -35,7 +35,6 @@
 		A50B18871C9044D600ADD607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50B18891C9044D600ADD607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50B188F1C90486E00ADD607 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyoKit.framework; path = Frameworks/MyoKit.framework; sourceTree = "<group>"; };
-		A50B18911C90493600ADD607 /* GymBuddy-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GymBuddy-Swift-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		A50B18921C904B7A00ADD607 /* GymBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GymBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
 		A50B18961C904E5D00ADD607 /* GLKitPolyfill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLKitPolyfill.h; path = "../../HelloMyoSwift-master/HelloMyoSwift/GLKitPolyfill.h"; sourceTree = "<group>"; };
 		A50B18971C904E5D00ADD607 /* GLKitPolyfill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLKitPolyfill.m; path = "../../HelloMyoSwift-master/HelloMyoSwift/GLKitPolyfill.m"; sourceTree = "<group>"; };
@@ -84,7 +83,6 @@
 			children = (
 				A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */,
 				A50B18991C9058AA00ADD607 /* CoreBluetooth.framework */,
-				A50B18911C90493600ADD607 /* GymBuddy-Swift-Bridging-Header.h */,
 				A50B188F1C90486E00ADD607 /* MyoKit.framework */,
 				A50B18791C9044D600ADD607 /* GymBuddy */,
 				A50B18781C9044D600ADD607 /* Products */,
