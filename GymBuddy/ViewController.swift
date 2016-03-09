@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import GLKit
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        let controller = TLMSettingsViewController.settingsInNavigationController()
+        presentViewController(controller, animated: true, completion: nil)
     }
 
     override func didReceiveMemoryWarning() {

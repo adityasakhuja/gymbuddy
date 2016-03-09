@@ -14,6 +14,9 @@
 		A50B18851C9044D600ADD607 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A50B18841C9044D600ADD607 /* Assets.xcassets */; };
 		A50B18881C9044D600ADD607 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A50B18861C9044D600ADD607 /* LaunchScreen.storyboard */; };
 		A50B18901C90486E00ADD607 /* MyoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B188F1C90486E00ADD607 /* MyoKit.framework */; };
+		A50B18981C904E5D00ADD607 /* GLKitPolyfill.m in Sources */ = {isa = PBXBuildFile; fileRef = A50B18971C904E5D00ADD607 /* GLKitPolyfill.m */; };
+		A50B189A1C9058AA00ADD607 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B18991C9058AA00ADD607 /* CoreBluetooth.framework */; };
+		A50B189C1C9058E200ADD607 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		A50B18871C9044D600ADD607 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A50B18891C9044D600ADD607 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A50B188F1C90486E00ADD607 /* MyoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MyoKit.framework; path = Frameworks/MyoKit.framework; sourceTree = "<group>"; };
+		A50B18911C90493600ADD607 /* GymBuddy-Swift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GymBuddy-Swift-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
+		A50B18921C904B7A00ADD607 /* GymBuddy-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GymBuddy-Bridging-Header.h"; sourceTree = "<group>"; };
+		A50B18961C904E5D00ADD607 /* GLKitPolyfill.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GLKitPolyfill.h; path = "../../HelloMyoSwift-master/HelloMyoSwift/GLKitPolyfill.h"; sourceTree = "<group>"; };
+		A50B18971C904E5D00ADD607 /* GLKitPolyfill.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GLKitPolyfill.m; path = "../../HelloMyoSwift-master/HelloMyoSwift/GLKitPolyfill.m"; sourceTree = "<group>"; };
+		A50B18991C9058AA00ADD607 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50B189C1C9058E200ADD607 /* SystemConfiguration.framework in Frameworks */,
+				A50B189A1C9058AA00ADD607 /* CoreBluetooth.framework in Frameworks */,
 				A50B18901C90486E00ADD607 /* MyoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,6 +54,9 @@
 		A50B186E1C9044D600ADD607 = {
 			isa = PBXGroup;
 			children = (
+				A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */,
+				A50B18991C9058AA00ADD607 /* CoreBluetooth.framework */,
+				A50B18911C90493600ADD607 /* GymBuddy-Swift-Bridging-Header.h */,
 				A50B188F1C90486E00ADD607 /* MyoKit.framework */,
 				A50B18791C9044D600ADD607 /* GymBuddy */,
 				A50B18781C9044D600ADD607 /* Products */,
@@ -60,6 +74,8 @@
 		A50B18791C9044D600ADD607 /* GymBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				A50B18961C904E5D00ADD607 /* GLKitPolyfill.h */,
+				A50B18971C904E5D00ADD607 /* GLKitPolyfill.m */,
 				A50B187A1C9044D600ADD607 /* AppDelegate.swift */,
 				A50B187C1C9044D600ADD607 /* ViewController.swift */,
 				A50B187E1C9044D600ADD607 /* Main.storyboard */,
@@ -67,6 +83,7 @@
 				A50B18861C9044D600ADD607 /* LaunchScreen.storyboard */,
 				A50B18891C9044D600ADD607 /* Info.plist */,
 				A50B18811C9044D600ADD607 /* GymBuddy.xcdatamodeld */,
+				A50B18921C904B7A00ADD607 /* GymBuddy-Bridging-Header.h */,
 			);
 			path = GymBuddy;
 			sourceTree = "<group>";
@@ -143,6 +160,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A50B18981C904E5D00ADD607 /* GLKitPolyfill.m in Sources */,
 				A50B187D1C9044D600ADD607 /* ViewController.swift in Sources */,
 				A50B18831C9044D600ADD607 /* GymBuddy.xcdatamodeld in Sources */,
 				A50B187B1C9044D600ADD607 /* AppDelegate.swift in Sources */,
@@ -256,7 +274,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -265,6 +285,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DT.GymBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GymBuddy/GymBuddy-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -272,7 +294,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Frameworks",
@@ -281,6 +305,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = DT.GymBuddy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "GymBuddy/GymBuddy-Bridging-Header.h";
 			};
 			name = Release;
 		};
