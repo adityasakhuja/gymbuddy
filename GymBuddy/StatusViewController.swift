@@ -23,6 +23,10 @@ class StatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // Initialise the controllers
+        let _ = FatigueController()
+        let _ = CorrectnessController()
+        
         // Bind labels to Status model
         status.fatigue
             .map {"\($0)"}
@@ -47,6 +51,7 @@ class StatusViewController: UIViewController {
     func timerDidFire()
     {
         timer++
+        
         //calculate the minutes in elapsed time.
         let minutes = Int(floor(Double(timer)/Double(60)))
         var minutesText = "\(minutes)"
