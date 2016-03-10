@@ -7,21 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		11DE4F2986BD9AED729A57E4159A2F66 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C3ABB5CD706AF090F48DEC03A7F4D261 /* IGLDropDownMenu.m */; };
-		15BD61A7A6A96368522370ECF0FE6B20 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		3D00E8F98B2355007A15C484BDA12329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */; };
-		4B8202738DF04DA596BBB2342C06EA5B /* IGLDropDownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE5B141DE5104C212DC50C9E0B5A7436 /* IGLDropDownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		616D1851DD358B371A24C5ECCBD6D2DA /* Pods-GymBuddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6E52DF947B848513910A1D5D56F01027 /* IGLDropDownMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 24E54ACBA79C5D6CF8CA4D491503EF3F /* IGLDropDownMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7E232EC8190C36B337695974CA4EA306 /* Pods-GymBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */; };
-		8F068D59AB3A8B48DF1947A952D5A298 /* IGLDropDownItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E547E9101E2FB782BFF3FE0F3380242 /* IGLDropDownItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9C63DAD099DD1F653B71AE03C0720AB3 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A9EDF26662DEB7EAC482961F088F8DC /* IGLDropDownItem.m */; };
-		B142CFC297FB38B6ECAA7BF1C1AB08D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */; };
-		F4F40FA5A473271E12127E0DF2A63881 /* IGLDropDownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1BD3E8C6DE8F3206CE4EA49D7033EF5D /* IGLDropDownMenu-dummy.m */; };
+		07D072E2DEE09B91754976490740E692 /* NSObject+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = C172B015CFF8CB798387EFAF3E127C33 /* NSObject+Bond.swift */; };
+		0F3F38460AB0958F2E61825A1CC6F339 /* Pods-GymBuddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		11DE4F2986BD9AED729A57E4159A2F66 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 50B6273CE60D6EAA38E04A7950CCD65D /* IGLDropDownMenu.m */; };
+		1AF125B28A61839240FB20DFCC487A77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		1C2DFBFAFCB0951A64A678FA2AD48F58 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B373D3CF5FE2A47A67E88308CB1FB87E /* BindableType.swift */; };
+		1F87F3E8974EC37ACB137CADAC820D3C /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E8C055669AC68A6C9FE50D266F33384 /* Reference.swift */; };
+		2FBA2895EEFE12C598C7F5532E3AAFCF /* EventProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37DC4C29DEE07C549CE82DCE1F19A2FE /* EventProducer.swift */; };
+		3122B60E56A567DE78C19761D11D08E6 /* SimpleDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 051F269278D1BA3AA9871BFBCFCA31EA /* SimpleDiff.swift */; };
+		3A320BCF5C3DAE46B893FEE510CDC913 /* UIProgressView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 811476D2A64361A9AE3B816A5F4201EF /* UIProgressView+Bond.swift */; };
+		3B046A0578A1DFDCB63FF2AD8E99E408 /* UIBarItem+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABE1ECF6F77D1C63025369944CD02B6E /* UIBarItem+Bond.swift */; };
+		3D00E8F98B2355007A15C484BDA12329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07C51563A8537190C45BF7B84469E6 /* UIKit.framework */; };
+		406A63A3ADD13FCC6A114306ECFACB35 /* Bond-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F1259BAE278520C09975240A94520D02 /* Bond-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45D77EFAE7512E91BD081ABD4D9D8D25 /* NSLayoutConstraint+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E0314931A5AC65D349EC43DE9026FC /* NSLayoutConstraint+Bond.swift */; };
+		4B8202738DF04DA596BBB2342C06EA5B /* IGLDropDownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0215BE15CA8D8204732F00D729C1C28A /* IGLDropDownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C3C803DAE849D7D23417F63F5179F27 /* UILabel+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64E37A93C1555761672E54A3D15600AB /* UILabel+Bond.swift */; };
+		4D967F8EF9F5FE51D102959FE0318B79 /* UIImageView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DE68A60A39EE5F76878520B9050E49C /* UIImageView+Bond.swift */; };
+		4F6D5FB3E04F760094AAF446ADB2B8E8 /* MutableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42C769E86E7BBDE0B7E6210E09F0383A /* MutableObservable.swift */; };
+		591500DDDB643F9E413CC61DD6B0C25D /* Bond-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A37D33F39C7ED17D0B6DF4D9022EE5AB /* Bond-dummy.m */; };
+		59F83978ED9BE2F8CCC471402C3A366A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B535A7AEF630328E5B65DFCB24A6A7 /* Queue.swift */; };
+		60146433CA8FEEDAC39544F22A641B18 /* Pods-GymBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */; };
+		6097E80BD9846C769B07BAE00305F429 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		61D20E52E5047E1269CED010B240D24B /* UISegmentedControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9F9736494D910542913AD2C997CF832 /* UISegmentedControl+Bond.swift */; };
+		62DAA3929D2CC62FC8761BF621BB6B73 /* Bond.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A2900F9EB2A3A3AF8E6281BFEC7AA37 /* Bond.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63790D07711DE9E70CCB2B82742D05ED /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292E75E11DECC9888EB0DFF50CD49258 /* Buffer.swift */; };
+		6511D63929A1D1F8C252C2C9490C4C5D /* UITableView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE5D7C0FC3899B8D8FD302172AE0EC5E /* UITableView+Bond.swift */; };
+		65468605F87FF32752DC24E5F584255D /* NSIndexSet+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28DBBC0B922A1B056D2FDAB4AFA5C87 /* NSIndexSet+Bond.swift */; };
+		655FBD0E50E79313AF3F42C9BA21ED31 /* UICollectionView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 992B54CF9A9851226F3C3719C0E60AB8 /* UICollectionView+Bond.swift */; };
+		67A2C13CC5A8F11F34239F2CF061858D /* ObservableArrayEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F05D66EBD0D59B39794ABDE651F4C64 /* ObservableArrayEvent.swift */; };
+		6D566B48B1DDB2CDE3E552E87863D2A9 /* UITextField+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF5D90B5B235A725E878749400B5A1D8 /* UITextField+Bond.swift */; };
+		6E52DF947B848513910A1D5D56F01027 /* IGLDropDownMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 469FA99F170875F8F316E1CEEAAB29AB /* IGLDropDownMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736A6B6CA33121E56AECC3AC24E18089 /* UIDatePicker+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = A78014BDD254F4B836D3C44B18ECC67A /* UIDatePicker+Bond.swift */; };
+		746A985F04A09F8116E30718809C56B1 /* NSNotificationCenter+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D1D5A18DEB812C6668C449A6B7B91B0 /* NSNotificationCenter+Bond.swift */; };
+		765CE44C5E228BB6F5641542C4EDB0F6 /* EventProducerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8353E70569C444BF809375E8F6038CCE /* EventProducerType.swift */; };
+		76B5FE3246FCC3A447F6E8B8E2F6E7C6 /* DisposableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F91E6F85E1D870C339BC51F74A223 /* DisposableType.swift */; };
+		826C3F638363819B87926E004C8EED1A /* UIActivityIndicatorView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1982FA6D73A04C6DD8502C4BDA657DAB /* UIActivityIndicatorView+Bond.swift */; };
+		87DD3779C2945DC1AF0C62DA796942B2 /* CALayer+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48010DE943E585B462CDDFF458334D80 /* CALayer+Bond.swift */; };
+		89FB89FCDE6B7C3E39877213A44E2628 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2638BBABF5158E00BC4D93924FB66B42 /* Operators.swift */; };
+		8F068D59AB3A8B48DF1947A952D5A298 /* IGLDropDownItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 626F23D201BC9F2F14B04CB0DD900774 /* IGLDropDownItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		966A52294B58F5D9E815A5DD4774FE5D /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E3EA32428E65AC7DEFAFFEBB68A059 /* OptionalType.swift */; };
+		97BBC94C26983572A8FC8C887EDBC74D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1B33188740B25D40CEDC08A929AF6 /* SystemConfiguration.framework */; };
+		9C63DAD099DD1F653B71AE03C0720AB3 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F71EE3FB957EA0D30CA7F952582748B5 /* IGLDropDownItem.m */; };
+		A6083AC93A479B289A68DB17ADB4D728 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B9B99F9C8BF1CFE4C88CAE563C9146 /* Disposable.swift */; };
+		ABD396472D36AB13D99B71527FFB3779 /* UINavigationBar+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E53CD771DB195ACEEE5A2CD4AAB1DED /* UINavigationBar+Bond.swift */; };
+		B142CFC297FB38B6ECAA7BF1C1AB08D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		B866721318441A1681518CF53015E6C0 /* UISwitch+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = F886870B598F4300F7399862ADC44662 /* UISwitch+Bond.swift */; };
+		B987CD074D89BA55D5BE1F69428B5A87 /* NSLock+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36F786EDC598B6D919062E971E146574 /* NSLock+Bond.swift */; };
+		C10C2E6F48783CC8C59737DB6FC6195C /* UISlider+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F941BCEAA8E51AB0FFB5CA7EAE58D3 /* UISlider+Bond.swift */; };
+		C4631742B846BEF2C51604F852545BEB /* UINavigationItem+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB96A93630A053EE11F4FEB118819BF8 /* UINavigationItem+Bond.swift */; };
+		C4C828F56932D31EC1B92E64974D71EC /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DA1C5C4AB234F98631B36636468F18F /* ObservableArray.swift */; };
+		C80561B11D8D882D4509326F6EB27705 /* UIView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = C385191F139304AC192C135D523D8A51 /* UIView+Bond.swift */; };
+		D23FF3B745356DB701D8962C552DAB09 /* UITextView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 381B50A70624188688D069A070551711 /* UITextView+Bond.swift */; };
+		F0B92B1B144221E8F09F224C7E865D80 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3D8585C065B4E963CD84BBD18C3F0BC /* Observable.swift */; };
+		F1315E3B51FFE22E0924BD347EE393BD /* UIControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CB2BD27BA37F0001443C350F94AFFF2 /* UIControl+Bond.swift */; };
+		F4F40FA5A473271E12127E0DF2A63881 /* IGLDropDownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BA70D3AF8629F346A144C14E625219 /* IGLDropDownMenu-dummy.m */; };
+		FA4161D2631EF85804BD0FDEF99CD64C /* UIButton+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A0D34C94E722C4BA2886581BFEF230 /* UIButton+Bond.swift */; };
+		FE086781D4F3DA2F363FA883037C98A6 /* UIRefreshControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90DB4EF9F805E35D71A18125C8A03C78 /* UIRefreshControl+Bond.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		C25C88911270ABA518C537EBBAB7D30E /* PBXContainerItemProxy */ = {
+		685FD51122E845B5695908EAEDB0D40B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80076C510C29F960587E43C0597ECBD5;
+			remoteInfo = Bond;
+		};
+		7DC0FFB7ED259AB5A2D70C1980F61917 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
@@ -31,39 +83,97 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0862E533E2A75338A03C8882C5049E77 /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0215BE15CA8D8204732F00D729C1C28A /* IGLDropDownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-umbrella.h"; sourceTree = "<group>"; };
+		02AA434548E203747AA8CF53B6B038F4 /* Bond-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-prefix.pch"; sourceTree = "<group>"; };
+		051F269278D1BA3AA9871BFBCFCA31EA /* SimpleDiff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDiff.swift; path = Bond/Core/SimpleDiff.swift; sourceTree = "<group>"; };
+		09B9B99F9C8BF1CFE4C88CAE563C9146 /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = Bond/Core/Disposable.swift; sourceTree = "<group>"; };
+		0E8C055669AC68A6C9FE50D266F33384 /* Reference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reference.swift; path = Bond/Core/Reference.swift; sourceTree = "<group>"; };
+		11CD00C2A1EB2CEBF3C91F7CF4D93620 /* Bond.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bond.xcconfig; sourceTree = "<group>"; };
+		143D4AD1C152CAD565D9537C6A36ABDA /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GymBuddy-umbrella.h"; sourceTree = "<group>"; };
-		1BD3E8C6DE8F3206CE4EA49D7033EF5D /* IGLDropDownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGLDropDownMenu-dummy.m"; sourceTree = "<group>"; };
-		24E54ACBA79C5D6CF8CA4D491503EF3F /* IGLDropDownMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownMenu.h; path = IGLDropDownMenu/IGLDropDownMenu.h; sourceTree = "<group>"; };
-		3D036984F4508732BE3122D2D5EEB176 /* IGLDropDownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-prefix.pch"; sourceTree = "<group>"; };
-		3E547E9101E2FB782BFF3FE0F3380242 /* IGLDropDownItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownItem.h; path = IGLDropDownMenu/IGLDropDownItem.h; sourceTree = "<group>"; };
+		1982FA6D73A04C6DD8502C4BDA657DAB /* UIActivityIndicatorView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIActivityIndicatorView+Bond.swift"; path = "Bond/Extensions/iOS/UIActivityIndicatorView+Bond.swift"; sourceTree = "<group>"; };
+		1D1D5A18DEB812C6668C449A6B7B91B0 /* NSNotificationCenter+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Bond.swift"; path = "Bond/Extensions/Shared/NSNotificationCenter+Bond.swift"; sourceTree = "<group>"; };
+		1DA1C5C4AB234F98631B36636468F18F /* ObservableArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableArray.swift; path = Bond/Core/ObservableArray.swift; sourceTree = "<group>"; };
+		2638BBABF5158E00BC4D93924FB66B42 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Bond/Core/Operators.swift; sourceTree = "<group>"; };
+		26BA70D3AF8629F346A144C14E625219 /* IGLDropDownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGLDropDownMenu-dummy.m"; sourceTree = "<group>"; };
+		292E75E11DECC9888EB0DFF50CD49258 /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = Bond/Core/Buffer.swift; sourceTree = "<group>"; };
+		2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		36F786EDC598B6D919062E971E146574 /* NSLock+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLock+Bond.swift"; path = "Bond/Extensions/Shared/NSLock+Bond.swift"; sourceTree = "<group>"; };
+		37DC4C29DEE07C549CE82DCE1F19A2FE /* EventProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventProducer.swift; path = Bond/Core/EventProducer.swift; sourceTree = "<group>"; };
+		381B50A70624188688D069A070551711 /* UITextView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Bond.swift"; path = "Bond/Extensions/iOS/UITextView+Bond.swift"; sourceTree = "<group>"; };
+		3970E8A0D6EBBA8EC4E32993C60AF4BC /* IGLDropDownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-prefix.pch"; sourceTree = "<group>"; };
 		42291E3340198D90417665ABDDE7713E /* Pods-GymBuddy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBuddy-frameworks.sh"; sourceTree = "<group>"; };
-		449BB0525CD086353DA1BC732CDE999C /* IGLDropDownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGLDropDownMenu.xcconfig; sourceTree = "<group>"; };
-		4A65D5F3FCA58F1CA21093DDCF1316D8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42C769E86E7BBDE0B7E6210E09F0383A /* MutableObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableObservable.swift; path = Bond/Core/MutableObservable.swift; sourceTree = "<group>"; };
+		469FA99F170875F8F316E1CEEAAB29AB /* IGLDropDownMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownMenu.h; path = IGLDropDownMenu/IGLDropDownMenu.h; sourceTree = "<group>"; };
+		48010DE943E585B462CDDFF458334D80 /* CALayer+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Bond.swift"; path = "Bond/Extensions/Shared/CALayer+Bond.swift"; sourceTree = "<group>"; };
+		49E3EA32428E65AC7DEFAFFEBB68A059 /* OptionalType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalType.swift; path = Bond/Core/OptionalType.swift; sourceTree = "<group>"; };
+		4CB2BD27BA37F0001443C350F94AFFF2 /* UIControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Bond.swift"; path = "Bond/Extensions/iOS/UIControl+Bond.swift"; sourceTree = "<group>"; };
+		50B6273CE60D6EAA38E04A7950CCD65D /* IGLDropDownMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownMenu.m; path = IGLDropDownMenu/IGLDropDownMenu.m; sourceTree = "<group>"; };
+		52D6E4ED1504537A666254C528B3840C /* IGLDropDownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGLDropDownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		568D99DDA8D4BCFE206ECBED1D6B59F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A9EDF26662DEB7EAC482961F088F8DC /* IGLDropDownItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownItem.m; path = IGLDropDownMenu/IGLDropDownItem.m; sourceTree = "<group>"; };
-		641E82C49A090E783F89AFC0C11B6034 /* IGLDropDownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IGLDropDownMenu.modulemap; sourceTree = "<group>"; };
+		58E0314931A5AC65D349EC43DE9026FC /* NSLayoutConstraint+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Bond.swift"; path = "Bond/Extensions/Shared/NSLayoutConstraint+Bond.swift"; sourceTree = "<group>"; };
+		626F23D201BC9F2F14B04CB0DD900774 /* IGLDropDownItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownItem.h; path = IGLDropDownMenu/IGLDropDownItem.h; sourceTree = "<group>"; };
+		6345FA14F5DBC049FFEC20B6591F868C /* IGLDropDownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGLDropDownMenu.xcconfig; sourceTree = "<group>"; };
+		64E37A93C1555761672E54A3D15600AB /* UILabel+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Bond.swift"; path = "Bond/Extensions/iOS/UILabel+Bond.swift"; sourceTree = "<group>"; };
 		6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBuddy.debug.xcconfig"; sourceTree = "<group>"; };
-		6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		6DE68A60A39EE5F76878520B9050E49C /* UIImageView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Bond.swift"; path = "Bond/Extensions/iOS/UIImageView+Bond.swift"; sourceTree = "<group>"; };
+		714F91E6F85E1D870C339BC51F74A223 /* DisposableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisposableType.swift; path = Bond/Core/DisposableType.swift; sourceTree = "<group>"; };
+		77F941BCEAA8E51AB0FFB5CA7EAE58D3 /* UISlider+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISlider+Bond.swift"; path = "Bond/Extensions/iOS/UISlider+Bond.swift"; sourceTree = "<group>"; };
 		7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBuddy.release.xcconfig"; sourceTree = "<group>"; };
+		7F05D66EBD0D59B39794ABDE651F4C64 /* ObservableArrayEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableArrayEvent.swift; path = Bond/Core/ObservableArrayEvent.swift; sourceTree = "<group>"; };
+		811476D2A64361A9AE3B816A5F4201EF /* UIProgressView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIProgressView+Bond.swift"; path = "Bond/Extensions/iOS/UIProgressView+Bond.swift"; sourceTree = "<group>"; };
+		8353E70569C444BF809375E8F6038CCE /* EventProducerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventProducerType.swift; path = Bond/Core/EventProducerType.swift; sourceTree = "<group>"; };
+		8A2900F9EB2A3A3AF8E6281BFEC7AA37 /* Bond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bond.h; path = Bond/Bond.h; sourceTree = "<group>"; };
+		8E53CD771DB195ACEEE5A2CD4AAB1DED /* UINavigationBar+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Bond.swift"; path = "Bond/Extensions/iOS/UINavigationBar+Bond.swift"; sourceTree = "<group>"; };
+		90DB4EF9F805E35D71A18125C8A03C78 /* UIRefreshControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Bond.swift"; path = "Bond/Extensions/iOS/UIRefreshControl+Bond.swift"; sourceTree = "<group>"; };
+		992B54CF9A9851226F3C3719C0E60AB8 /* UICollectionView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Bond.swift"; path = "Bond/Extensions/iOS/UICollectionView+Bond.swift"; sourceTree = "<group>"; };
 		9BD39A955A9215AE1A94A0EDACA1BEA2 /* Pods-GymBuddy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymBuddy-acknowledgements.plist"; sourceTree = "<group>"; };
+		A28DBBC0B922A1B056D2FDAB4AFA5C87 /* NSIndexSet+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSIndexSet+Bond.swift"; path = "Bond/Extensions/Shared/NSIndexSet+Bond.swift"; sourceTree = "<group>"; };
+		A2B535A7AEF630328E5B65DFCB24A6A7 /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Bond/Core/Queue.swift; sourceTree = "<group>"; };
+		A37D33F39C7ED17D0B6DF4D9022EE5AB /* Bond-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bond-dummy.m"; sourceTree = "<group>"; };
+		A78014BDD254F4B836D3C44B18ECC67A /* UIDatePicker+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDatePicker+Bond.swift"; path = "Bond/Extensions/iOS/UIDatePicker+Bond.swift"; sourceTree = "<group>"; };
 		A8787A58189160937780570C52D7C37C /* Pods-GymBuddy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GymBuddy-acknowledgements.markdown"; sourceTree = "<group>"; };
+		ABE1ECF6F77D1C63025369944CD02B6E /* UIBarItem+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarItem+Bond.swift"; path = "Bond/Extensions/iOS/UIBarItem+Bond.swift"; sourceTree = "<group>"; };
+		AE3918F21ADCBBA817FB16B9170EF71B /* IGLDropDownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IGLDropDownMenu.modulemap; sourceTree = "<group>"; };
 		AE7E54168581CA7AF42B96B66D64EF1F /* Pods-GymBuddy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GymBuddy.modulemap"; sourceTree = "<group>"; };
 		AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GymBuddy-dummy.m"; sourceTree = "<group>"; };
+		AFFD3C69CD7D2CD5150BEB4CBFC8696C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B2E341F6C20CB6F9E4E9ADB86A254926 /* Bond.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Bond.modulemap; sourceTree = "<group>"; };
+		B373D3CF5FE2A47A67E88308CB1FB87E /* BindableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BindableType.swift; path = Bond/Core/BindableType.swift; sourceTree = "<group>"; };
+		B3D8585C065B4E963CD84BBD18C3F0BC /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = Bond/Core/Observable.swift; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		C3ABB5CD706AF090F48DEC03A7F4D261 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownMenu.m; path = IGLDropDownMenu/IGLDropDownMenu.m; sourceTree = "<group>"; };
-		C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		C8A4A1F70F2AE06E09C7B558EDDE1750 /* IGLDropDownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGLDropDownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EE5B141DE5104C212DC50C9E0B5A7436 /* IGLDropDownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-umbrella.h"; sourceTree = "<group>"; };
+		BAE1B33188740B25D40CEDC08A929AF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		BE5D7C0FC3899B8D8FD302172AE0EC5E /* UITableView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Bond.swift"; path = "Bond/Extensions/iOS/UITableView+Bond.swift"; sourceTree = "<group>"; };
+		C172B015CFF8CB798387EFAF3E127C33 /* NSObject+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Bond.swift"; path = "Bond/Extensions/Shared/NSObject+Bond.swift"; sourceTree = "<group>"; };
+		C385191F139304AC192C135D523D8A51 /* UIView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Bond.swift"; path = "Bond/Extensions/iOS/UIView+Bond.swift"; sourceTree = "<group>"; };
+		C4A0D34C94E722C4BA2886581BFEF230 /* UIButton+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Bond.swift"; path = "Bond/Extensions/iOS/UIButton+Bond.swift"; sourceTree = "<group>"; };
+		CE07C51563A8537190C45BF7B84469E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF5D90B5B235A725E878749400B5A1D8 /* UITextField+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Bond.swift"; path = "Bond/Extensions/iOS/UITextField+Bond.swift"; sourceTree = "<group>"; };
+		D07DD567A588D662E96F94FE90AAFF1A /* Bond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB96A93630A053EE11F4FEB118819BF8 /* UINavigationItem+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+Bond.swift"; path = "Bond/Extensions/iOS/UINavigationItem+Bond.swift"; sourceTree = "<group>"; };
+		EDB698312B9222EAFF75A3C6CC210FCF /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1259BAE278520C09975240A94520D02 /* Bond-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-umbrella.h"; sourceTree = "<group>"; };
 		F6024E026CA4CEDD47FAB2E5825DF5DF /* Pods-GymBuddy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBuddy-resources.sh"; sourceTree = "<group>"; };
+		F71EE3FB957EA0D30CA7F952582748B5 /* IGLDropDownItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownItem.m; path = IGLDropDownMenu/IGLDropDownItem.m; sourceTree = "<group>"; };
+		F886870B598F4300F7399862ADC44662 /* UISwitch+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISwitch+Bond.swift"; path = "Bond/Extensions/iOS/UISwitch+Bond.swift"; sourceTree = "<group>"; };
+		F9F9736494D910542913AD2C997CF832 /* UISegmentedControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISegmentedControl+Bond.swift"; path = "Bond/Extensions/iOS/UISegmentedControl+Bond.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		EB9F45AAA59E3335CFB86EE20D47C74D /* Frameworks */ = {
+		48388185FE9685DD9A87437BA0D0A877 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15BD61A7A6A96368522370ECF0FE6B20 /* Foundation.framework in Frameworks */,
+				1AF125B28A61839240FB20DFCC487A77 /* Foundation.framework in Frameworks */,
+				97BBC94C26983572A8FC8C887EDBC74D /* SystemConfiguration.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1966DFCEE34868A78B314063A670A96 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6097E80BD9846C769B07BAE00305F429 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,25 +189,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		18340F12838DEE43507667CC74401EB1 /* iOS */ = {
+		0C104E7B34F66AEC1FBFE4172C133DB3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				6E7E5AF37923BFA48D6994B9BFC6535F /* Foundation.framework */,
-				C3B7BDF5CE5CB8F095FE12DA55D9A9BB /* UIKit.framework */,
+				D07DD567A588D662E96F94FE90AAFF1A /* Bond.framework */,
+				52D6E4ED1504537A666254C528B3840C /* IGLDropDownMenu.framework */,
+				EDB698312B9222EAFF75A3C6CC210FCF /* Pods_GymBuddy.framework */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		1FC0E69A7933AACEBA3A166B29ACC566 /* IGLDropDownMenu */ = {
+		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				3E547E9101E2FB782BFF3FE0F3380242 /* IGLDropDownItem.h */,
-				5A9EDF26662DEB7EAC482961F088F8DC /* IGLDropDownItem.m */,
-				24E54ACBA79C5D6CF8CA4D491503EF3F /* IGLDropDownMenu.h */,
-				C3ABB5CD706AF090F48DEC03A7F4D261 /* IGLDropDownMenu.m */,
-				4A27D925A44F6E77E5D2B8BE2B736086 /* Support Files */,
+				FF2AEA74965EED5FE2760906784C788C /* iOS */,
 			);
-			path = IGLDropDownMenu;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2B671CEE1015B7EB44E0205A61CBE371 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				AE3918F21ADCBBA817FB16B9170EF71B /* IGLDropDownMenu.modulemap */,
+				6345FA14F5DBC049FFEC20B6591F868C /* IGLDropDownMenu.xcconfig */,
+				26BA70D3AF8629F346A144C14E625219 /* IGLDropDownMenu-dummy.m */,
+				3970E8A0D6EBBA8EC4E32993C60AF4BC /* IGLDropDownMenu-prefix.pch */,
+				0215BE15CA8D8204732F00D729C1C28A /* IGLDropDownMenu-umbrella.h */,
+				AFFD3C69CD7D2CD5150BEB4CBFC8696C /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IGLDropDownMenu";
 			sourceTree = "<group>";
 		};
 		36720E87E0EDA3E572351C3F162B0BC2 /* Targets Support Files */ = {
@@ -106,23 +227,6 @@
 				46FC83DEE285AB41E968FD32C1BC18FF /* Pods-GymBuddy */,
 			);
 			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		39A848921580F60A7B64A228B88BFABD /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				C8A4A1F70F2AE06E09C7B558EDDE1750 /* IGLDropDownMenu.framework */,
-				0862E533E2A75338A03C8882C5049E77 /* Pods_GymBuddy.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				18340F12838DEE43507667CC74401EB1 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		46FC83DEE285AB41E968FD32C1BC18FF /* Pods-GymBuddy */ = {
@@ -143,42 +247,122 @@
 			path = "Target Support Files/Pods-GymBuddy";
 			sourceTree = "<group>";
 		};
-		4A27D925A44F6E77E5D2B8BE2B736086 /* Support Files */ = {
+		497D65863A19A23CB7E391765605F7AC /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				641E82C49A090E783F89AFC0C11B6034 /* IGLDropDownMenu.modulemap */,
-				449BB0525CD086353DA1BC732CDE999C /* IGLDropDownMenu.xcconfig */,
-				1BD3E8C6DE8F3206CE4EA49D7033EF5D /* IGLDropDownMenu-dummy.m */,
-				3D036984F4508732BE3122D2D5EEB176 /* IGLDropDownMenu-prefix.pch */,
-				EE5B141DE5104C212DC50C9E0B5A7436 /* IGLDropDownMenu-umbrella.h */,
-				4A65D5F3FCA58F1CA21093DDCF1316D8 /* Info.plist */,
+				B2E341F6C20CB6F9E4E9ADB86A254926 /* Bond.modulemap */,
+				11CD00C2A1EB2CEBF3C91F7CF4D93620 /* Bond.xcconfig */,
+				A37D33F39C7ED17D0B6DF4D9022EE5AB /* Bond-dummy.m */,
+				02AA434548E203747AA8CF53B6B038F4 /* Bond-prefix.pch */,
+				F1259BAE278520C09975240A94520D02 /* Bond-umbrella.h */,
+				143D4AD1C152CAD565D9537C6A36ABDA /* Info.plist */,
 			);
 			name = "Support Files";
-			path = "../Target Support Files/IGLDropDownMenu";
+			path = "../Target Support Files/Bond";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
-				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
-				FD017A5D6FFAEA0415C58366575F47F5 /* Pods */,
-				39A848921580F60A7B64A228B88BFABD /* Products */,
+				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
+				A2024838F4338824E9892B4B39D09D7A /* Pods */,
+				0C104E7B34F66AEC1FBFE4172C133DB3 /* Products */,
 				36720E87E0EDA3E572351C3F162B0BC2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		FD017A5D6FFAEA0415C58366575F47F5 /* Pods */ = {
+		A2024838F4338824E9892B4B39D09D7A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1FC0E69A7933AACEBA3A166B29ACC566 /* IGLDropDownMenu */,
+				E9B9AB766EC552B4B934D2B240B1A9C8 /* Bond */,
+				F861E9DE09270B285F52727BEB109579 /* IGLDropDownMenu */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		E9B9AB766EC552B4B934D2B240B1A9C8 /* Bond */ = {
+			isa = PBXGroup;
+			children = (
+				B373D3CF5FE2A47A67E88308CB1FB87E /* BindableType.swift */,
+				8A2900F9EB2A3A3AF8E6281BFEC7AA37 /* Bond.h */,
+				292E75E11DECC9888EB0DFF50CD49258 /* Buffer.swift */,
+				48010DE943E585B462CDDFF458334D80 /* CALayer+Bond.swift */,
+				09B9B99F9C8BF1CFE4C88CAE563C9146 /* Disposable.swift */,
+				714F91E6F85E1D870C339BC51F74A223 /* DisposableType.swift */,
+				37DC4C29DEE07C549CE82DCE1F19A2FE /* EventProducer.swift */,
+				8353E70569C444BF809375E8F6038CCE /* EventProducerType.swift */,
+				42C769E86E7BBDE0B7E6210E09F0383A /* MutableObservable.swift */,
+				A28DBBC0B922A1B056D2FDAB4AFA5C87 /* NSIndexSet+Bond.swift */,
+				58E0314931A5AC65D349EC43DE9026FC /* NSLayoutConstraint+Bond.swift */,
+				36F786EDC598B6D919062E971E146574 /* NSLock+Bond.swift */,
+				1D1D5A18DEB812C6668C449A6B7B91B0 /* NSNotificationCenter+Bond.swift */,
+				C172B015CFF8CB798387EFAF3E127C33 /* NSObject+Bond.swift */,
+				B3D8585C065B4E963CD84BBD18C3F0BC /* Observable.swift */,
+				1DA1C5C4AB234F98631B36636468F18F /* ObservableArray.swift */,
+				7F05D66EBD0D59B39794ABDE651F4C64 /* ObservableArrayEvent.swift */,
+				2638BBABF5158E00BC4D93924FB66B42 /* Operators.swift */,
+				49E3EA32428E65AC7DEFAFFEBB68A059 /* OptionalType.swift */,
+				A2B535A7AEF630328E5B65DFCB24A6A7 /* Queue.swift */,
+				0E8C055669AC68A6C9FE50D266F33384 /* Reference.swift */,
+				051F269278D1BA3AA9871BFBCFCA31EA /* SimpleDiff.swift */,
+				1982FA6D73A04C6DD8502C4BDA657DAB /* UIActivityIndicatorView+Bond.swift */,
+				ABE1ECF6F77D1C63025369944CD02B6E /* UIBarItem+Bond.swift */,
+				C4A0D34C94E722C4BA2886581BFEF230 /* UIButton+Bond.swift */,
+				992B54CF9A9851226F3C3719C0E60AB8 /* UICollectionView+Bond.swift */,
+				4CB2BD27BA37F0001443C350F94AFFF2 /* UIControl+Bond.swift */,
+				A78014BDD254F4B836D3C44B18ECC67A /* UIDatePicker+Bond.swift */,
+				6DE68A60A39EE5F76878520B9050E49C /* UIImageView+Bond.swift */,
+				64E37A93C1555761672E54A3D15600AB /* UILabel+Bond.swift */,
+				8E53CD771DB195ACEEE5A2CD4AAB1DED /* UINavigationBar+Bond.swift */,
+				EB96A93630A053EE11F4FEB118819BF8 /* UINavigationItem+Bond.swift */,
+				811476D2A64361A9AE3B816A5F4201EF /* UIProgressView+Bond.swift */,
+				90DB4EF9F805E35D71A18125C8A03C78 /* UIRefreshControl+Bond.swift */,
+				F9F9736494D910542913AD2C997CF832 /* UISegmentedControl+Bond.swift */,
+				77F941BCEAA8E51AB0FFB5CA7EAE58D3 /* UISlider+Bond.swift */,
+				F886870B598F4300F7399862ADC44662 /* UISwitch+Bond.swift */,
+				BE5D7C0FC3899B8D8FD302172AE0EC5E /* UITableView+Bond.swift */,
+				CF5D90B5B235A725E878749400B5A1D8 /* UITextField+Bond.swift */,
+				381B50A70624188688D069A070551711 /* UITextView+Bond.swift */,
+				C385191F139304AC192C135D523D8A51 /* UIView+Bond.swift */,
+				497D65863A19A23CB7E391765605F7AC /* Support Files */,
+			);
+			path = Bond;
+			sourceTree = "<group>";
+		};
+		F861E9DE09270B285F52727BEB109579 /* IGLDropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				626F23D201BC9F2F14B04CB0DD900774 /* IGLDropDownItem.h */,
+				F71EE3FB957EA0D30CA7F952582748B5 /* IGLDropDownItem.m */,
+				469FA99F170875F8F316E1CEEAAB29AB /* IGLDropDownMenu.h */,
+				50B6273CE60D6EAA38E04A7950CCD65D /* IGLDropDownMenu.m */,
+				2B671CEE1015B7EB44E0205A61CBE371 /* Support Files */,
+			);
+			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
+		FF2AEA74965EED5FE2760906784C788C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */,
+				BAE1B33188740B25D40CEDC08A929AF6 /* SystemConfiguration.framework */,
+				CE07C51563A8537190C45BF7B84469E6 /* UIKit.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		3740642F931A0C5EBDEF2968E67FE3A0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0F3F38460AB0958F2E61825A1CC6F339 /* Pods-GymBuddy-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5CE5CA929C00ACCF844AF0DB35C9D16A /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -189,11 +373,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E81F60584FB262FD6047E6E1D7E724B7 /* Headers */ = {
+		A3DE35D220D12B4864312E4098900C25 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				616D1851DD358B371A24C5ECCBD6D2DA /* Pods-GymBuddy-umbrella.h in Headers */,
+				406A63A3ADD13FCC6A114306ECFACB35 /* Bond-umbrella.h in Headers */,
+				62DAA3929D2CC62FC8761BF621BB6B73 /* Bond.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -214,25 +399,43 @@
 			);
 			name = IGLDropDownMenu;
 			productName = IGLDropDownMenu;
-			productReference = C8A4A1F70F2AE06E09C7B558EDDE1750 /* IGLDropDownMenu.framework */;
+			productReference = 52D6E4ED1504537A666254C528B3840C /* IGLDropDownMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		9C06A1009AF7562A6B06F072B45267C4 /* Pods-GymBuddy */ = {
+		80076C510C29F960587E43C0597ECBD5 /* Bond */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 634AFA283BADE50090F9141356E7F883 /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */;
+			buildConfigurationList = 15CF0A625D00818C302B148B468776AF /* Build configuration list for PBXNativeTarget "Bond" */;
 			buildPhases = (
-				B10A33B597B0D957255A5B01B4C6C069 /* Sources */,
-				EB9F45AAA59E3335CFB86EE20D47C74D /* Frameworks */,
-				E81F60584FB262FD6047E6E1D7E724B7 /* Headers */,
+				7EB23091D7865351EDEF1B98FB32BF52 /* Sources */,
+				48388185FE9685DD9A87437BA0D0A877 /* Frameworks */,
+				A3DE35D220D12B4864312E4098900C25 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E2370C3C560801ECE12CB817C3B3D780 /* PBXTargetDependency */,
+			);
+			name = Bond;
+			productName = Bond;
+			productReference = D07DD567A588D662E96F94FE90AAFF1A /* Bond.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		A5694A19595DEC15EE1287B936659261 /* Pods-GymBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC8E4AC6BDD8B020723516F392639AED /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */;
+			buildPhases = (
+				5772ADD4AA6662C82D93F2167CC18CB0 /* Sources */,
+				D1966DFCEE34868A78B314063A670A96 /* Frameworks */,
+				3740642F931A0C5EBDEF2968E67FE3A0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7919FCA3341D48FAB37050FC15BC616A /* PBXTargetDependency */,
+				66BABDB0DD04D280D03C736680739AD9 /* PBXTargetDependency */,
 			);
 			name = "Pods-GymBuddy";
 			productName = "Pods-GymBuddy";
-			productReference = 0862E533E2A75338A03C8882C5049E77 /* Pods_GymBuddy.framework */;
+			productReference = EDB698312B9222EAFF75A3C6CC210FCF /* Pods_GymBuddy.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -252,17 +455,26 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 39A848921580F60A7B64A228B88BFABD /* Products */;
+			productRefGroup = 0C104E7B34F66AEC1FBFE4172C133DB3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				80076C510C29F960587E43C0597ECBD5 /* Bond */,
 				5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */,
-				9C06A1009AF7562A6B06F072B45267C4 /* Pods-GymBuddy */,
+				A5694A19595DEC15EE1287B936659261 /* Pods-GymBuddy */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		5772ADD4AA6662C82D93F2167CC18CB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				60146433CA8FEEDAC39544F22A641B18 /* Pods-GymBuddy-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		5EDB4F2D34BFA2D0107693021CFC8114 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -273,29 +485,102 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		B10A33B597B0D957255A5B01B4C6C069 /* Sources */ = {
+		7EB23091D7865351EDEF1B98FB32BF52 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7E232EC8190C36B337695974CA4EA306 /* Pods-GymBuddy-dummy.m in Sources */,
+				1C2DFBFAFCB0951A64A678FA2AD48F58 /* BindableType.swift in Sources */,
+				591500DDDB643F9E413CC61DD6B0C25D /* Bond-dummy.m in Sources */,
+				63790D07711DE9E70CCB2B82742D05ED /* Buffer.swift in Sources */,
+				87DD3779C2945DC1AF0C62DA796942B2 /* CALayer+Bond.swift in Sources */,
+				A6083AC93A479B289A68DB17ADB4D728 /* Disposable.swift in Sources */,
+				76B5FE3246FCC3A447F6E8B8E2F6E7C6 /* DisposableType.swift in Sources */,
+				2FBA2895EEFE12C598C7F5532E3AAFCF /* EventProducer.swift in Sources */,
+				765CE44C5E228BB6F5641542C4EDB0F6 /* EventProducerType.swift in Sources */,
+				4F6D5FB3E04F760094AAF446ADB2B8E8 /* MutableObservable.swift in Sources */,
+				65468605F87FF32752DC24E5F584255D /* NSIndexSet+Bond.swift in Sources */,
+				45D77EFAE7512E91BD081ABD4D9D8D25 /* NSLayoutConstraint+Bond.swift in Sources */,
+				B987CD074D89BA55D5BE1F69428B5A87 /* NSLock+Bond.swift in Sources */,
+				746A985F04A09F8116E30718809C56B1 /* NSNotificationCenter+Bond.swift in Sources */,
+				07D072E2DEE09B91754976490740E692 /* NSObject+Bond.swift in Sources */,
+				F0B92B1B144221E8F09F224C7E865D80 /* Observable.swift in Sources */,
+				C4C828F56932D31EC1B92E64974D71EC /* ObservableArray.swift in Sources */,
+				67A2C13CC5A8F11F34239F2CF061858D /* ObservableArrayEvent.swift in Sources */,
+				89FB89FCDE6B7C3E39877213A44E2628 /* Operators.swift in Sources */,
+				966A52294B58F5D9E815A5DD4774FE5D /* OptionalType.swift in Sources */,
+				59F83978ED9BE2F8CCC471402C3A366A /* Queue.swift in Sources */,
+				1F87F3E8974EC37ACB137CADAC820D3C /* Reference.swift in Sources */,
+				3122B60E56A567DE78C19761D11D08E6 /* SimpleDiff.swift in Sources */,
+				826C3F638363819B87926E004C8EED1A /* UIActivityIndicatorView+Bond.swift in Sources */,
+				3B046A0578A1DFDCB63FF2AD8E99E408 /* UIBarItem+Bond.swift in Sources */,
+				FA4161D2631EF85804BD0FDEF99CD64C /* UIButton+Bond.swift in Sources */,
+				655FBD0E50E79313AF3F42C9BA21ED31 /* UICollectionView+Bond.swift in Sources */,
+				F1315E3B51FFE22E0924BD347EE393BD /* UIControl+Bond.swift in Sources */,
+				736A6B6CA33121E56AECC3AC24E18089 /* UIDatePicker+Bond.swift in Sources */,
+				4D967F8EF9F5FE51D102959FE0318B79 /* UIImageView+Bond.swift in Sources */,
+				4C3C803DAE849D7D23417F63F5179F27 /* UILabel+Bond.swift in Sources */,
+				ABD396472D36AB13D99B71527FFB3779 /* UINavigationBar+Bond.swift in Sources */,
+				C4631742B846BEF2C51604F852545BEB /* UINavigationItem+Bond.swift in Sources */,
+				3A320BCF5C3DAE46B893FEE510CDC913 /* UIProgressView+Bond.swift in Sources */,
+				FE086781D4F3DA2F363FA883037C98A6 /* UIRefreshControl+Bond.swift in Sources */,
+				61D20E52E5047E1269CED010B240D24B /* UISegmentedControl+Bond.swift in Sources */,
+				C10C2E6F48783CC8C59737DB6FC6195C /* UISlider+Bond.swift in Sources */,
+				B866721318441A1681518CF53015E6C0 /* UISwitch+Bond.swift in Sources */,
+				6511D63929A1D1F8C252C2C9490C4C5D /* UITableView+Bond.swift in Sources */,
+				6D566B48B1DDB2CDE3E552E87863D2A9 /* UITextField+Bond.swift in Sources */,
+				D23FF3B745356DB701D8962C552DAB09 /* UITextView+Bond.swift in Sources */,
+				C80561B11D8D882D4509326F6EB27705 /* UIView+Bond.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E2370C3C560801ECE12CB817C3B3D780 /* PBXTargetDependency */ = {
+		66BABDB0DD04D280D03C736680739AD9 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = IGLDropDownMenu;
 			target = 5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */;
-			targetProxy = C25C88911270ABA518C537EBBAB7D30E /* PBXContainerItemProxy */;
+			targetProxy = 7DC0FFB7ED259AB5A2D70C1980F61917 /* PBXContainerItemProxy */;
+		};
+		7919FCA3341D48FAB37050FC15BC616A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bond;
+			target = 80076C510C29F960587E43C0597ECBD5 /* Bond */;
+			targetProxy = 685FD51122E845B5695908EAEDB0D40B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		323FB7A9329DC1D32F2A01CEDBA202E6 /* Debug */ = {
+		15866B7067557FBD315953760BA8B3D5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */;
+			baseConfigurationReference = 11CD00C2A1EB2CEBF3C91F7CF4D93620 /* Bond.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Bond/Bond-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bond/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Bond/Bond.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Bond;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1CD220DAF0BEAE2FB8AF124C4C3D22BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -310,7 +595,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
@@ -321,11 +606,11 @@
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		518D7EEFEAC1F765E4F483F7B1B125A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 449BB0525CD086353DA1BC732CDE999C /* IGLDropDownMenu.xcconfig */;
+			baseConfigurationReference = 6345FA14F5DBC049FFEC20B6591F868C /* IGLDropDownMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -389,9 +674,9 @@
 			};
 			name = Debug;
 		};
-		9380F93B930AEB00122FB407066B849A /* Release */ = {
+		96F63023BBAC0B57A4CB815AF17FA623 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */;
+			baseConfigurationReference = 11CD00C2A1EB2CEBF3C91F7CF4D93620 /* Bond.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -400,24 +685,22 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GymBuddy/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/Bond/Bond-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Bond/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_GymBuddy;
+				MODULEMAP_FILE = "Target Support Files/Bond/Bond.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Bond;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -453,9 +736,40 @@
 			};
 			name = Release;
 		};
+		DD926E5C93343980EF0127C4F2577A93 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GymBuddy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		E68A62AC290B8691FBFC64A9F7E2E888 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 449BB0525CD086353DA1BC732CDE999C /* IGLDropDownMenu.xcconfig */;
+			baseConfigurationReference = 6345FA14F5DBC049FFEC20B6591F868C /* IGLDropDownMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -483,6 +797,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		15CF0A625D00818C302B148B468776AF /* Build configuration list for PBXNativeTarget "Bond" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				96F63023BBAC0B57A4CB815AF17FA623 /* Debug */,
+				15866B7067557FBD315953760BA8B3D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -492,20 +815,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		634AFA283BADE50090F9141356E7F883 /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				323FB7A9329DC1D32F2A01CEDBA202E6 /* Debug */,
-				9380F93B930AEB00122FB407066B849A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		CD11BE46F279134F35997A7780A531BA /* Build configuration list for PBXNativeTarget "IGLDropDownMenu" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				518D7EEFEAC1F765E4F483F7B1B125A4 /* Debug */,
 				E68A62AC290B8691FBFC64A9F7E2E888 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC8E4AC6BDD8B020723516F392639AED /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD926E5C93343980EF0127C4F2577A93 /* Debug */,
+				1CD220DAF0BEAE2FB8AF124C4C3D22BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

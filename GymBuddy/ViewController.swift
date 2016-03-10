@@ -42,7 +42,7 @@ class ViewController: UIViewController {
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        if connected
+        if !connected
         {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
             let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileViewController") as UIViewController

@@ -211,7 +211,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="01:59" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-V5-2ea">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VDP-V5-2ea">
                                 <rect key="frame" x="127" y="28" width="160" height="66"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="47"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -221,6 +221,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="correctnessLabel" destination="eSf-dT-zO5" id="JwX-AL-rPe"/>
+                        <outlet property="fatigueLabel" destination="0c7-va-oqx" id="uTQ-9M-ILf"/>
+                        <outlet property="repsLabel" destination="1e3-t9-Ucy" id="Ypa-cg-HhE"/>
+                        <outlet property="speedLabel" destination="cBj-mc-jdI" id="lrl-TG-muG"/>
+                        <outlet property="timerLabel" destination="VDP-V5-2ea" id="aIK-LR-5TW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frK-Jv-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

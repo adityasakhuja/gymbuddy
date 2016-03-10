@@ -5,5 +5,6 @@ use_frameworks!
 
 target 'GymBuddy' do
 	pod 'IGLDropDownMenu'
+    pod 'Bond'
 end
 

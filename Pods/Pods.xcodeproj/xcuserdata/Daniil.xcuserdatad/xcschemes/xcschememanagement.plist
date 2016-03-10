@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Bond.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IGLDropDownMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -22,7 +27,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C06A1009AF7562A6B06F072B45267C4</key>
+		<key>80076C510C29F960587E43C0597ECBD5</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A5694A19595DEC15EE1287B936659261</key>
 		<dict>
 			<key>primary</key>
 			<true/>

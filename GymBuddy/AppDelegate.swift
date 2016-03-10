@@ -9,6 +9,8 @@
 import UIKit
 import CoreData
 
+var status = Status(fatigue: 1, reps: 0, speed: 0, correctness: 100)
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
