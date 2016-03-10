@@ -9,7 +9,66 @@
 import UIKit
 import CoreData
 
+extension Int
+{
+    static func random(range: Range<Int> ) -> Int
+    {
+        var offset = 0
+        
+        if range.startIndex < 0   // allow negative ranges
+        {
+            offset = abs(range.startIndex)
+        }
+        
+        let mini = UInt32(range.startIndex + offset)
+        let maxi = UInt32(range.endIndex   + offset)
+        
+        return Int(mini + arc4random_uniform(maxi - mini)) - offset
+    }
+}
+
+extension Array {
+    func shiftLeft(var amount: Int = 1) -> [Element] {
+        assert(-count...count ~= amount, "Shift amount out of bounds")
+        if amount < 0 { amount += count }  // this needs to be >= 0
+        return Array(self[amount ..< count] + self[0 ..< amount])
+    }
+}
+
 var status = Status(fatigue: 1, reps: 0, speed: 0, correctness: 100)
+var emgDataGlobal: [[Double]] = []
+
+func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]
+{
+    var _arr = arr
+    if arr.count < maxSize
+    {
+        _arr.append(element)
+    }
+    else
+    {
+        _arr.shiftLeft()
+        _arr[maxSize-1] = element
+    }
+    
+    return _arr
+}
+
+func shiftPushArray(arr: [[Double]], element: [Double], maxSize: Int) -> [[Double]]
+{
+    var _arr = arr
+    if arr.count < maxSize
+    {
+        _arr.append(element)
+    }
+    else
+    {
+        _arr.shiftLeft()
+        _arr[maxSize-1] = element
+    }
+    
+    return _arr
+}
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

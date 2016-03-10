@@ -111,6 +111,10 @@ class StatusViewController: UIViewController {
         let eventData = notification.userInfo as! Dictionary<NSString, TLMEmgEvent>
         let emgEvent = eventData[kTLMKeyEMGEvent]!
         let emgData = emgEvent.rawData as! [Double]
+        
+        // Store EMG data globally
+        emgDataGlobal = shiftPushArray(emgDataGlobal, element: emgData, maxSize: 25)
+        
         emg1.text = "\(Int(emgData[0]))"
         emg2.text = "\(Int(emgData[1]))"
         emg3.text = "\(Int(emgData[2]))"
