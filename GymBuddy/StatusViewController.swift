@@ -13,14 +13,30 @@ import Bond
 class StatusViewController: UIViewController {
     
     var timer = 0
-    var currentPose: TLMPose!
-    var currentEmg: TLMEmgEvent!
+    var emgEnabled = false
     
+    // Status labels
     @IBOutlet weak var fatigueLabel: UILabel!
     @IBOutlet weak var repsLabel: UILabel!
     @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var correctnessLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
+    
+    // Debugging labels
+    @IBOutlet weak var connectedLabel: UILabel!
+    @IBOutlet weak var aMagLabel: UILabel!
+    @IBOutlet weak var aXLabel: UILabel!
+    @IBOutlet weak var aYLabel: UILabel!
+    @IBOutlet weak var aZLabel: UILabel!
+    @IBOutlet weak var emg1: UILabel!
+    @IBOutlet weak var emg2: UILabel!
+    @IBOutlet weak var emg3: UILabel!
+    @IBOutlet weak var emg4: UILabel!
+    @IBOutlet weak var emg5: UILabel!
+    @IBOutlet weak var emg6: UILabel!
+    @IBOutlet weak var emg7: UILabel!
+    @IBOutlet weak var emg8: UILabel!
+    @IBOutlet weak var helloLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,6 +75,8 @@ class StatusViewController: UIViewController {
         notifer.addObserver(self, selector: "didRecieveEmgEvent:", name: TLMMyoDidReceiveEmgEventNotification, object: nil)
         // Notifications accelerometer event are posted at a rate of 50 Hz.
         notifer.addObserver(self, selector: "didRecieveAccelerationEvent:", name: TLMMyoDidReceiveAccelerometerEventNotification, object: nil)
+        // Notifications for orientation event are posted at a rate of 50 Hz.
+        notifer.addObserver(self, selector: "didRecieveOrientationEvent:", name: TLMMyoDidReceiveOrientationEventNotification, object: nil)
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -72,23 +90,35 @@ class StatusViewController: UIViewController {
         let eventData = notification.userInfo as! Dictionary<NSString, TLMArmSyncEvent>
         let armEvent = eventData[kTLMKeyArmSyncEvent]!
         
-        var arm = armEvent.arm == .Right ? "Right" : "Left"
-        var direction = armEvent.xDirection == .TowardWrist ? "Towards Wrist" : "Toward Elbow"
-        print("SYNCED: Arm: \(arm) X-Direction: \(direction)")
-        
         armEvent.myo!.vibrateWithLength(.Short)
-        armEvent.myo!.setStreamEmg(.Enabled)
+        if !emgEnabled
+        {
+            armEvent.myo!.setStreamEmg(.Enabled)
+            emgEnabled = true
+        }
+        
+        connectedLabel.text = "Synced"
+        connectedLabel.backgroundColor = UIColor.blueColor()
     }
     
     func didLoseArm(notification: NSNotification) {
         print("Perform the Sync Gesture")
+        connectedLabel.text = "Unsynced"
+        connectedLabel.backgroundColor = UIColor.redColor()
     }
     
     func didRecieveEmgEvent(notification: NSNotification) {
         let eventData = notification.userInfo as! Dictionary<NSString, TLMEmgEvent>
         let emgEvent = eventData[kTLMKeyEMGEvent]!
-        
-        let emg = 1
+        let emgData = emgEvent.rawData as! [Double]
+        emg1.text = "\(Int(emgData[0]))"
+        emg2.text = "\(Int(emgData[1]))"
+        emg3.text = "\(Int(emgData[2]))"
+        emg4.text = "\(Int(emgData[3]))"
+        emg5.text = "\(Int(emgData[4]))"
+        emg6.text = "\(Int(emgData[5]))"
+        emg7.text = "\(Int(emgData[6]))"
+        emg8.text = "\(Int(emgData[7]))"
     }
     
     func didRecieveAccelerationEvent(notification: NSNotification) {
@@ -96,12 +126,31 @@ class StatusViewController: UIViewController {
         let accelerometerEvent = eventData[kTLMKeyAccelerometerEvent]!
         
         let acceleration = GLKitPolyfill.getAcceleration(accelerometerEvent);
-        print("\(acceleration.magnitude)")
         
-        // Uncomment to show direction of acceleration
-        print("x: \(acceleration.x)")
-        print("y: \(acceleration.y)")
-        print("z: \(acceleration.z)")
+        aMagLabel.text = "Mag: \(acceleration.magnitude)"
+        aXLabel.text = "X: \(acceleration.x)"
+        aYLabel.text = "Y: \(acceleration.y)"
+        aZLabel.text = "Z: \(acceleration.z)"
+        
+        if !emgEnabled
+        {
+            accelerometerEvent.myo!.setStreamEmg(.Enabled)
+            emgEnabled = true
+        }
+    }
+    
+    func didRecieveOrientationEvent(notification: NSNotification) {
+        let eventData = notification.userInfo as! Dictionary<NSString, TLMOrientationEvent>
+        let orientationEvent = eventData[kTLMKeyOrientationEvent]!
+        
+        let angles = GLKitPolyfill.getOrientation(orientationEvent)
+        let pitch = CGFloat(angles.pitch.radians)
+        let yaw = CGFloat(angles.yaw.radians)
+        let roll = CGFloat(angles.roll.radians)
+        let rotationAndPerspectiveTransform:CATransform3D = CATransform3DConcat(CATransform3DConcat(CATransform3DRotate (CATransform3DIdentity, pitch, -1.0, 0.0, 0.0), CATransform3DRotate(CATransform3DIdentity, yaw, 0.0, 1.0, 0.0)), CATransform3DRotate(CATransform3DIdentity, roll, 0.0, 0.0, -1.0))
+        
+        // Apply the rotation and perspective transform to helloLabel.
+        helloLabel.layer.transform = rotationAndPerspectiveTransform
     }
     
     func timerDidFire()
