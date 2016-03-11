@@ -25,6 +25,7 @@
 		A5DC27551C91EB88000793A6 /* Status.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27541C91EB88000793A6 /* Status.swift */; };
 		A5DC27571C91FA03000793A6 /* FatigueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27561C91FA03000793A6 /* FatigueController.swift */; };
 		A5DC27591C91FB08000793A6 /* CorrectnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27581C91FB08000793A6 /* CorrectnessController.swift */; };
+		A5DC275F1C931F13000793A6 /* Ideal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC275E1C931F13000793A6 /* Ideal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		A5DC27541C91EB88000793A6 /* Status.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Status.swift; sourceTree = "<group>"; };
 		A5DC27561C91FA03000793A6 /* FatigueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FatigueController.swift; sourceTree = "<group>"; };
 		A5DC27581C91FB08000793A6 /* CorrectnessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectnessController.swift; sourceTree = "<group>"; };
+		A5DC275E1C931F13000793A6 /* Ideal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ideal.swift; sourceTree = "<group>"; };
 		B66B6C827A10F3EADB24E26A /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -127,6 +129,7 @@
 				A5DC27541C91EB88000793A6 /* Status.swift */,
 				A5DC27561C91FA03000793A6 /* FatigueController.swift */,
 				A5DC27581C91FB08000793A6 /* CorrectnessController.swift */,
+				A5DC275E1C931F13000793A6 /* Ideal.swift */,
 			);
 			path = GymBuddy;
 			sourceTree = "<group>";
@@ -255,6 +258,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A5DC27591C91FB08000793A6 /* CorrectnessController.swift in Sources */,
+				A5DC275F1C931F13000793A6 /* Ideal.swift in Sources */,
 				A5DC27451C90EE3F000793A6 /* StatusViewController.swift in Sources */,
 				A5DC273F1C90C612000793A6 /* ProfileViewController.swift in Sources */,
 				A50B18981C904E5D00ADD607 /* GLKitPolyfill.m in Sources */,

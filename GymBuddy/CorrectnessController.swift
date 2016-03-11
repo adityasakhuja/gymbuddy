@@ -11,6 +11,9 @@ import Foundation
 class CorrectnessController: NSObject {
     
     var timerCount = NSTimer()
+    let ideal = Ideal()
+    var reps = 0
+    var repsNumCount = 0
     
     override init()
     {
@@ -22,6 +25,7 @@ class CorrectnessController: NSObject {
     
     func calculateRepsNum()
     {
+        repsNumCount++
         var accX = accXGlobal
         var repsNum = 0
         
@@ -36,6 +40,19 @@ class CorrectnessController: NSObject {
             }
         }
         status.reps.value += repsNum
+        
+        reps += repsNum
+        if repsNumCount % 5 == 0
+        {
+            checkSpeed(reps*12)
+            reps = 0
+        }
+    }
+    
+    func checkSpeed(speed: Int)
+    {
+        let speedDev = speed - (ideal.exerciseList["bicepsCurl"]?.speed)!
+        status.speed.value = speedDev
     }
     
     func calcMA(lastN: [Double]) -> Double
