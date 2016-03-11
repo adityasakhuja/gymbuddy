@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 import Bond
+import MBCircularProgressBar
 
 class StatusViewController: UIViewController {
     
@@ -18,9 +19,9 @@ class StatusViewController: UIViewController {
     // Status labels
     @IBOutlet weak var fatigueLabel: UILabel!
     @IBOutlet weak var repsLabel: UILabel!
-    @IBOutlet weak var speedLabel: UILabel!
     @IBOutlet weak var correctnessLabel: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
+    @IBOutlet weak var speedLabelC: MBCircularProgressBarView!
     
     // Debugging labels
     @IBOutlet weak var connectedLabel: UILabel!
@@ -52,9 +53,31 @@ class StatusViewController: UIViewController {
         status.reps
             .map {"\($0) Reps"}
             .bindTo(repsLabel.bnd_text)
-        status.speed
-            .map {"\($0)"}
-            .bindTo(speedLabel.bnd_text)
+        
+        status.speed.observe { value in
+            var val = 0
+            if value < 0
+            {
+                self.speedLabelC.progressColor = UIColor.greenColor()
+                self.speedLabelC.emptyLineColor = UIColor.redColor()
+            }
+            else
+            {
+                self.speedLabelC.progressColor = UIColor.redColor()
+                self.speedLabelC.emptyLineColor = UIColor.greenColor()
+            }
+            
+            if value > 40
+            {
+                val = 40
+            }
+            else
+            {
+                val = value
+            }
+            self.speedLabelC.value = CGFloat(val)
+        }
+        
         status.correctness
             .map {"\($0)"}
             .bindTo(correctnessLabel.bnd_text)
@@ -77,9 +100,12 @@ class StatusViewController: UIViewController {
         notifer.addObserver(self, selector: "didRecieveAccelerationEvent:", name: TLMMyoDidReceiveAccelerometerEventNotification, object: nil)
         // Notifications for orientation event are posted at a rate of 50 Hz.
         notifer.addObserver(self, selector: "didRecieveOrientationEvent:", name: TLMMyoDidReceiveOrientationEventNotification, object: nil)
+        
+        
     }
     
     override func viewDidAppear(animated: Bool) {
+        
     }
     
     func didDisconnectDevice(notification: NSNotification) {

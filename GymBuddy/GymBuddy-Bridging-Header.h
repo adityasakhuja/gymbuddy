@@ -5,3 +5,4 @@
 #import <IGLDropDownMenu/IGLDropDownMenu.h>
 #import <MyoKit/MyoKit.h>
 #import "GLKitPolyfill.h"
+#import <MBCircularProgressBar/MBCircularProgressBarView.h>

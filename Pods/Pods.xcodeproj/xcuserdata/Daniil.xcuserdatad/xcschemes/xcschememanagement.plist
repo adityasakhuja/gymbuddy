@@ -14,6 +14,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>MBCircularProgressBar-MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Pods-GymBuddy.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,7 +42,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>A5694A19595DEC15EE1287B936659261</key>
+		<key>860A9179BCFD9F1C616D8653DB2B4F91</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8FC4B2785BB68892651401B8A26A15AD</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>9F4D8C424B9C2F553E98A5BA030F717F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

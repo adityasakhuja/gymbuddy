@@ -86,8 +86,10 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-GymBuddy/Bond.framework"
   install_framework "Pods-GymBuddy/IGLDropDownMenu.framework"
+  install_framework "Pods-GymBuddy/MBCircularProgressBar.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-GymBuddy/Bond.framework"
   install_framework "Pods-GymBuddy/IGLDropDownMenu.framework"
+  install_framework "Pods-GymBuddy/MBCircularProgressBar.framework"
 fi
