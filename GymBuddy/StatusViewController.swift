@@ -155,16 +155,19 @@ class StatusViewController: UIViewController {
         let eventData = notification.userInfo as! Dictionary<NSString, TLMAccelerometerEvent>
         let accelerometerEvent = eventData[kTLMKeyAccelerometerEvent]!
         
-        let acceleration = GLKitPolyfill.getAcceleration(accelerometerEvent);
+        let mag = TLMVector3Length(accelerometerEvent.vector)
+        let xVal = accelerometerEvent.vector.x
+        let yVal = accelerometerEvent.vector.y
+        let zVal = accelerometerEvent.vector.z
         
-        accXGlobal = shiftPush(accXGlobal, element: Double(acceleration.x), maxSize: 50)
-        accYGlobal = shiftPush(accYGlobal, element: Double(acceleration.y), maxSize: 50)
-        accZGlobal = shiftPush(accZGlobal, element: Double(acceleration.z), maxSize: 50)
+        accXGlobal = shiftPush(accXGlobal, element: Double(xVal), maxSize: 50)
+        accYGlobal = shiftPush(accYGlobal, element: Double(yVal), maxSize: 50)
+        accZGlobal = shiftPush(accZGlobal, element: Double(zVal), maxSize: 50)
         
-        aMagLabel.text = "Mag: \(acceleration.magnitude)"
-        aXLabel.text = "X: \(acceleration.x)"
-        aYLabel.text = "Y: \(acceleration.y)"
-        aZLabel.text = "Z: \(acceleration.z)"
+        aMagLabel.text = "Mag: \(mag)"
+        aXLabel.text = "X: \(xVal)"
+        aYLabel.text = "Y: \(yVal)"
+        aZLabel.text = "Z: \(zVal)"
         
         if !emgEnabled
         {
@@ -177,7 +180,8 @@ class StatusViewController: UIViewController {
         let eventData = notification.userInfo as! Dictionary<NSString, TLMOrientationEvent>
         let orientationEvent = eventData[kTLMKeyOrientationEvent]!
         
-        let angles = GLKitPolyfill.getOrientation(orientationEvent)
+        let angles = TLMEulerAngles(quaternion: orientationEvent.quaternion)
+        
         let pitch = CGFloat(angles.pitch.radians)
         let yaw = CGFloat(angles.yaw.radians)
         let roll = CGFloat(angles.roll.radians)

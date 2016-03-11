@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import GLKit
+//import GLKit
 
 class ViewController: UIViewController {
     
