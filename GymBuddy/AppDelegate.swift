@@ -37,6 +37,9 @@ extension Array {
 
 var status = Status(fatigue: 1, reps: 0, speed: 0, correctness: 100)
 var emgDataGlobal: [[Double]] = []
+var accXGlobal: [Double] = []
+var accYGlobal: [Double] = []
+var accZGlobal: [Double] = []
 
 func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]
 {
