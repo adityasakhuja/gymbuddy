@@ -16,24 +16,34 @@ class CorrectnessController: NSObject {
     {
         super.init()
         // Calculate number of reps every 0.5 s
-        timerCount = NSTimer(timeInterval: 0.5, target: self, selector: "calculateRepsNum", userInfo: nil, repeats: true)
+        timerCount = NSTimer(timeInterval: 1, target: self, selector: "calculateRepsNum", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timerCount, forMode: NSRunLoopCommonModes)
     }
     
     func calculateRepsNum()
     {
-        let accX = accXGlobal
-        var xPrev = -1.00
+        var accX = accXGlobal
         var repsNum = 0
         
-        for x in accX
+        // Detect reps
+        for(var i=1; i<accX.count; i++)
         {
-            if xPrev >= 0 && x <= 0
+            // Waveform smoothing
+            accX[i] = calcMA([accX[i], accX[i-1]])
+            if(accX[i-1] >= 0.00 && accX[i] < 0.00)
             {
                 repsNum++
             }
-            xPrev=x
         }
         status.reps.value += repsNum
+    }
+    
+    func calcMA(lastN: [Double]) -> Double
+    {
+        var total: Double = 0
+        for element in lastN {
+            total+=element
+        }
+        return total/Double(lastN.count)
     }
 }

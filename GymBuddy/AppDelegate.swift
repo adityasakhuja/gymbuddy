@@ -44,14 +44,14 @@ var accZGlobal: [Double] = []
 func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]
 {
     var _arr = arr
-    if arr.count < maxSize
+    if _arr.count < maxSize
     {
         _arr.append(element)
     }
     else
     {
-        _arr.shiftLeft()
-        _arr[maxSize-1] = element
+        _arr.removeFirst()
+        _arr.append(element)
     }
     
     return _arr
@@ -60,14 +60,14 @@ func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]
 func shiftPushArray(arr: [[Double]], element: [Double], maxSize: Int) -> [[Double]]
 {
     var _arr = arr
-    if arr.count < maxSize
+    if _arr.count < maxSize
     {
         _arr.append(element)
     }
     else
     {
-        _arr.shiftLeft()
-        _arr[maxSize-1] = element
+        _arr.removeFirst()
+        _arr.append(element)
     }
     
     return _arr

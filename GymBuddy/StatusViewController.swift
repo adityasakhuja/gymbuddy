@@ -131,9 +131,9 @@ class StatusViewController: UIViewController {
         
         let acceleration = GLKitPolyfill.getAcceleration(accelerometerEvent);
         
-        accXGlobal = shiftPush(accXGlobal, element: Double(acceleration.x), maxSize: 25)
-        accYGlobal = shiftPush(accYGlobal, element: Double(acceleration.y), maxSize: 25)
-        accZGlobal = shiftPush(accZGlobal, element: Double(acceleration.z), maxSize: 25)
+        accXGlobal = shiftPush(accXGlobal, element: Double(acceleration.x), maxSize: 50)
+        accYGlobal = shiftPush(accYGlobal, element: Double(acceleration.y), maxSize: 50)
+        accZGlobal = shiftPush(accZGlobal, element: Double(acceleration.z), maxSize: 50)
         
         aMagLabel.text = "Mag: \(acceleration.magnitude)"
         aXLabel.text = "X: \(acceleration.x)"
