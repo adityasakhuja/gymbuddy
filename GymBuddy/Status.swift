@@ -14,11 +14,13 @@ class Status: NSObject {
     var reps:Observable<Int> = Observable((0))
     var speed:Observable<Int> = Observable((0))
     var correctness:Observable<Int> = Observable((0))
+    var weight:Observable<Int> = Observable((0))
     
-    init(fatigue: Int, reps: Int, speed: Int, correctness: Int) {
+    init(fatigue: Int, reps: Int, speed: Int, correctness: Int, weight: Int) {
         self.fatigue.value = fatigue
         self.reps.value = reps
         self.speed.value = speed
         self.correctness.value = correctness
+        self.weight.value = weight
     }
 }

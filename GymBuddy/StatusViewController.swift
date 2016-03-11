@@ -18,10 +18,21 @@ class StatusViewController: UIViewController {
     
     // Status labels
     @IBOutlet weak var fatigueLabel: UILabel!
+    @IBOutlet weak var fatigueText: UILabel!
     @IBOutlet weak var repsLabel: UILabel!
+    @IBOutlet weak var speedText: UILabel!
     @IBOutlet weak var correctnessLabel: UILabel!
+    @IBOutlet weak var correctnessText: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var speedLabelC: MBCircularProgressBarView!
+    
+    @IBOutlet weak var endButton: UIButton!
+    
+    // Resting labels
+    @IBOutlet weak var repsNextLabel: UILabel!
+    @IBOutlet weak var weightsLabel: UILabel!
+    @IBOutlet weak var restLabel: UILabel!
+    @IBOutlet weak var nextSetLabel: UILabel!
     
     // Debugging labels
     @IBOutlet weak var connectedLabel: UILabel!
@@ -38,6 +49,31 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var emg7: UILabel!
     @IBOutlet weak var emg8: UILabel!
     @IBOutlet weak var helloLabel: UILabel!
+    
+    @IBAction func endButtonPressed(sender: AnyObject) {
+        // Initialise RestController
+        let _ = RestController()
+        
+        //Hide status labels
+        fatigueLabel.hidden = true
+        fatigueText.hidden = true
+        repsLabel.hidden = true
+        correctnessLabel.hidden = true
+        correctnessText.hidden = true
+        speedText.hidden = true
+        speedLabelC.hidden = true
+        
+        // Show resting labels
+        repsNextLabel.hidden = false
+        weightsLabel.hidden = false
+        restLabel.hidden = false
+        nextSetLabel.hidden = false
+        
+        // Change the Button
+        endButton.backgroundColor = UIColor.blueColor()
+        endButton.setTitle("Continue", forState: .Normal)
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +117,15 @@ class StatusViewController: UIViewController {
         status.correctness
             .map {"\($0)"}
             .bindTo(correctnessLabel.bnd_text)
+        
+        // Bind labels to rest
+        status.weight
+            .map {"Use \($0) KG weights"}
+            .bindTo(weightsLabel.bnd_text)
+        
+        rest.reps
+            .map {"Do \($0) reps"}
+            .bindTo(repsNextLabel.bnd_text)
         
         // Start the timer
         NSTimer.scheduledTimerWithTimeInterval(1, target: self, selector: "timerDidFire", userInfo: nil, repeats: true)

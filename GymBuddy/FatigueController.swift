@@ -7,7 +7,6 @@
 //
 
 import Foundation
-import GLKit
 
 class FatigueController: NSObject {
     
@@ -49,5 +48,8 @@ class FatigueController: NSObject {
         
         // Update fatigue index (randomly for now)
         status.fatigue.value = Int.random(1...5)
+        
+        // For Guang's controller
+        fatigueGlobal.append(status.fatigue.value)
     }
 }

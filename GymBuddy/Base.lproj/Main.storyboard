@@ -313,6 +313,41 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Do 20 reps" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s10-sa-DLQ">
+                                <rect key="frame" x="20" y="290" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rDo-ln-5PG">
+                                <rect key="frame" x="79" y="633" width="288" height="75"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="End exercise">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="endButtonPressed:" destination="O9f-PS-YNH" eventType="touchUpInside" id="g7D-2C-tIT"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Great! Now rest until the timer expires." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hz-iW-5v3">
+                                <rect key="frame" x="20" y="99" width="374" height="92"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="For the next set:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hWR-1s-zEW">
+                                <rect key="frame" x="20" y="190" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use 3 KG weights" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rpi-eG-c1K">
+                                <rect key="frame" x="20" y="243" width="374" height="38"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jaz-fV-GEC" customClass="MBCircularProgressBarView">
                                 <rect key="frame" x="114" y="286" width="242" height="85"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -358,6 +393,7 @@
                         <outlet property="aZLabel" destination="Cee-Kk-ddT" id="ATC-ui-Wd5"/>
                         <outlet property="connectedLabel" destination="RfR-N5-pyz" id="WDT-FY-ydB"/>
                         <outlet property="correctnessLabel" destination="eSf-dT-zO5" id="JwX-AL-rPe"/>
+                        <outlet property="correctnessText" destination="5M8-BT-rjA" id="sq0-AU-cVf"/>
                         <outlet property="emg1" destination="rqj-7P-zQv" id="b8W-j3-Lja"/>
                         <outlet property="emg2" destination="jGM-5j-VtQ" id="ein-hi-1HK"/>
                         <outlet property="emg3" destination="j71-6d-gRZ" id="idf-Uk-rM5"/>
@@ -366,11 +402,18 @@
                         <outlet property="emg6" destination="gFS-vI-SAs" id="9KB-8q-3VS"/>
                         <outlet property="emg7" destination="EcD-5V-SG0" id="iUT-Ma-J0Y"/>
                         <outlet property="emg8" destination="n17-sA-Vp4" id="owO-HV-Ysq"/>
+                        <outlet property="endButton" destination="rDo-ln-5PG" id="NoD-1j-3Fn"/>
                         <outlet property="fatigueLabel" destination="0c7-va-oqx" id="uTQ-9M-ILf"/>
+                        <outlet property="fatigueText" destination="GZR-1y-GQZ" id="Pws-6g-WVf"/>
                         <outlet property="helloLabel" destination="zKx-dh-uir" id="fuw-ZW-6eH"/>
+                        <outlet property="nextSetLabel" destination="hWR-1s-zEW" id="swI-UV-PPR"/>
                         <outlet property="repsLabel" destination="1e3-t9-Ucy" id="Ypa-cg-HhE"/>
+                        <outlet property="repsNextLabel" destination="s10-sa-DLQ" id="Xmy-eN-82r"/>
+                        <outlet property="restLabel" destination="2hz-iW-5v3" id="feZ-oN-mJw"/>
                         <outlet property="speedLabelC" destination="jaz-fV-GEC" id="NOn-co-9s1"/>
+                        <outlet property="speedText" destination="pP2-u6-Vab" id="7J1-7r-iDM"/>
                         <outlet property="timerLabel" destination="VDP-V5-2ea" id="aIK-LR-5TW"/>
+                        <outlet property="weightsLabel" destination="Rpi-eG-c1K" id="kbl-TD-H5c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frK-Jv-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>

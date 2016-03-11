@@ -25,6 +25,8 @@
 		A5DC27571C91FA03000793A6 /* FatigueController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27561C91FA03000793A6 /* FatigueController.swift */; };
 		A5DC27591C91FB08000793A6 /* CorrectnessController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27581C91FB08000793A6 /* CorrectnessController.swift */; };
 		A5DC275F1C931F13000793A6 /* Ideal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC275E1C931F13000793A6 /* Ideal.swift */; };
+		A5DC27611C936B41000793A6 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27601C936B41000793A6 /* Rest.swift */; };
+		A5DC27631C936CE7000793A6 /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27621C936CE7000793A6 /* RestController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		A5DC27561C91FA03000793A6 /* FatigueController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FatigueController.swift; sourceTree = "<group>"; };
 		A5DC27581C91FB08000793A6 /* CorrectnessController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CorrectnessController.swift; sourceTree = "<group>"; };
 		A5DC275E1C931F13000793A6 /* Ideal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ideal.swift; sourceTree = "<group>"; };
+		A5DC27601C936B41000793A6 /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
+		A5DC27621C936CE7000793A6 /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestController.swift; sourceTree = "<group>"; };
 		B66B6C827A10F3EADB24E26A /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -125,6 +129,8 @@
 				A5DC27561C91FA03000793A6 /* FatigueController.swift */,
 				A5DC27581C91FB08000793A6 /* CorrectnessController.swift */,
 				A5DC275E1C931F13000793A6 /* Ideal.swift */,
+				A5DC27601C936B41000793A6 /* Rest.swift */,
+				A5DC27621C936CE7000793A6 /* RestController.swift */,
 			);
 			path = GymBuddy;
 			sourceTree = "<group>";
@@ -255,6 +261,8 @@
 				A5DC27591C91FB08000793A6 /* CorrectnessController.swift in Sources */,
 				A5DC275F1C931F13000793A6 /* Ideal.swift in Sources */,
 				A5DC27451C90EE3F000793A6 /* StatusViewController.swift in Sources */,
+				A5DC27631C936CE7000793A6 /* RestController.swift in Sources */,
+				A5DC27611C936B41000793A6 /* Rest.swift in Sources */,
 				A5DC273F1C90C612000793A6 /* ProfileViewController.swift in Sources */,
 				A5DC27571C91FA03000793A6 /* FatigueController.swift in Sources */,
 				A50B187D1C9044D600ADD607 /* ViewController.swift in Sources */,

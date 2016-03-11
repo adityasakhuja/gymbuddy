@@ -35,11 +35,13 @@ extension Array {
     }
 }
 
-var status = Status(fatigue: 1, reps: 0, speed: 0, correctness: 100)
+var status = Status(fatigue: 1, reps: 0, speed: 0, correctness: 100, weight: 3)
+var rest = Rest(time: 120, reps: 10)
 var emgDataGlobal: [[Double]] = []
 var accXGlobal: [Double] = []
 var accYGlobal: [Double] = []
 var accZGlobal: [Double] = []
+var fatigueGlobal: [Int] = []
 
 func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]
 {
