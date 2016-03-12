@@ -17,7 +17,6 @@ class StatusViewController: UIViewController {
     var emgEnabled = false
     
     // Status labels
-    @IBOutlet weak var fatigueLabel: UILabel!
     @IBOutlet weak var fatigueText: UILabel!
     @IBOutlet weak var repsLabel: UILabel!
     @IBOutlet weak var speedText: UILabel!
@@ -25,6 +24,7 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var correctnessText: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
     @IBOutlet weak var speedLabelC: MBCircularProgressBarView!
+    @IBOutlet weak var fatigueLabelC: MBCircularProgressBarView!
     
     @IBOutlet weak var endButton: UIButton!
     
@@ -55,13 +55,13 @@ class StatusViewController: UIViewController {
         let _ = RestController()
         
         //Hide status labels
-        fatigueLabel.hidden = true
         fatigueText.hidden = true
         repsLabel.hidden = true
         correctnessLabel.hidden = true
         correctnessText.hidden = true
         speedText.hidden = true
         speedLabelC.hidden = true
+        fatigueLabelC.hidden = true
         
         // Show resting labels
         repsNextLabel.hidden = false
@@ -83,9 +83,23 @@ class StatusViewController: UIViewController {
         let _ = CorrectnessController()
         
         // Bind labels to Status model
-        status.fatigue
-            .map {"\($0)"}
-            .bindTo(fatigueLabel.bnd_text)
+        status.fatigue.observe { value in
+            if value < 3 || value == 4
+            {
+                self.fatigueLabelC.progressColor = UIColor.yellowColor()
+            }
+            else if value == 3
+            {
+                self.fatigueLabelC.progressColor = UIColor.greenColor()
+            }
+            else
+            {
+                self.fatigueLabelC.progressColor = UIColor.redColor()
+            }
+            
+            self.fatigueLabelC.value = CGFloat(value)
+        }
+        
         status.reps
             .map {"\($0) Reps"}
             .bindTo(repsLabel.bnd_text)
