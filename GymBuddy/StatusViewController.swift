@@ -15,6 +15,7 @@ class StatusViewController: UIViewController {
     
     var timer = 0
     var emgEnabled = false
+    var resting = false
     
     // Status labels
     @IBOutlet weak var fatigueText: UILabel!
@@ -51,27 +52,60 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     
     @IBAction func endButtonPressed(sender: AnyObject) {
-        // Initialise RestController
-        let _ = RestController()
-        
-        //Hide status labels
-        fatigueText.hidden = true
-        repsLabel.hidden = true
-        correctnessLabel.hidden = true
-        correctnessText.hidden = true
-        speedText.hidden = true
-        speedLabelC.hidden = true
-        fatigueLabelC.hidden = true
-        
-        // Show resting labels
-        repsNextLabel.hidden = false
-        weightsLabel.hidden = false
-        restLabel.hidden = false
-        nextSetLabel.hidden = false
-        
-        // Change the Button
-        endButton.backgroundColor = UIColor.blueColor()
-        endButton.setTitle("Continue", forState: .Normal)
+        if resting
+        {
+            //Show status labels
+            fatigueText.hidden = false
+            repsLabel.hidden = false
+            correctnessLabel.hidden = false
+            correctnessText.hidden = false
+            speedText.hidden = false
+            speedLabelC.hidden = false
+            fatigueLabelC.hidden = false
+            
+            // Hide resting labels
+            repsNextLabel.hidden = true
+            weightsLabel.hidden = true
+            restLabel.hidden = true
+            nextSetLabel.hidden = true
+            
+            // Change the Button
+            endButton.backgroundColor = UIColor.redColor()
+            endButton.setTitle("End exercise", forState: .Normal)
+            
+            // Reset timer
+            timer = 0
+            
+            // Update system state
+            resting = false
+        }
+        else
+        {
+            // Initialise RestController
+            let _ = RestController()
+            
+            //Hide status labels
+            fatigueText.hidden = true
+            repsLabel.hidden = true
+            correctnessLabel.hidden = true
+            correctnessText.hidden = true
+            speedText.hidden = true
+            speedLabelC.hidden = true
+            fatigueLabelC.hidden = true
+            
+            // Show resting labels
+            repsNextLabel.hidden = false
+            weightsLabel.hidden = false
+            restLabel.hidden = false
+            nextSetLabel.hidden = false
+            
+            // Change the Button
+            endButton.backgroundColor = UIColor.blueColor()
+            endButton.setTitle("Continue", forState: .Normal)
+            
+            // Update system state
+            resting = true
+        }
     }
     
     
@@ -98,6 +132,10 @@ class StatusViewController: UIViewController {
             }
             
             self.fatigueLabelC.value = CGFloat(value)
+        }
+        
+        rest.time.observe { value in
+            self.timer = value
         }
         
         status.reps
@@ -252,25 +290,40 @@ class StatusViewController: UIViewController {
     
     func timerDidFire()
     {
-        timer++
-        
-        //calculate the minutes in elapsed time.
-        let minutes = Int(floor(Double(timer)/Double(60)))
-        var minutesText = "\(minutes)"
-        if minutes < 10
+        if resting{
+            timer--
+        }
+        else
         {
-            minutesText = "0\(minutes)"
+            timer++
         }
         
-        //calculate the seconds in elapsed time.
-        let seconds = timer % 60
-        var secondsText = "\(seconds)"
-        if seconds < 10
+        if timer > 0
         {
-            secondsText = "0\(seconds)"
+            //calculate the minutes in elapsed time.
+            let minutes = Int(floor(Double(timer)/Double(60)))
+            var minutesText = "\(minutes)"
+            if minutes < 10
+            {
+                minutesText = "0\(minutes)"
+            }
+            
+            //calculate the seconds in elapsed time.
+            let seconds = timer % 60
+            var secondsText = "\(seconds)"
+            if seconds < 10
+            {
+                secondsText = "0\(seconds)"
+            }
+            
+            // Display the time
+            timerLabel.text = "\(minutesText):\(secondsText)"
+            timerLabel.textColor = UIColor.blackColor()
         }
-        
-        // Display the time
-        timerLabel.text = "\(minutesText):\(secondsText)"
+        else
+        {
+            timerLabel.text = "00:00"
+            timerLabel.textColor = UIColor.redColor()
+        }
     }
 }
