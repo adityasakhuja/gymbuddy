@@ -45,7 +45,7 @@ class ViewController: UIViewController {
         if connected
         {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-            let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileViewController") as UIViewController
+            let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("CalibrationViewController") as UIViewController
             self.presentViewController(vc, animated: true, completion: nil)
         }
     }

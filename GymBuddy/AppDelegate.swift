@@ -42,6 +42,8 @@ var accXGlobal: [Double] = []
 var accYGlobal: [Double] = []
 var accZGlobal: [Double] = []
 var fatigueGlobal: [Int] = []
+var orientationGlobal: [[Double]] = []
+var centerGlobal: [Double] = []
 
 func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]
 {

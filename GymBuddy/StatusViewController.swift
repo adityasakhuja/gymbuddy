@@ -52,6 +52,7 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     
     @IBAction func endButtonPressed(sender: AnyObject) {
+        NSLog("%@", orientationGlobal)
         if resting
         {
             //Show status labels
@@ -282,6 +283,10 @@ class StatusViewController: UIViewController {
         let pitch = CGFloat(angles.pitch.radians)
         let yaw = CGFloat(angles.yaw.radians)
         let roll = CGFloat(angles.roll.radians)
+        
+        // Append global orientation array
+        orientationGlobal.append([Double(pitch), Double(yaw), Double(roll)])
+        
         let rotationAndPerspectiveTransform:CATransform3D = CATransform3DConcat(CATransform3DConcat(CATransform3DRotate (CATransform3DIdentity, pitch, -1.0, 0.0, 0.0), CATransform3DRotate(CATransform3DIdentity, yaw, 0.0, 1.0, 0.0)), CATransform3DRotate(CATransform3DIdentity, roll, 0.0, 0.0, -1.0))
         
         // Apply the rotation and perspective transform to helloLabel.
