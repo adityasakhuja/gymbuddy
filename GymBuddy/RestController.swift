@@ -19,12 +19,12 @@ class RestController: NSObject {
     
     func calculateNextReps()
     {
-        //print("input: fatigues: \(fatigues),\t reps: \(repsPrev),\t Weight: \(weightPrev),\t rest: \(restPrev)")
-        
         let fatigues = fatigueGlobal// Get previous fatigues array [Int]
         let repsPrev = status.reps.value// Get previous reps
         let weightPrev = status.weight.value// Get previous weight
         let restPrev = rest.time.value
+        
+        print("input: fatigues: \(fatigues),\t reps: \(repsPrev),\t Weight: \(weightPrev),\t rest: \(restPrev)")
         
         let fatigue_curr = fatigues[fatigues.endIndex - 1]
         let fatigue_init = fatigues[0]
@@ -60,7 +60,7 @@ class RestController: NSObject {
                 }
                 rest_time = 30 // should start immediately
             case 3:
-                if(fatigue_curr == tiredness_threshold){
+                if(fatigue_init == tiredness_threshold){
                     rest_time += 30
                     if(rest_time >= max_rest_time){
                         rest_time = max_rest_time
@@ -71,7 +71,6 @@ class RestController: NSObject {
                         }
                     }
                 }
-                
             case 4:
                 if(restPrev >= max_rest_time){
                     status_weight -= 1
