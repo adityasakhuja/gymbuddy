@@ -27,6 +27,7 @@
 		A5DC275F1C931F13000793A6 /* Ideal.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC275E1C931F13000793A6 /* Ideal.swift */; };
 		A5DC27611C936B41000793A6 /* Rest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27601C936B41000793A6 /* Rest.swift */; };
 		A5DC27631C936CE7000793A6 /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27621C936CE7000793A6 /* RestController.swift */; };
+		A5DC27671C947B6F000793A6 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27661C947B6F000793A6 /* WeightViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		A5DC275E1C931F13000793A6 /* Ideal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ideal.swift; sourceTree = "<group>"; };
 		A5DC27601C936B41000793A6 /* Rest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rest.swift; sourceTree = "<group>"; };
 		A5DC27621C936CE7000793A6 /* RestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestController.swift; sourceTree = "<group>"; };
+		A5DC27661C947B6F000793A6 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		B66B6C827A10F3EADB24E26A /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -131,6 +133,7 @@
 				A5DC275E1C931F13000793A6 /* Ideal.swift */,
 				A5DC27601C936B41000793A6 /* Rest.swift */,
 				A5DC27621C936CE7000793A6 /* RestController.swift */,
+				A5DC27661C947B6F000793A6 /* WeightViewController.swift */,
 			);
 			path = GymBuddy;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				A5DC27551C91EB88000793A6 /* Status.swift in Sources */,
 				A50B189E1C90878000ADD607 /* ListViewController.swift in Sources */,
 				A50B187B1C9044D600ADD607 /* AppDelegate.swift in Sources */,
+				A5DC27671C947B6F000793A6 /* WeightViewController.swift in Sources */,
 				A5DC27411C90D606000793A6 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

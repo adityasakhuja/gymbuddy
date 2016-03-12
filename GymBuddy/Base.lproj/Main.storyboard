@@ -153,6 +153,60 @@
             </objects>
             <point key="canvasLocation" x="1552" y="271"/>
         </scene>
+        <!--Weight View Controller-->
+        <scene sceneID="WuJ-15-Rb9">
+            <objects>
+                <viewController restorationIdentifier="WeightViewController" storyboardIdentifier="WeightViewController" id="7Qa-dr-b2f" customClass="WeightViewController" customModule="GymBuddy" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BPT-oV-2I2"/>
+                        <viewControllerLayoutGuide type="bottom" id="riX-Tp-3Pd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uoa-A5-RH1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Please specify the weight that you are using:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wl9-9t-hbW">
+                                <rect key="frame" x="20" y="57" width="374" height="83"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="3" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="Hfh-gQ-V7h">
+                                <rect key="frame" x="18" y="233" width="378" height="31"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" destination="7Qa-dr-b2f" eventType="valueChanged" id="3sC-Zd-DWs"/>
+                                </connections>
+                            </slider>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="orX-8P-0Ng">
+                                <rect key="frame" x="94" y="568" width="226" height="48"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Begin exercise">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="O9f-PS-YNH" kind="show" id="8XI-jl-uiY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="3 KG" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YxH-z0-jD7">
+                                <rect key="frame" x="20" y="305" width="374" height="99"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="slider" destination="Hfh-gQ-V7h" id="RWn-w0-Dcl"/>
+                        <outlet property="weightLabel" destination="YxH-z0-jD7" id="KjE-Vb-rvB"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5S3-rn-zrV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2202" y="271"/>
+        </scene>
         <!--Status View Controller-->
         <scene sceneID="min-zf-Bqc">
             <objects>
@@ -437,7 +491,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frK-Jv-cOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2077" y="271"/>
+            <point key="canvasLocation" x="2905" y="271"/>
         </scene>
     </scenes>
 </document>

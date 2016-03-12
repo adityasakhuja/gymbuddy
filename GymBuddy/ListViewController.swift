@@ -34,7 +34,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         print("You selected cell #\(indexPath.row)!")
         let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("StatusViewController") as UIViewController
+        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("WeightViewController") as UIViewController
         self.presentViewController(vc, animated: true, completion: nil)
         
     }
