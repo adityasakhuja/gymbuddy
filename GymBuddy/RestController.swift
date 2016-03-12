@@ -19,7 +19,7 @@ class RestController: NSObject {
     
     func calculateNextReps()
     {
-        print("input: fatigues: \(fatigues),\t reps: \(repsPrev),\t Weight: \(weightPrev),\t rest: \(restPrev)")
+        //print("input: fatigues: \(fatigues),\t reps: \(repsPrev),\t Weight: \(weightPrev),\t rest: \(restPrev)")
         
         let fatigues = fatigueGlobal// Get previous fatigues array [Int]
         let repsPrev = status.reps.value// Get previous reps
