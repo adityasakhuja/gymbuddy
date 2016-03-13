@@ -32,6 +32,12 @@ class CalibrationViewController: UIViewController {
         notifer.addObserver(self, selector: "didLoseArm:", name: TLMMyoDidReceiveArmUnsyncEventNotification, object: nil)
         TLMHub.sharedHub().lockingPolicy = .None
         
+        if syncedGlobal
+        {
+            topLabel.text = "Your Myo is now synced!"
+            middleLabel.text = "Now you need to calibrate your Myo. To do this, follow the graphic below:"
+        }
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -63,7 +69,8 @@ class CalibrationViewController: UIViewController {
                 centerGlobal = orientation.last!
                 let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
                 let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileViewController") as UIViewController
-                self.presentViewController(vc, animated: true, completion: nil)
+                let window = UIApplication.sharedApplication().windows[0] as UIWindow;
+                window.rootViewController = vc;
             default: break // .Rest or .Unknown
             }
         }

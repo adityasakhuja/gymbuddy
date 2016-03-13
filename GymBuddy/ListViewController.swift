@@ -35,7 +35,8 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         print("You selected cell #\(indexPath.row)!")
         let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
         let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("WeightViewController") as UIViewController
-        self.presentViewController(vc, animated: true, completion: nil)
+        let window = UIApplication.sharedApplication().windows[0] as UIWindow;
+        window.rootViewController = vc;
         
     }
 }

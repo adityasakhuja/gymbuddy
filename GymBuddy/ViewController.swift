@@ -50,7 +50,8 @@ class ViewController: UIViewController {
         {
             let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
             let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("CalibrationViewController") as UIViewController
-            self.presentViewController(vc, animated: true, completion: nil)
+            let window = UIApplication.sharedApplication().windows[0] as UIWindow;
+            window.rootViewController = vc;
         }
     }
 
