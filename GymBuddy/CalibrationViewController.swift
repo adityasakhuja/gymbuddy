@@ -31,6 +31,7 @@ class CalibrationViewController: UIViewController {
         // Posted whenever Myo loses its calibration (when Myo is taken off, or moved enough on the user's arm)
         notifer.addObserver(self, selector: "didLoseArm:", name: TLMMyoDidReceiveArmUnsyncEventNotification, object: nil)
         TLMHub.sharedHub().lockingPolicy = .None
+        
     }
     
     override func viewDidAppear(animated: Bool) {
@@ -52,26 +53,31 @@ class CalibrationViewController: UIViewController {
     }
     
     func didChangePose(notification: NSNotification) {
-        let eventData = notification.userInfo as! Dictionary<NSString, TLMPose>
-        currentPose = eventData[kTLMKeyPose]!
-        
-        switch (currentPose.type) {
-        case .Fist:
-            centerGlobal = orientation.last!
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-            let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileViewController") as UIViewController
-            self.presentViewController(vc, animated: true, completion: nil)
-        default: break // .Rest or .Unknown
+        if syncedGlobal
+        {
+            let eventData = notification.userInfo as! Dictionary<NSString, TLMPose>
+            currentPose = eventData[kTLMKeyPose]!
+            
+            switch (currentPose.type) {
+            case .Fist:
+                centerGlobal = orientation.last!
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileViewController") as UIViewController
+                self.presentViewController(vc, animated: true, completion: nil)
+            default: break // .Rest or .Unknown
+            }
         }
     }
     
     func didRecognizeArm(notification: NSNotification) {
         topLabel.text = "Your Myo is now synced!"
         middleLabel.text = "Now you need to calibrate your Myo. To do this, follow the graphic below:"
+        syncedGlobal = true
     }
     
     func didLoseArm(notification: NSNotification) {
         topLabel.text = "Your Myo is now unsynced! =("
         middleLabel.text = "You need to sync your Myo again. To do this, follow the graphic below:"
+        syncedGlobal = false
     }
 }

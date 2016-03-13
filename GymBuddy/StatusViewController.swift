@@ -52,7 +52,6 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var helloLabel: UILabel!
     
     @IBAction func endButtonPressed(sender: AnyObject) {
-        NSLog("%@", orientationGlobal)
         if resting
         {
             //Show status labels

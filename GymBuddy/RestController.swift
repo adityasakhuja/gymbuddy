@@ -115,7 +115,7 @@ class RestController: NSObject {
         
         rest.time.value = rest_time// Return resting time in seconds
         status.weight.value = status_weight// Set the new weight
-        status.reps.value = status_rep// Reset the status reps
+        rest.reps.value = status_rep// Reset the status reps
         fatigueGlobal = []// Flush the global array when you are done
     }
 }
