@@ -67,6 +67,10 @@ class ViewController: UIViewController {
     func didLoseArm(notification: NSNotification) {
         syncedGlobal = false
     }
+    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
+    }
 
 }
 
