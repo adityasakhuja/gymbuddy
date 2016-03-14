@@ -20,7 +20,7 @@ class RestController: NSObject {
     {
         super.init()
         
-        //1
+        // Fetch data from CoreData
         var exerciseDatas = [NSManagedObject]()
         let appDelegate =
         UIApplication.sharedApplication().delegate as! AppDelegate
@@ -39,6 +39,7 @@ class RestController: NSObject {
             print("Could not fetch \(error), \(error.userInfo)")
         }
         
+        // Save data to local arrays
         for data in exerciseDatas
         {
             let arrString = data.valueForKey("fatigues") as? String

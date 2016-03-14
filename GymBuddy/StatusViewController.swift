@@ -308,7 +308,7 @@ class StatusViewController: UIViewController {
         let emgData = emgEvent.rawData as! [Double]
         
         // Store EMG data globally
-        emgDataGlobal = shiftPushArray(emgDataGlobal, element: emgData, maxSize: 100)
+        emgDataGlobal = shiftPushArray(emgDataGlobal, element: emgData, maxSize: 128)
         
         emg1.text = "\(Int(emgData[0]))"
         emg2.text = "\(Int(emgData[1]))"
