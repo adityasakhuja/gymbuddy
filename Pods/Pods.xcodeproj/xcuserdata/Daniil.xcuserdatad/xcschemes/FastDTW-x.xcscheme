@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'B10D2A91B7B8DE2AEAB8FE82'
+               BlueprintIdentifier = 'C77197423AC842C7DABF736F'
                BlueprintName = 'FastDTW-x'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'FastDTW_x.framework'>

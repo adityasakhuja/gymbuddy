@@ -103,13 +103,13 @@ class StatusViewController: UIViewController {
 //            print("First orientation:")
 //            NSLog("%@", orientationGlobal[0])
 //            // Adjust orientation array
-            var orientationNew: [Float] = []
-            for orientation in orientationGlobal
-            {
-                orientationNew.append(orientation.w)
-            }
-            // Print new orientation array
-            NSLog("%@", orientationNew)
+//            var orientationNew: [Float] = []
+//            for orientation in orientationGlobal
+//            {
+//                orientationNew.append(orientation.w)
+//            }
+//            // Print new orientation array
+//            NSLog("%@", orientationNew)
             
             // Store data in CoreData
             var exerciseDatas = [NSManagedObject]()
@@ -358,7 +358,7 @@ class StatusViewController: UIViewController {
             let roll = CGFloat(angles.roll.radians)
             
             // Append global orientation array
-            orientationGlobal.append(TLMQuaternionMultiply(orientationEvent.quaternion, centerGlobal))
+            orientationGlobal.append(TLMQuaternionMultiply(orientationEvent.quaternion, centerGlobal).w)
             
             let rotationAndPerspectiveTransform:CATransform3D = CATransform3DConcat(CATransform3DConcat(CATransform3DRotate (CATransform3DIdentity, pitch, -1.0, 0.0, 0.0), CATransform3DRotate(CATransform3DIdentity, yaw, 0.0, 1.0, 0.0)), CATransform3DRotate(CATransform3DIdentity, roll, 0.0, 0.0, -1.0))
             

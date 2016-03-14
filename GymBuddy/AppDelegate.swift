@@ -42,7 +42,7 @@ var accXGlobal: [Double] = []
 var accYGlobal: [Double] = []
 var accZGlobal: [Double] = []
 var fatigueGlobal: [Int] = []
-var orientationGlobal: [TLMQuaternion] = []
+var orientationGlobal: [Float] = []
 var centerGlobal: TLMQuaternion = TLMQuaternion()
 var syncedGlobal = false
 

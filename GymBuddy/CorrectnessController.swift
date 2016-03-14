@@ -24,14 +24,77 @@ class CorrectnessController: NSObject {
     {
         super.init()
         // Calculate number of reps every 0.5 s
-        timerCount = NSTimer(timeInterval: 1, target: self, selector: "calculateRepsNum", userInfo: nil, repeats: true)
+        timerCount = NSTimer(timeInterval: 5, target: self, selector: "calculateCorrectness", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timerCount, forMode: NSRunLoopCommonModes)
     }
     
-    func DTW()
+    func calculateCorrectness()
     {
-        let x = [1, 1, 2, 3, 2, 0]
-        let y = [0, 1, 1, 2, 3, 2, 1]
+        let orientations = orientationGlobal
+        orientationGlobal = []
+        print(orientations)
+        
+        //NSLog("%@", orientations)
+//        var costs: [Int] = []
+//        let repsArr = splitByReps()
+//        for rep in repsArr
+//        {
+//            costs.append(DTW((ideal.exerciseList["bicepsCurl"]?.orientations)!, y: rep.map {Int($0*100)}))
+//        }
+        print("here")
+    }
+    
+    func splitByReps() -> [ArraySlice<Float>]
+    {
+        let orientations = orientationGlobal
+        orientationGlobal = []
+        
+        var repsArr: [ArraySlice<Float>] = []
+        
+        let (points, isMax) = findTurningPoints(orientations)
+        for(var i=0; i<points.count-2; i++)
+        {
+            if !isMax[i] && isMax[i+1] && !isMax[i+2]
+            {
+                repsArr.append(orientations[points[i]...points[i+2]])
+                i++
+            }
+        }
+        
+        return repsArr
+    }
+    
+    func findTurningPoints(inputOrig: [Float]) -> ([Int], [Bool])
+    {
+        var input = inputOrig
+        for(var i=10; i<input.count; i++)
+        {
+            // Waveform smoothing
+            input[i] = calcMA(inputOrig[i-10...i])
+        }
+        
+        var points: [Int] = []
+        var isMax: [Bool] = []
+        
+        for(var i=5; i<input.count-5; i++)
+        {
+            if(input[i]>input[i-5] && input[i]>input[i+5])
+            {
+                points.append(i)
+                isMax.append(true)
+            }
+            else if(input[i]<input[i-5] && input[i]<input[i+5])
+            {
+                points.append(i)
+                isMax.append(false)
+            }
+        }
+        
+        return (points, isMax)
+    }
+    
+    func DTW(x: [Int], y: [Int]) -> Int
+    {
         var distances = [[Int]](count: y.count, repeatedValue: [Int](count: x.count, repeatedValue: 0))
         for(var i=0; i<y.count; i++)
         {
@@ -40,7 +103,6 @@ class CorrectnessController: NSObject {
                 distances[i][j] = (x[j]-y[i])^^2
             }
         }
-        
         
         var accumulatedCost = [[Int]](count: y.count, repeatedValue: [Int](count: x.count, repeatedValue: 0))
         accumulatedCost[0][0] = distances[0][0]
@@ -62,6 +124,61 @@ class CorrectnessController: NSObject {
                 accumulatedCost[i][j] = min(accumulatedCost[i-1][j-1], accumulatedCost[i-1][j], accumulatedCost[i][j-1]) + distances[i][j]
             }
         }
+        
+        let (path, cost) = pathCost(x, y: y, accumulatedCost: accumulatedCost, distances: distances)
+        
+        return cost
+        
+//        for point in path{
+//            print("\(point[0]) \(x[point[0]]) : \(point[1]) \(y[point[1]])")
+//        }
+//        
+//        print(path)
+//        print("\(cost)")
+    }
+    
+    func pathCost(x: [Int], y: [Int], accumulatedCost: [[Int]], distances: [[Int]]) -> ([[Int]], Int)
+    {
+        var cost = 0
+        var path: [[Int]] = []
+        path.append([x.count-1, y.count-1])
+        var i = y.count-1
+        var j = x.count-1
+        while(i>0 && j>0)
+        {
+            if i == 0
+            {
+                j = j - 1
+            }
+            else if j == 0
+            {
+                i = i - 1
+            }
+            else
+            {
+                if(accumulatedCost[i-1][j] == min(accumulatedCost[i-1][j-1], accumulatedCost[i-1][j], accumulatedCost[i][j-1]))
+                {
+                    i = i - 1
+                }
+                else if(accumulatedCost[i][j-1] == min(accumulatedCost[i-1][j-1], accumulatedCost[i-1][j], accumulatedCost[i][j-1]))
+                {
+                    j = j-1
+                }
+                else
+                {
+                    i = i - 1
+                    j = j - 1
+                }
+            }
+            path.append([j, i])
+        }
+        path.append([0, 0])
+        
+        for point in path
+        {
+            cost += distances[point[1]][point[0]]
+        }
+        return (path, cost)
     }
     
     func calculateRepsNum()
@@ -103,5 +220,14 @@ class CorrectnessController: NSObject {
             total+=element
         }
         return total/Double(lastN.count)
+    }
+    
+    func calcMA(lastN: ArraySlice<Float>) -> Float
+    {
+        var total: Float = 0
+        for element in lastN {
+            total+=element
+        }
+        return total/Float(lastN.count)
     }
 }

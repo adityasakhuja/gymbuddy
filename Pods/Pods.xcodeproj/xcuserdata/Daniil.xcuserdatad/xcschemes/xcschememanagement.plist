@@ -8,58 +8,46 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>FastDTW-x.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
 		</dict>
 		<key>IGLDropDownMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>MBCircularProgressBar-MBCircularProgressBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>MBCircularProgressBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods-GymBuddy.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>SwiftGifOrigin.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>7</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>SwiftSpinner.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>2FAAC008910DC3FF9401662FB686E2F9</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4634B76C9DBD38AE6FD62C4D51463475</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -84,12 +72,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ED794FA06CB0BCBABC66ECF8FA7984D2</key>
+		<key>9A4EBF3B5D0F733E41B8AFEE5E5F2437</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>EE3903A98A24EC51161DBAAA92124C7D</key>
+		<key>9C89CAD32F2DC8760D6420C7D901FBD6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F2BB0AAD9993091FD4BB34BE43A0B99A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

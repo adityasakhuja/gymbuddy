@@ -21,7 +21,7 @@ class FatigueController: NSObject {
         
         // Wait 1 seconds to get enough EMG values
         timerMain = NSTimer(timeInterval: 0.5, target: self, selector: "begin", userInfo: nil, repeats: false)
-        NSRunLoop.currentRunLoop().addTimer(timerFreq, forMode: NSRunLoopCommonModes)
+        NSRunLoop.currentRunLoop().addTimer(timerMain, forMode: NSRunLoopCommonModes)
     }
     
     func begin()
