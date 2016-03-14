@@ -7,12 +7,47 @@
 //
 
 import Foundation
+import CoreData
 
 class RestController: NSObject {
+    
+    var fatiguesHistorical: [[Int]] = []
+    var weightsHistorical: [Int] = []
+    var repsHistorical: [Int] = []
+    var exerciseHistorical: [Int] = []
     
     override init()
     {
         super.init()
+        
+        //1
+        var exerciseDatas = [NSManagedObject]()
+        let appDelegate =
+        UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        //2
+        let fetchRequest = NSFetchRequest(entityName: "ExerciseData")
+        
+        //3
+        do {
+            let results =
+            try managedContext.executeFetchRequest(fetchRequest)
+            exerciseDatas = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        for data in exerciseDatas
+        {
+            let arrString = data.valueForKey("fatigues") as? String
+            let arr = arrString!.characters.split{$0 == "-"}.map(String.init).map {Int($0)!}
+            fatiguesHistorical.append(arr)
+            weightsHistorical.append((data.valueForKey("weights") as? Int)!)
+            repsHistorical.append((data.valueForKey("reps") as? Int)!)
+            exerciseHistorical.append((data.valueForKey("exercise") as? Int)!)
+        }
         
         calculateNextReps()
     }
