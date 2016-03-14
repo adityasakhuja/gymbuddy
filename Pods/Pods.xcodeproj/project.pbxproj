@@ -7,93 +7,143 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		07D072E2DEE09B91754976490740E692 /* NSObject+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B53A2AAC4D4C5EC8DE5D3C421F0811F /* NSObject+Bond.swift */; };
-		11DE4F2986BD9AED729A57E4159A2F66 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = E4E0E837407B53749D2689F4EDC52F2F /* IGLDropDownMenu.m */; };
+		07D072E2DEE09B91754976490740E692 /* NSObject+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65188227CDEF53F498EA080D8B06E28E /* NSObject+Bond.swift */; };
+		0E4D550F0CC10A977A04FE98684E4525 /* FastDTW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 34E8DC248F0B13D88A4AF6698CF7D0FF /* FastDTW.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		115896E8318855FB53E589A38D9F6D9E /* SearchWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 92E99451CF918D2005E4D3810C1EB5F2 /* SearchWindow.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		11DE4F2986BD9AED729A57E4159A2F66 /* IGLDropDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 68C979399891EDBD2F66A65F5CB1C919 /* IGLDropDownMenu.m */; };
 		1AF125B28A61839240FB20DFCC487A77 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
-		1C2DFBFAFCB0951A64A678FA2AD48F58 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175B6E79C8F8902F27A3C4845816ED74 /* BindableType.swift */; };
-		1F87F3E8974EC37ACB137CADAC820D3C /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12B8B0DFDCDD3EDCB3F5629D06EABD1 /* Reference.swift */; };
-		2B95200755F4983D22E37C984284F956 /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = CDDAEBEFBB931CF96A665DFFF183C051 /* MBCircularProgressBarLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C2DFBFAFCB0951A64A678FA2AD48F58 /* BindableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4108934ADCED5135536367521F0E2F77 /* BindableType.swift */; };
+		1F87F3E8974EC37ACB137CADAC820D3C /* Reference.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B46C68CA00CFBED401577497C63D2D7 /* Reference.swift */; };
+		25FE4BE50DD391B8AE885A3DD663B97C /* ManhattanDistance.h in Headers */ = {isa = PBXBuildFile; fileRef = F7273D4FFD9A9CBF14FA0797F30BADDD /* ManhattanDistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B95200755F4983D22E37C984284F956 /* MBCircularProgressBarLayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FAB66EA26F47DD5BB8B669B9D7C673A /* MBCircularProgressBarLayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2F522E7B2A4A9DFD43C47A2929E57180 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
-		2FBA2895EEFE12C598C7F5532E3AAFCF /* EventProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AE0EB38CAE632AD5ADE0D280D161F03 /* EventProducer.swift */; };
-		3122B60E56A567DE78C19761D11D08E6 /* SimpleDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FC437F6DF0A882DACAD19A950E5E0F5 /* SimpleDiff.swift */; };
-		3A320BCF5C3DAE46B893FEE510CDC913 /* UIProgressView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286243D603ADE4D7D260CD0D853D678D /* UIProgressView+Bond.swift */; };
-		3B046A0578A1DFDCB63FF2AD8E99E408 /* UIBarItem+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8E8F0C5EC97E8E68E84BE3132E26B90 /* UIBarItem+Bond.swift */; };
+		2FBA2895EEFE12C598C7F5532E3AAFCF /* EventProducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB82BB3386866B500053CBDF5DA35651 /* EventProducer.swift */; };
+		3122B60E56A567DE78C19761D11D08E6 /* SimpleDiff.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D45FA0F74B45A5D47F5A5F538A51998 /* SimpleDiff.swift */; };
+		3A320BCF5C3DAE46B893FEE510CDC913 /* UIProgressView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 876C95800ED0E64E51A470275FF5AF3C /* UIProgressView+Bond.swift */; };
+		3B046A0578A1DFDCB63FF2AD8E99E408 /* UIBarItem+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65577F1170535DF00FC5E8CFAF0C3596 /* UIBarItem+Bond.swift */; };
 		3D00E8F98B2355007A15C484BDA12329 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CE07C51563A8537190C45BF7B84469E6 /* UIKit.framework */; };
-		3D8AD791B35FC0D3460783E6492E0936 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
-		406A63A3ADD13FCC6A114306ECFACB35 /* Bond-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E842D17F098268BAC7497C4A2F7FF4E2 /* Bond-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		45D77EFAE7512E91BD081ABD4D9D8D25 /* NSLayoutConstraint+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 923FA04DA148C9DF66CE132104C04FB7 /* NSLayoutConstraint+Bond.swift */; };
-		4B8202738DF04DA596BBB2342C06EA5B /* IGLDropDownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B0DAE240749112548D34DF17D58E9B56 /* IGLDropDownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4C3C803DAE849D7D23417F63F5179F27 /* UILabel+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA5F81C61FA9AD07E7CFCB423EDA681 /* UILabel+Bond.swift */; };
-		4D967F8EF9F5FE51D102959FE0318B79 /* UIImageView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 289A9127F7EE1FD0C4099EC719B769C8 /* UIImageView+Bond.swift */; };
-		4F6D5FB3E04F760094AAF446ADB2B8E8 /* MutableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3379C8695907B47087CD8FFF46265D07 /* MutableObservable.swift */; };
-		591500DDDB643F9E413CC61DD6B0C25D /* Bond-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F72B1680CAA9A2ED44264425B6CC7EB /* Bond-dummy.m */; };
-		59F83978ED9BE2F8CCC471402C3A366A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DAB706EDEEA8FD127D478E3290631D9 /* Queue.swift */; };
-		61D20E52E5047E1269CED010B240D24B /* UISegmentedControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECD25C1D054356BE55A351DDD5ADA24C /* UISegmentedControl+Bond.swift */; };
-		62DAA3929D2CC62FC8761BF621BB6B73 /* Bond.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F4F88494441FED536D5CBCF867A8B64 /* Bond.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		63790D07711DE9E70CCB2B82742D05ED /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C07BC0AC5F7B7A14D55F2D82D3B81A /* Buffer.swift */; };
-		6447B5362DD395075EB2433CEE8C21D4 /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = EBE7058FE10A45B2B3A7F5D4942D2104 /* MBCircularProgressBarView.m */; };
-		6511D63929A1D1F8C252C2C9490C4C5D /* UITableView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95403B1E3572B0FD6E6A2253741D386 /* UITableView+Bond.swift */; };
-		65468605F87FF32752DC24E5F584255D /* NSIndexSet+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6FCF6BBED73EDFAC94F9129F5AD540D8 /* NSIndexSet+Bond.swift */; };
-		655FBD0E50E79313AF3F42C9BA21ED31 /* UICollectionView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235BEB955BCEDAA2F0C1820A9F2401CB /* UICollectionView+Bond.swift */; };
-		67A2C13CC5A8F11F34239F2CF061858D /* ObservableArrayEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DBB79BA0B4D50458F00B8DF2E3B077C /* ObservableArrayEvent.swift */; };
-		6D566B48B1DDB2CDE3E552E87863D2A9 /* UITextField+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0CE0AAAB081EDA39C03A5563AEB669 /* UITextField+Bond.swift */; };
-		6E52DF947B848513910A1D5D56F01027 /* IGLDropDownMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = A18F6EFCBF06259663698C48D46E5580 /* IGLDropDownMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		736A6B6CA33121E56AECC3AC24E18089 /* UIDatePicker+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449417AB3AA5324A97C08BA4A9C14598 /* UIDatePicker+Bond.swift */; };
-		746A985F04A09F8116E30718809C56B1 /* NSNotificationCenter+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2514C34328D95155B17FE8619926B392 /* NSNotificationCenter+Bond.swift */; };
-		765CE44C5E228BB6F5641542C4EDB0F6 /* EventProducerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA01D388FD517DC0DD39113E79019443 /* EventProducerType.swift */; };
-		76B5FE3246FCC3A447F6E8B8E2F6E7C6 /* DisposableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9DB3879985746B2AEC18CB0A61F0A01 /* DisposableType.swift */; };
-		826C3F638363819B87926E004C8EED1A /* UIActivityIndicatorView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 788D1DFF7932D0DAB86676A1EE607A29 /* UIActivityIndicatorView+Bond.swift */; };
-		8546F815857BF9C93440151A864EB626 /* MBCircularProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E13D9FA2AAF0F4E3873D1722FA48FA5 /* MBCircularProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		86C96CE9BF21B8D10756F22C071EFBC5 /* MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B584E88A436485360A4091D6EF36B63 /* MBCircularProgressBar-dummy.m */; };
-		87DD3779C2945DC1AF0C62DA796942B2 /* CALayer+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7A32E56BBA0CFC75D709C985726A34 /* CALayer+Bond.swift */; };
-		89FB89FCDE6B7C3E39877213A44E2628 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43CF9F5031F2E4306C2D0C97CFEF18E5 /* Operators.swift */; };
-		8F068D59AB3A8B48DF1947A952D5A298 /* IGLDropDownItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F9CF40FBB3ED5DDBB25F3A0B54A90451 /* IGLDropDownItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		966A52294B58F5D9E815A5DD4774FE5D /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B90356202524D1031556F7B33952EC0A /* OptionalType.swift */; };
+		401A681D9DAC689DADB1420AADE40CA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		406A63A3ADD13FCC6A114306ECFACB35 /* Bond-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 21EC387815C1167DDDD9757DEBDA88F2 /* Bond-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45D77EFAE7512E91BD081ABD4D9D8D25 /* NSLayoutConstraint+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABACB20C84FB2092F50E9D20F46B3280 /* NSLayoutConstraint+Bond.swift */; };
+		4B8202738DF04DA596BBB2342C06EA5B /* IGLDropDownMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7018709D11737C952A6F50DC3058313A /* IGLDropDownMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4C3C803DAE849D7D23417F63F5179F27 /* UILabel+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AC8DF476C5DFD0B53C6348E3D906D2B /* UILabel+Bond.swift */; };
+		4D967F8EF9F5FE51D102959FE0318B79 /* UIImageView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F133470E68D7019C273E45CC2A7EA5D /* UIImageView+Bond.swift */; };
+		4E363CF802D3B7085FF55013AEC365BF /* FastDTW-x-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 38D2641E2178EF5EED5D248384DA0269 /* FastDTW-x-dummy.m */; };
+		4E85FB313C81D326E4E3FA412F6396B7 /* TimeWarpInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BC086DD374B9F3634C7D4C171C76C27 /* TimeWarpInfo.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4ED9E5441C60A6F0586903203BAB8336 /* TimeSeries.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CBFEBDE4BCD8B43B91B6D5FEDE94BD51 /* TimeSeries.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4F6D5FB3E04F760094AAF446ADB2B8E8 /* MutableObservable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E6E6161546C314F15F599DF2A1AF68 /* MutableObservable.swift */; };
+		5122E71E905BDCAFB00CCD7775B1FE0B /* ManhattanDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 602EE46FFCDE637525445405ACA39340 /* ManhattanDistance.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		591500DDDB643F9E413CC61DD6B0C25D /* Bond-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A273A17F4B50D112EB68BB75D88900DE /* Bond-dummy.m */; };
+		59F83978ED9BE2F8CCC471402C3A366A /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BC1A32B6B02D32CBECAEFDB21BAA25F /* Queue.swift */; };
+		5ECB56536B00578686F92581B4C9CA45 /* TimeWarpInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C6281D45454342F2A35E78988C480C6 /* TimeWarpInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F6B9E5D267E335EF7711E3A34158785 /* FullWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E24B50134EC6CF95360BDA44C2CEDA9E /* FullWindow.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		61D20E52E5047E1269CED010B240D24B /* UISegmentedControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AD51D0A0C983B27C107748D8B42DBB1 /* UISegmentedControl+Bond.swift */; };
+		62DAA3929D2CC62FC8761BF621BB6B73 /* Bond.h in Headers */ = {isa = PBXBuildFile; fileRef = 30EEE0D8D39D1F616893339BE7506D70 /* Bond.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		63790D07711DE9E70CCB2B82742D05ED /* Buffer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C387EB46679D4CBC1078D473675B6BD1 /* Buffer.swift */; };
+		6447B5362DD395075EB2433CEE8C21D4 /* MBCircularProgressBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = AA7A861395CD536ADC6E96AB4D7B6EBF /* MBCircularProgressBarView.m */; };
+		6511D63929A1D1F8C252C2C9490C4C5D /* UITableView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFD2150223E12510327A0CE02FA6023 /* UITableView+Bond.swift */; };
+		65468605F87FF32752DC24E5F584255D /* NSIndexSet+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2FAB4FE800430CF848BD0CAE08AD62 /* NSIndexSet+Bond.swift */; };
+		655FBD0E50E79313AF3F42C9BA21ED31 /* UICollectionView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14289FCB285988B22FB7D7E59819F249 /* UICollectionView+Bond.swift */; };
+		662E8AB07CDD482F76B106FE5D7402B6 /* DTW.h in Headers */ = {isa = PBXBuildFile; fileRef = FDEC92EEBE7B7CA9EEECCCEB2F253FB7 /* DTW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		67A2C13CC5A8F11F34239F2CF061858D /* ObservableArrayEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = E698CB3FC558C43072F654BFEAA5AA61 /* ObservableArrayEvent.swift */; };
+		6C2732C7A2046C6B9550A302FA451C2E /* EuclideanDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = BEC3EB2F0293D1A85CDFA1A5E8206CA7 /* EuclideanDistance.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		6D566B48B1DDB2CDE3E552E87863D2A9 /* UITextField+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1348433F6F396896B0AF5080B58F1C /* UITextField+Bond.swift */; };
+		6E52DF947B848513910A1D5D56F01027 /* IGLDropDownMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = EEDED419016BACFC4781D6EC2EA6352C /* IGLDropDownMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		736A6B6CA33121E56AECC3AC24E18089 /* UIDatePicker+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C5A4C5544E682BB2E6584A3188F1664 /* UIDatePicker+Bond.swift */; };
+		746A985F04A09F8116E30718809C56B1 /* NSNotificationCenter+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = D662E114181C4591522B8FBD3DCFD537 /* NSNotificationCenter+Bond.swift */; };
+		765CE44C5E228BB6F5641542C4EDB0F6 /* EventProducerType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F89A4821FF58EA038DC7F7AE9D2E87E /* EventProducerType.swift */; };
+		76855FB81E9712F3768E2E9B95797B3C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
+		76B5FE3246FCC3A447F6E8B8E2F6E7C6 /* DisposableType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 419A7B0F9D114EB46BFF53FDA0020608 /* DisposableType.swift */; };
+		79B119FCF3073136B7434ADBFF849AC9 /* Foundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 17DDBB4F7CF630F8D386968233DE55D6 /* Foundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A3D08E425E6FD71DBC19F38187E6CF7 /* ColMajorCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 179DD6EC604D704962366C77B70F6E72 /* ColMajorCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7DD4C78FC85EDD8669C3B31D5781D408 /* JavaTypes.h in Headers */ = {isa = PBXBuildFile; fileRef = 9264D65EE37184B3C8CEAD5B2302D239 /* JavaTypes.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		81C663821BEEBFF1356C5AEB5B1C0630 /* WarpPath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0CFC679F15F692B12A3409E12ABE1824 /* WarpPath.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		81CAEE0262BAC6FAE7B4DC263272C059 /* ColMajorCell.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A200B16528611E4E956EAF414CF25E3C /* ColMajorCell.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		82336FA5B4A6B1DED7C945C58AE75034 /* ExpandedResWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 23F4F2C62E63333D13513309B8203098 /* ExpandedResWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		826C3F638363819B87926E004C8EED1A /* UIActivityIndicatorView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E6310F4BC6BBD6958459DD9D2A659B9 /* UIActivityIndicatorView+Bond.swift */; };
+		8546F815857BF9C93440151A864EB626 /* MBCircularProgressBar-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FACC6A47BF0B003544023FD5D0E74A4 /* MBCircularProgressBar-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		86C96CE9BF21B8D10756F22C071EFBC5 /* MBCircularProgressBar-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A960B8C26BD87ED9DF29D46632F96AD /* MBCircularProgressBar-dummy.m */; };
+		87DD3779C2945DC1AF0C62DA796942B2 /* CALayer+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E556E860F17D11075475A1C623F053 /* CALayer+Bond.swift */; };
+		881E88C878159703CE7BB01D9D688B72 /* PAA.h in Headers */ = {isa = PBXBuildFile; fileRef = A6AA0305D9E4708038A7C78B372DBED1 /* PAA.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		89FB89FCDE6B7C3E39877213A44E2628 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82F88E20DD53C3B9891970F894043E95 /* Operators.swift */; };
+		8F068D59AB3A8B48DF1947A952D5A298 /* IGLDropDownItem.h in Headers */ = {isa = PBXBuildFile; fileRef = E33A93294EF3D710F4F1CEF5F52D40F0 /* IGLDropDownItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		966A52294B58F5D9E815A5DD4774FE5D /* OptionalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56C1B4F3415B25B76D50CD3FE4D2BBF2 /* OptionalType.swift */; };
 		97BBC94C26983572A8FC8C887EDBC74D /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAE1B33188740B25D40CEDC08A929AF6 /* SystemConfiguration.framework */; };
-		9C63DAD099DD1F653B71AE03C0720AB3 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = BA77DA90F74F6C3D6285E1FB371C4A36 /* IGLDropDownItem.m */; };
-		A49D14DE7493B873F5B16A1BE91A6855 /* Pods-GymBuddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6083AC93A479B289A68DB17ADB4D728 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91B12ED8CFA6EF7164142BD65651C663 /* Disposable.swift */; };
-		ABD396472D36AB13D99B71527FFB3779 /* UINavigationBar+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDAD2DF9CF24A97EF1D34D55E65FB53B /* UINavigationBar+Bond.swift */; };
+		9BB906BFA51CC470B4ED224CD62B0FEF /* SearchWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = A8FF2EE47CA5059CDE425967D3E7CEA9 /* SearchWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9C63DAD099DD1F653B71AE03C0720AB3 /* IGLDropDownItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 05A5CA177A56AFBB111CDA3D1C11FB3B /* IGLDropDownItem.m */; };
+		A6083AC93A479B289A68DB17ADB4D728 /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAC7C5C3D7BDF799097F96D7107603B /* Disposable.swift */; };
+		A66D5FA88D499F5C3D3B480C10D5D8A2 /* BinaryDistance.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 80643816A94572C0066574EA13B32059 /* BinaryDistance.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		A8E9D8B50A6779E4B0E32BE78B2BB4FF /* BinaryDistance.h in Headers */ = {isa = PBXBuildFile; fileRef = 190102AA8CFDDB43A22FD4DB9BAF0E23 /* BinaryDistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ABD396472D36AB13D99B71527FFB3779 /* UINavigationBar+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF99CB6F786D7B28F94840F5F3281494 /* UINavigationBar+Bond.swift */; };
+		ABEB5958117A03C209EAB0B1A423AF22 /* FastDTW.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB9D6BDD6CC48907970892B2C7E2614 /* FastDTW.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ACF760EDF629D7EB6E794FB146228060 /* LinearWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4A647FC07102A22694A7FDCAE0772D3 /* LinearWindow.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		AD29268DFA8F6B3193139F1FE6A306FE /* FullWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 0FB7917B71E9447F825EAEAC0DE769C2 /* FullWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AD938C4AB1DEC7567FB61259A5085E63 /* CostMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 4856B8E3422D8D1418F8B0DF9B5CE73F /* CostMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B03C3381077AFC7674053A7AB878A06E /* EuclideanDistance.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C33EBFA214FAE625AF233379F44EC2D /* EuclideanDistance.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B142CFC297FB38B6ECAA7BF1C1AB08D5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */; };
-		B866721318441A1681518CF53015E6C0 /* UISwitch+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28D5DCBBF730EE76F02882328217837C /* UISwitch+Bond.swift */; };
-		B987CD074D89BA55D5BE1F69428B5A87 /* NSLock+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A8D4DA2491672B84712E4A33708F076 /* NSLock+Bond.swift */; };
-		C10C2E6F48783CC8C59737DB6FC6195C /* UISlider+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB54A3818F01579B37C8F2F6665B02D8 /* UISlider+Bond.swift */; };
-		C4631742B846BEF2C51604F852545BEB /* UINavigationItem+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2501A2FFCE6066CB40FAAE74724EB1ED /* UINavigationItem+Bond.swift */; };
-		C4C828F56932D31EC1B92E64974D71EC /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6862A0B8974022CD2E0F2249306996 /* ObservableArray.swift */; };
-		C80561B11D8D882D4509326F6EB27705 /* UIView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0C4C42E94B19D2E9007991A6378502 /* UIView+Bond.swift */; };
-		D23FF3B745356DB701D8962C552DAB09 /* UITextView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68873DE144ED0AE2E29555BEED2B1AE0 /* UITextView+Bond.swift */; };
-		DF8B4ABD99134A1353BBC6F096B3781E /* Pods-GymBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */; };
-		E912798811F25351DFFFCFEF1B153B2A /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 082230673E3C7D48539A46DCF18A02F0 /* MBCircularProgressBarLayer.m */; };
-		EB70BEA373CD78800BE63150747CE860 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = 4447059775F99D639CFE26C50C7057EA /* MBCircularProgressBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F0B92B1B144221E8F09F224C7E865D80 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04677ECF794D4D2CF83BF6D422B1A345 /* Observable.swift */; };
-		F1315E3B51FFE22E0924BD347EE393BD /* UIControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73FBB055A6E96CCA900DEF6D17E33F30 /* UIControl+Bond.swift */; };
-		F4F40FA5A473271E12127E0DF2A63881 /* IGLDropDownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C6CBB356D782F91CE06440B310CFA47 /* IGLDropDownMenu-dummy.m */; };
-		F88D157974522F8674E5DFA82F8B0A2A /* MBCircularProgressBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2E8AAC8F9E75E796C97E761FEC11F06A /* MBCircularProgressBar.bundle */; };
-		FA4161D2631EF85804BD0FDEF99CD64C /* UIButton+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29F457198B06AA73045F59D94FD7DF3F /* UIButton+Bond.swift */; };
-		FE086781D4F3DA2F363FA883037C98A6 /* UIRefreshControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = AF437527781E9F510A76AF3A947FDAF0 /* UIRefreshControl+Bond.swift */; };
+		B1686D9D863087FB2D24B79D3FCE71BD /* FastDTW-x-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2754A7FCFED1954CE110E81E021259BD /* FastDTW-x-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B866721318441A1681518CF53015E6C0 /* UISwitch+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = B125D20813E86DF443C09267FF11AF48 /* UISwitch+Bond.swift */; };
+		B987CD074D89BA55D5BE1F69428B5A87 /* NSLock+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721B9BAEA2F0DAA36D3FE1BA06A8E452 /* NSLock+Bond.swift */; };
+		BE69A05E11332D3F4B0C5C619E0FE587 /* FDAssert.h in Headers */ = {isa = PBXBuildFile; fileRef = CF07F6B668FF04AD78374BD716BFBCF5 /* FDAssert.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C10C2E6F48783CC8C59737DB6FC6195C /* UISlider+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D280E6927AADBFDD8959C97AC3BD84 /* UISlider+Bond.swift */; };
+		C4631742B846BEF2C51604F852545BEB /* UINavigationItem+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4829909806E9A7EA3D4A9EDFC3034CC0 /* UINavigationItem+Bond.swift */; };
+		C4C828F56932D31EC1B92E64974D71EC /* ObservableArray.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23C83F7CA43DF3A4C573FDE669003AF4 /* ObservableArray.swift */; };
+		C72F73ADA999C1C9294E189DB0845420 /* TimeSeries.h in Headers */ = {isa = PBXBuildFile; fileRef = CA0ECF25087180B97776C67632B7B2A7 /* TimeSeries.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C80561B11D8D882D4509326F6EB27705 /* UIView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC1C13708FF46E64772FB8040616CC9 /* UIView+Bond.swift */; };
+		C98F262E10F460EB5B0986987520FA49 /* WarpPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 826151F33C7A3676F7D59A6E491544D3 /* WarpPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CC46E2B94B84A1F90C70B4739F5F3CE9 /* PartialWindowMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C80E69C394A560F55F9963F6264AAFE /* PartialWindowMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CD4B74D402350E6B2743E1DA27E6DA69 /* FDMath.h in Headers */ = {isa = PBXBuildFile; fileRef = 5E6DDD2432FA660BF901050CEAD7BE9E /* FDMath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D23FF3B745356DB701D8962C552DAB09 /* UITextView+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20663C6327918A46764E3A83DB723253 /* UITextView+Bond.swift */; };
+		D78CDBBB69F650BB9C4573FF69AC492B /* LinearWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A5676A84EFCFE65C51944051DC53648 /* LinearWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DAFAC4B83DA234162683A5207F0300D7 /* PAA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 002C2A5D525673629B9BABE75D14D5B9 /* PAA.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DEA3FC0A2B5FBC71A82161C681CAE228 /* ExpandedResWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B4D0EFBEF8D2A14F352894E4D7FBF97E /* ExpandedResWindow.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		DF9FD77D4476D40BE658A2EC5F9E988E /* Pods-GymBuddy-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */; };
+		E0273D4282FA76CF3AE3C3D0C2B12C27 /* TimeSeriesPoint.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 4583294472E9F74AB45C64D08DDBEC61 /* TimeSeriesPoint.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E2DD01E0818EC4FFCE2FBA18CE396EAC /* PartialWindowMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 5D98786F25A15AA99D7A37E359416DC7 /* PartialWindowMatrix.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E912798811F25351DFFFCFEF1B153B2A /* MBCircularProgressBarLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = C590AF9A9984CF8FCA2209BDDDF1A6EC /* MBCircularProgressBarLayer.m */; };
+		EB70BEA373CD78800BE63150747CE860 /* MBCircularProgressBarView.h in Headers */ = {isa = PBXBuildFile; fileRef = CE3FF88834E28AD2C0FDC2D99F33BF5F /* MBCircularProgressBarView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F0B92B1B144221E8F09F224C7E865D80 /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93A56CF32B57A18EB62EC6C529C595F4 /* Observable.swift */; };
+		F1315E3B51FFE22E0924BD347EE393BD /* UIControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 604BBEF2C4F43133A73A43E652EBF7DA /* UIControl+Bond.swift */; };
+		F227D78EAE58571E3E9C9EDA10991AA6 /* MemoryResidentMatrix.h in Headers */ = {isa = PBXBuildFile; fileRef = 2377F56792DC3E37F09EB068F20701D3 /* MemoryResidentMatrix.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4F40FA5A473271E12127E0DF2A63881 /* IGLDropDownMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DDEC72525F321EAFAA08C86DA3994B /* IGLDropDownMenu-dummy.m */; };
+		F52E6D34F54C15F785967ABD66D0E53C /* TimeSeriesPoint.h in Headers */ = {isa = PBXBuildFile; fileRef = 225098A4FC8FB4C56FFE3C9A6A3B8EC5 /* TimeSeriesPoint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5DC153D4A5E12CC848BE7E699A09FAB /* CostMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = FB814DDCF98322C76C2E36337BC74ABB /* CostMatrix.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F6468353277AA7F153C956C196C2DFFE /* MemoryResidentMatrix.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F1E88CC809305014528267233498A6E5 /* MemoryResidentMatrix.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F873369BEB1E2E8069B14579F4F88E56 /* Pods-GymBuddy-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F88D157974522F8674E5DFA82F8B0A2A /* MBCircularProgressBar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ACC48B9A426A3A7AAC9BF72546ADCF00 /* MBCircularProgressBar.bundle */; };
+		FA4161D2631EF85804BD0FDEF99CD64C /* UIButton+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0A1DA762CB1CE3466EE052DCED8803F /* UIButton+Bond.swift */; };
+		FDE6CEF2D1DD3A94CA46F6501552F25F /* DTW.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 382C49032A162D043F149539C93EF73D /* DTW.cpp */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FE086781D4F3DA2F363FA883037C98A6 /* UIRefreshControl+Bond.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E47C8625A2866DD2F46710754BE3500 /* UIRefreshControl+Bond.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1588A79ACC8BA6EC8622F1786CC77919 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 80076C510C29F960587E43C0597ECBD5;
-			remoteInfo = Bond;
-		};
-		2D562E84AD3E3BBE38E050B6F047B38A /* PBXContainerItemProxy */ = {
+		0A4E8ABA9CDE0E5B0A2E5CD942BB927A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5D38700903AE3E9C8224AE34BD3B2DC6;
 			remoteInfo = IGLDropDownMenu;
 		};
-		627570EDCA5D5103EF2D10A9ADE02FBB /* PBXContainerItemProxy */ = {
+		81027043C6456B74AFC00D586AE225CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2FAAC008910DC3FF9401662FB686E2F9;
+			remoteInfo = "FastDTW-x";
+		};
+		C41FFEFA0F04E07F75DC0B4B235FDD36 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 860A9179BCFD9F1C616D8653DB2B4F91;
 			remoteInfo = MBCircularProgressBar;
+		};
+		DA1B0CF30620DCDD42C5683405CB200E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80076C510C29F960587E43C0597ECBD5;
+			remoteInfo = Bond;
 		};
 		EBC59F00882F35808CD4B15930E9008E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -105,103 +155,142 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		04677ECF794D4D2CF83BF6D422B1A345 /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = Bond/Core/Observable.swift; sourceTree = "<group>"; };
-		082230673E3C7D48539A46DCF18A02F0 /* MBCircularProgressBarLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarLayer.m; path = Pod/Classes/MBCircularProgressBarLayer.m; sourceTree = "<group>"; };
-		0DBB79BA0B4D50458F00B8DF2E3B077C /* ObservableArrayEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableArrayEvent.swift; path = Bond/Core/ObservableArrayEvent.swift; sourceTree = "<group>"; };
-		0DE887371C8A04BAF1A9BD65DC88A658 /* IGLDropDownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGLDropDownMenu.xcconfig; sourceTree = "<group>"; };
-		0F68B63282F189A65D7F5EE21F45F7D6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		002C2A5D525673629B9BABE75D14D5B9 /* PAA.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = PAA.cpp; path = "FastDTW-x/Classes/TimeSeries/PAA.cpp"; sourceTree = "<group>"; };
+		00318A665F1C1D0A7E0F2ABCB8A47A2B /* MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
+		0375FECFD07333E3B122B17534947300 /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05A5CA177A56AFBB111CDA3D1C11FB3B /* IGLDropDownItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownItem.m; path = IGLDropDownMenu/IGLDropDownItem.m; sourceTree = "<group>"; };
+		08094721439161D54C34294D5B3B0948 /* FastDTW-x-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FastDTW-x-prefix.pch"; sourceTree = "<group>"; };
+		08DDEC72525F321EAFAA08C86DA3994B /* IGLDropDownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGLDropDownMenu-dummy.m"; sourceTree = "<group>"; };
+		0BC1A32B6B02D32CBECAEFDB21BAA25F /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Bond/Core/Queue.swift; sourceTree = "<group>"; };
+		0CFC679F15F692B12A3409E12ABE1824 /* WarpPath.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = WarpPath.cpp; path = "FastDTW-x/Classes/Dtw/WarpPath.cpp"; sourceTree = "<group>"; };
+		0FAB66EA26F47DD5BB8B669B9D7C673A /* MBCircularProgressBarLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarLayer.h; path = Pod/Classes/MBCircularProgressBarLayer.h; sourceTree = "<group>"; };
+		0FB7917B71E9447F825EAEAC0DE769C2 /* FullWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = FullWindow.h; path = "FastDTW-x/Classes/Dtw/FullWindow.h"; sourceTree = "<group>"; };
+		14289FCB285988B22FB7D7E59819F249 /* UICollectionView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Bond.swift"; path = "Bond/Extensions/iOS/UICollectionView+Bond.swift"; sourceTree = "<group>"; };
 		16411F7871AE50288988FD48ABBA0F31 /* Pods-GymBuddy-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-GymBuddy-umbrella.h"; sourceTree = "<group>"; };
-		175B6E79C8F8902F27A3C4845816ED74 /* BindableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BindableType.swift; path = Bond/Core/BindableType.swift; sourceTree = "<group>"; };
-		1DAB706EDEEA8FD127D478E3290631D9 /* Queue.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Queue.swift; path = Bond/Core/Queue.swift; sourceTree = "<group>"; };
-		235BEB955BCEDAA2F0C1820A9F2401CB /* UICollectionView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UICollectionView+Bond.swift"; path = "Bond/Extensions/iOS/UICollectionView+Bond.swift"; sourceTree = "<group>"; };
-		2501A2FFCE6066CB40FAAE74724EB1ED /* UINavigationItem+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+Bond.swift"; path = "Bond/Extensions/iOS/UINavigationItem+Bond.swift"; sourceTree = "<group>"; };
-		2514C34328D95155B17FE8619926B392 /* NSNotificationCenter+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Bond.swift"; path = "Bond/Extensions/Shared/NSNotificationCenter+Bond.swift"; sourceTree = "<group>"; };
-		286243D603ADE4D7D260CD0D853D678D /* UIProgressView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIProgressView+Bond.swift"; path = "Bond/Extensions/iOS/UIProgressView+Bond.swift"; sourceTree = "<group>"; };
-		289A9127F7EE1FD0C4099EC719B769C8 /* UIImageView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Bond.swift"; path = "Bond/Extensions/iOS/UIImageView+Bond.swift"; sourceTree = "<group>"; };
-		28D5DCBBF730EE76F02882328217837C /* UISwitch+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISwitch+Bond.swift"; path = "Bond/Extensions/iOS/UISwitch+Bond.swift"; sourceTree = "<group>"; };
-		29F457198B06AA73045F59D94FD7DF3F /* UIButton+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Bond.swift"; path = "Bond/Extensions/iOS/UIButton+Bond.swift"; sourceTree = "<group>"; };
-		2B53A2AAC4D4C5EC8DE5D3C421F0811F /* NSObject+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Bond.swift"; path = "Bond/Extensions/Shared/NSObject+Bond.swift"; sourceTree = "<group>"; };
-		2B7BC1771522BE1D312F2658891CC294 /* MBCircularProgressBar-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-prefix.pch"; sourceTree = "<group>"; };
-		2E8AAC8F9E75E796C97E761FEC11F06A /* MBCircularProgressBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBCircularProgressBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		179DD6EC604D704962366C77B70F6E72 /* ColMajorCell.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = ColMajorCell.h; path = "FastDTW-x/Classes/Dtw/ColMajorCell.h"; sourceTree = "<group>"; };
+		17B1E421A2584C2978D826F1099A19DF /* Bond.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bond.xcconfig; sourceTree = "<group>"; };
+		17DDBB4F7CF630F8D386968233DE55D6 /* Foundation.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = Foundation.h; path = "FastDTW-x/Classes/Foundation.h"; sourceTree = "<group>"; };
+		190102AA8CFDDB43A22FD4DB9BAF0E23 /* BinaryDistance.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = BinaryDistance.h; path = "FastDTW-x/Classes/Util/BinaryDistance.h"; sourceTree = "<group>"; };
+		1C5A4C5544E682BB2E6584A3188F1664 /* UIDatePicker+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDatePicker+Bond.swift"; path = "Bond/Extensions/iOS/UIDatePicker+Bond.swift"; sourceTree = "<group>"; };
+		1C80E69C394A560F55F9963F6264AAFE /* PartialWindowMatrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = PartialWindowMatrix.h; path = "FastDTW-x/Classes/Dtw/PartialWindowMatrix.h"; sourceTree = "<group>"; };
+		1E2FAB4FE800430CF848BD0CAE08AD62 /* NSIndexSet+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSIndexSet+Bond.swift"; path = "Bond/Extensions/Shared/NSIndexSet+Bond.swift"; sourceTree = "<group>"; };
+		20663C6327918A46764E3A83DB723253 /* UITextView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Bond.swift"; path = "Bond/Extensions/iOS/UITextView+Bond.swift"; sourceTree = "<group>"; };
+		21EC387815C1167DDDD9757DEBDA88F2 /* Bond-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-umbrella.h"; sourceTree = "<group>"; };
+		225098A4FC8FB4C56FFE3C9A6A3B8EC5 /* TimeSeriesPoint.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = TimeSeriesPoint.h; path = "FastDTW-x/Classes/TimeSeries/TimeSeriesPoint.h"; sourceTree = "<group>"; };
+		2377F56792DC3E37F09EB068F20701D3 /* MemoryResidentMatrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = MemoryResidentMatrix.h; path = "FastDTW-x/Classes/Dtw/MemoryResidentMatrix.h"; sourceTree = "<group>"; };
+		23C83F7CA43DF3A4C573FDE669003AF4 /* ObservableArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableArray.swift; path = Bond/Core/ObservableArray.swift; sourceTree = "<group>"; };
+		23F4F2C62E63333D13513309B8203098 /* ExpandedResWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = ExpandedResWindow.h; path = "FastDTW-x/Classes/Dtw/ExpandedResWindow.h"; sourceTree = "<group>"; };
+		2714CF078330CDD259EE57EA01F481BD /* IGLDropDownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGLDropDownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2754A7FCFED1954CE110E81E021259BD /* FastDTW-x-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FastDTW-x-umbrella.h"; sourceTree = "<group>"; };
+		2B46C68CA00CFBED401577497C63D2D7 /* Reference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reference.swift; path = Bond/Core/Reference.swift; sourceTree = "<group>"; };
+		2BC086DD374B9F3634C7D4C171C76C27 /* TimeWarpInfo.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = TimeWarpInfo.cpp; path = "FastDTW-x/Classes/Dtw/TimeWarpInfo.cpp"; sourceTree = "<group>"; };
 		2FACA9CC9B826DA85CD1E3AD17763766 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3379C8695907B47087CD8FFF46265D07 /* MutableObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableObservable.swift; path = Bond/Core/MutableObservable.swift; sourceTree = "<group>"; };
-		39A024D4320E8586D67B922177816353 /* IGLDropDownMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = IGLDropDownMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3DDF4BED97E90684666CF759143CDD43 /* MBCircularProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.xcconfig; sourceTree = "<group>"; };
+		2FACC6A47BF0B003544023FD5D0E74A4 /* MBCircularProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		30EEE0D8D39D1F616893339BE7506D70 /* Bond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bond.h; path = Bond/Bond.h; sourceTree = "<group>"; };
+		34E8DC248F0B13D88A4AF6698CF7D0FF /* FastDTW.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = FastDTW.cpp; path = "FastDTW-x/Classes/Dtw/FastDTW.cpp"; sourceTree = "<group>"; };
+		368F7B831A716FEE115448F82E909252 /* MBCircularProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		382C49032A162D043F149539C93EF73D /* DTW.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = DTW.cpp; path = "FastDTW-x/Classes/Dtw/DTW.cpp"; sourceTree = "<group>"; };
+		38D2641E2178EF5EED5D248384DA0269 /* FastDTW-x-dummy.m */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; path = "FastDTW-x-dummy.m"; sourceTree = "<group>"; };
+		3A1348433F6F396896B0AF5080B58F1C /* UITextField+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Bond.swift"; path = "Bond/Extensions/iOS/UITextField+Bond.swift"; sourceTree = "<group>"; };
+		3D45FA0F74B45A5D47F5A5F538A51998 /* SimpleDiff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDiff.swift; path = Bond/Core/SimpleDiff.swift; sourceTree = "<group>"; };
+		3E47C8625A2866DD2F46710754BE3500 /* UIRefreshControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Bond.swift"; path = "Bond/Extensions/iOS/UIRefreshControl+Bond.swift"; sourceTree = "<group>"; };
+		4108934ADCED5135536367521F0E2F77 /* BindableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = BindableType.swift; path = Bond/Core/BindableType.swift; sourceTree = "<group>"; };
+		419A7B0F9D114EB46BFF53FDA0020608 /* DisposableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisposableType.swift; path = Bond/Core/DisposableType.swift; sourceTree = "<group>"; };
 		42291E3340198D90417665ABDDE7713E /* Pods-GymBuddy-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBuddy-frameworks.sh"; sourceTree = "<group>"; };
-		43CF9F5031F2E4306C2D0C97CFEF18E5 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Bond/Core/Operators.swift; sourceTree = "<group>"; };
-		4447059775F99D639CFE26C50C7057EA /* MBCircularProgressBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarView.h; path = Pod/Classes/MBCircularProgressBarView.h; sourceTree = "<group>"; };
-		449417AB3AA5324A97C08BA4A9C14598 /* UIDatePicker+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIDatePicker+Bond.swift"; path = "Bond/Extensions/iOS/UIDatePicker+Bond.swift"; sourceTree = "<group>"; };
-		47B0FF2F4379A2E14145E17D906E3502 /* IGLDropDownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IGLDropDownMenu.modulemap; sourceTree = "<group>"; };
-		4C6CBB356D782F91CE06440B310CFA47 /* IGLDropDownMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "IGLDropDownMenu-dummy.m"; sourceTree = "<group>"; };
-		4F4F88494441FED536D5CBCF867A8B64 /* Bond.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Bond.h; path = Bond/Bond.h; sourceTree = "<group>"; };
+		431E94ED810435C7CD9CF8615E596490 /* MBCircularProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBCircularProgressBar.modulemap; sourceTree = "<group>"; };
+		4583294472E9F74AB45C64D08DDBEC61 /* TimeSeriesPoint.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = TimeSeriesPoint.cpp; path = "FastDTW-x/Classes/TimeSeries/TimeSeriesPoint.cpp"; sourceTree = "<group>"; };
+		4829909806E9A7EA3D4A9EDFC3034CC0 /* UINavigationItem+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationItem+Bond.swift"; path = "Bond/Extensions/iOS/UINavigationItem+Bond.swift"; sourceTree = "<group>"; };
+		4856B8E3422D8D1418F8B0DF9B5CE73F /* CostMatrix.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = CostMatrix.h; path = "FastDTW-x/Classes/Dtw/CostMatrix.h"; sourceTree = "<group>"; };
+		4E6310F4BC6BBD6958459DD9D2A659B9 /* UIActivityIndicatorView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIActivityIndicatorView+Bond.swift"; path = "Bond/Extensions/iOS/UIActivityIndicatorView+Bond.swift"; sourceTree = "<group>"; };
 		568D99DDA8D4BCFE206ECBED1D6B59F6 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5B584E88A436485360A4091D6EF36B63 /* MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
-		5FC437F6DF0A882DACAD19A950E5E0F5 /* SimpleDiff.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SimpleDiff.swift; path = Bond/Core/SimpleDiff.swift; sourceTree = "<group>"; };
+		56C1B4F3415B25B76D50CD3FE4D2BBF2 /* OptionalType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalType.swift; path = Bond/Core/OptionalType.swift; sourceTree = "<group>"; };
+		5D98786F25A15AA99D7A37E359416DC7 /* PartialWindowMatrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = PartialWindowMatrix.cpp; path = "FastDTW-x/Classes/Dtw/PartialWindowMatrix.cpp"; sourceTree = "<group>"; };
+		5E6DDD2432FA660BF901050CEAD7BE9E /* FDMath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = FDMath.h; path = "FastDTW-x/Classes/Util/FDMath.h"; sourceTree = "<group>"; };
+		602EE46FFCDE637525445405ACA39340 /* ManhattanDistance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = ManhattanDistance.cpp; path = "FastDTW-x/Classes/Util/ManhattanDistance.cpp"; sourceTree = "<group>"; };
+		604BBEF2C4F43133A73A43E652EBF7DA /* UIControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Bond.swift"; path = "Bond/Extensions/iOS/UIControl+Bond.swift"; sourceTree = "<group>"; };
+		65188227CDEF53F498EA080D8B06E28E /* NSObject+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSObject+Bond.swift"; path = "Bond/Extensions/Shared/NSObject+Bond.swift"; sourceTree = "<group>"; };
+		65577F1170535DF00FC5E8CFAF0C3596 /* UIBarItem+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarItem+Bond.swift"; path = "Bond/Extensions/iOS/UIBarItem+Bond.swift"; sourceTree = "<group>"; };
+		65A8149ABE411865BE83CCFEFADC13B4 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBuddy.debug.xcconfig"; sourceTree = "<group>"; };
-		68873DE144ED0AE2E29555BEED2B1AE0 /* UITextView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextView+Bond.swift"; path = "Bond/Extensions/iOS/UITextView+Bond.swift"; sourceTree = "<group>"; };
-		6F72B1680CAA9A2ED44264425B6CC7EB /* Bond-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bond-dummy.m"; sourceTree = "<group>"; };
-		6FCF6BBED73EDFAC94F9129F5AD540D8 /* NSIndexSet+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSIndexSet+Bond.swift"; path = "Bond/Extensions/Shared/NSIndexSet+Bond.swift"; sourceTree = "<group>"; };
-		73FBB055A6E96CCA900DEF6D17E33F30 /* UIControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIControl+Bond.swift"; path = "Bond/Extensions/iOS/UIControl+Bond.swift"; sourceTree = "<group>"; };
-		788D1DFF7932D0DAB86676A1EE607A29 /* UIActivityIndicatorView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIActivityIndicatorView+Bond.swift"; path = "Bond/Extensions/iOS/UIActivityIndicatorView+Bond.swift"; sourceTree = "<group>"; };
-		7E13D9FA2AAF0F4E3873D1722FA48FA5 /* MBCircularProgressBar-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBCircularProgressBar-umbrella.h"; sourceTree = "<group>"; };
+		68C979399891EDBD2F66A65F5CB1C919 /* IGLDropDownMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownMenu.m; path = IGLDropDownMenu/IGLDropDownMenu.m; sourceTree = "<group>"; };
+		6ACAA2E2615C47A929408ABCEB42D1DA /* Bond-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-prefix.pch"; sourceTree = "<group>"; };
+		7018709D11737C952A6F50DC3058313A /* IGLDropDownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-umbrella.h"; sourceTree = "<group>"; };
+		721B9BAEA2F0DAA36D3FE1BA06A8E452 /* NSLock+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLock+Bond.swift"; path = "Bond/Extensions/Shared/NSLock+Bond.swift"; sourceTree = "<group>"; };
+		74E6E6161546C314F15F599DF2A1AF68 /* MutableObservable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MutableObservable.swift; path = Bond/Core/MutableObservable.swift; sourceTree = "<group>"; };
+		767E2A533F34EE0B4BD59ECE9282FDA8 /* Bond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AD51D0A0C983B27C107748D8B42DBB1 /* UISegmentedControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISegmentedControl+Bond.swift"; path = "Bond/Extensions/iOS/UISegmentedControl+Bond.swift"; sourceTree = "<group>"; };
+		7BAC7C5C3D7BDF799097F96D7107603B /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = Bond/Core/Disposable.swift; sourceTree = "<group>"; };
+		7C33EBFA214FAE625AF233379F44EC2D /* EuclideanDistance.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = EuclideanDistance.h; path = "FastDTW-x/Classes/Util/EuclideanDistance.h"; sourceTree = "<group>"; };
+		7C6281D45454342F2A35E78988C480C6 /* TimeWarpInfo.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = TimeWarpInfo.h; path = "FastDTW-x/Classes/Dtw/TimeWarpInfo.h"; sourceTree = "<group>"; };
 		7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-GymBuddy.release.xcconfig"; sourceTree = "<group>"; };
-		8AE0EB38CAE632AD5ADE0D280D161F03 /* EventProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventProducer.swift; path = Bond/Core/EventProducer.swift; sourceTree = "<group>"; };
-		8DA5F81C61FA9AD07E7CFCB423EDA681 /* UILabel+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Bond.swift"; path = "Bond/Extensions/iOS/UILabel+Bond.swift"; sourceTree = "<group>"; };
-		91B12ED8CFA6EF7164142BD65651C663 /* Disposable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Disposable.swift; path = Bond/Core/Disposable.swift; sourceTree = "<group>"; };
-		923FA04DA148C9DF66CE132104C04FB7 /* NSLayoutConstraint+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Bond.swift"; path = "Bond/Extensions/Shared/NSLayoutConstraint+Bond.swift"; sourceTree = "<group>"; };
-		9A8D4DA2491672B84712E4A33708F076 /* NSLock+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLock+Bond.swift"; path = "Bond/Extensions/Shared/NSLock+Bond.swift"; sourceTree = "<group>"; };
+		7F89A4821FF58EA038DC7F7AE9D2E87E /* EventProducerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventProducerType.swift; path = Bond/Core/EventProducerType.swift; sourceTree = "<group>"; };
+		80643816A94572C0066574EA13B32059 /* BinaryDistance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = BinaryDistance.cpp; path = "FastDTW-x/Classes/Util/BinaryDistance.cpp"; sourceTree = "<group>"; };
+		826151F33C7A3676F7D59A6E491544D3 /* WarpPath.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = WarpPath.h; path = "FastDTW-x/Classes/Dtw/WarpPath.h"; sourceTree = "<group>"; };
+		82F88E20DD53C3B9891970F894043E95 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = Bond/Core/Operators.swift; sourceTree = "<group>"; };
+		876C95800ED0E64E51A470275FF5AF3C /* UIProgressView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIProgressView+Bond.swift"; path = "Bond/Extensions/iOS/UIProgressView+Bond.swift"; sourceTree = "<group>"; };
+		8AC8DF476C5DFD0B53C6348E3D906D2B /* UILabel+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UILabel+Bond.swift"; path = "Bond/Extensions/iOS/UILabel+Bond.swift"; sourceTree = "<group>"; };
+		9264D65EE37184B3C8CEAD5B2302D239 /* JavaTypes.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = JavaTypes.h; path = "FastDTW-x/Classes/JavaTypes.h"; sourceTree = "<group>"; };
+		92E99451CF918D2005E4D3810C1EB5F2 /* SearchWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = SearchWindow.cpp; path = "FastDTW-x/Classes/Dtw/SearchWindow.cpp"; sourceTree = "<group>"; };
+		93A56CF32B57A18EB62EC6C529C595F4 /* Observable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Observable.swift; path = Bond/Core/Observable.swift; sourceTree = "<group>"; };
+		964ADD6271264C8B17138C6A68519D66 /* FastDTW-x.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "FastDTW-x.xcconfig"; sourceTree = "<group>"; };
+		9A5676A84EFCFE65C51944051DC53648 /* LinearWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = LinearWindow.h; path = "FastDTW-x/Classes/Dtw/LinearWindow.h"; sourceTree = "<group>"; };
+		9A960B8C26BD87ED9DF29D46632F96AD /* MBCircularProgressBar-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBCircularProgressBar-dummy.m"; sourceTree = "<group>"; };
+		9B2F3842DE5C020D3FB801AB78429E20 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9BD39A955A9215AE1A94A0EDACA1BEA2 /* Pods-GymBuddy-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-GymBuddy-acknowledgements.plist"; sourceTree = "<group>"; };
-		A12B8B0DFDCDD3EDCB3F5629D06EABD1 /* Reference.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Reference.swift; path = Bond/Core/Reference.swift; sourceTree = "<group>"; };
-		A18F6EFCBF06259663698C48D46E5580 /* IGLDropDownMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownMenu.h; path = IGLDropDownMenu/IGLDropDownMenu.h; sourceTree = "<group>"; };
-		A1BEED76B276CF8082DDB50AE1201AB1 /* Bond.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Bond.modulemap; sourceTree = "<group>"; };
+		9F133470E68D7019C273E45CC2A7EA5D /* UIImageView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIImageView+Bond.swift"; path = "Bond/Extensions/iOS/UIImageView+Bond.swift"; sourceTree = "<group>"; };
+		A0A1DA762CB1CE3466EE052DCED8803F /* UIButton+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Bond.swift"; path = "Bond/Extensions/iOS/UIButton+Bond.swift"; sourceTree = "<group>"; };
+		A200B16528611E4E956EAF414CF25E3C /* ColMajorCell.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = ColMajorCell.cpp; path = "FastDTW-x/Classes/Dtw/ColMajorCell.cpp"; sourceTree = "<group>"; };
+		A273A17F4B50D112EB68BB75D88900DE /* Bond-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Bond-dummy.m"; sourceTree = "<group>"; };
+		A566DC2E4D663B3F06B9E9AFD5075469 /* IGLDropDownMenu.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = IGLDropDownMenu.xcconfig; sourceTree = "<group>"; };
+		A5E556E860F17D11075475A1C623F053 /* CALayer+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Bond.swift"; path = "Bond/Extensions/Shared/CALayer+Bond.swift"; sourceTree = "<group>"; };
+		A6AA0305D9E4708038A7C78B372DBED1 /* PAA.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = PAA.h; path = "FastDTW-x/Classes/TimeSeries/PAA.h"; sourceTree = "<group>"; };
+		A7FC5E641A018CCA2682CAA904C9EAEE /* IGLDropDownMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = IGLDropDownMenu.modulemap; sourceTree = "<group>"; };
 		A8787A58189160937780570C52D7C37C /* Pods-GymBuddy-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-GymBuddy-acknowledgements.markdown"; sourceTree = "<group>"; };
-		A8EAF960A8B475E77913BC1C0A3289BF /* Bond.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Bond.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8FF2EE47CA5059CDE425967D3E7CEA9 /* SearchWindow.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = SearchWindow.h; path = "FastDTW-x/Classes/Dtw/SearchWindow.h"; sourceTree = "<group>"; };
+		AA7A861395CD536ADC6E96AB4D7B6EBF /* MBCircularProgressBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarView.m; path = Pod/Classes/MBCircularProgressBarView.m; sourceTree = "<group>"; };
+		ABA5938DC60F6596EEBDA9A5332461F1 /* MBCircularProgressBar.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBCircularProgressBar.xcconfig; sourceTree = "<group>"; };
+		ABACB20C84FB2092F50E9D20F46B3280 /* NSLayoutConstraint+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSLayoutConstraint+Bond.swift"; path = "Bond/Extensions/Shared/NSLayoutConstraint+Bond.swift"; sourceTree = "<group>"; };
+		ACC48B9A426A3A7AAC9BF72546ADCF00 /* MBCircularProgressBar.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MBCircularProgressBar.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE7E54168581CA7AF42B96B66D64EF1F /* Pods-GymBuddy.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-GymBuddy.modulemap"; sourceTree = "<group>"; };
 		AEEE84A0241AF810BD24AE7739601036 /* Pods-GymBuddy-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-GymBuddy-dummy.m"; sourceTree = "<group>"; };
-		AF437527781E9F510A76AF3A947FDAF0 /* UIRefreshControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIRefreshControl+Bond.swift"; path = "Bond/Extensions/iOS/UIRefreshControl+Bond.swift"; sourceTree = "<group>"; };
-		B0BB6E00408E6F4682FB52DA9C7F4A15 /* IGLDropDownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-prefix.pch"; sourceTree = "<group>"; };
-		B0DAE240749112548D34DF17D58E9B56 /* IGLDropDownMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-umbrella.h"; sourceTree = "<group>"; };
-		B4C07BC0AC5F7B7A14D55F2D82D3B81A /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = Bond/Core/Buffer.swift; sourceTree = "<group>"; };
-		B56FD48A4004FF7AC27E38E2A2DD12E1 /* MBCircularProgressBar.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = MBCircularProgressBar.modulemap; sourceTree = "<group>"; };
-		B8BCA17E4F86FC5BA5D39E4FA13E9446 /* Bond-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-prefix.pch"; sourceTree = "<group>"; };
-		B90356202524D1031556F7B33952EC0A /* OptionalType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OptionalType.swift; path = Bond/Core/OptionalType.swift; sourceTree = "<group>"; };
+		B125D20813E86DF443C09267FF11AF48 /* UISwitch+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISwitch+Bond.swift"; path = "Bond/Extensions/iOS/UISwitch+Bond.swift"; sourceTree = "<group>"; };
+		B4A647FC07102A22694A7FDCAE0772D3 /* LinearWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = LinearWindow.cpp; path = "FastDTW-x/Classes/Dtw/LinearWindow.cpp"; sourceTree = "<group>"; };
+		B4D0EFBEF8D2A14F352894E4D7FBF97E /* ExpandedResWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = ExpandedResWindow.cpp; path = "FastDTW-x/Classes/Dtw/ExpandedResWindow.cpp"; sourceTree = "<group>"; };
 		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		BA77DA90F74F6C3D6285E1FB371C4A36 /* IGLDropDownItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownItem.m; path = IGLDropDownMenu/IGLDropDownItem.m; sourceTree = "<group>"; };
 		BAE1B33188740B25D40CEDC08A929AF6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
-		BF0CE0AAAB081EDA39C03A5563AEB669 /* UITextField+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITextField+Bond.swift"; path = "Bond/Extensions/iOS/UITextField+Bond.swift"; sourceTree = "<group>"; };
-		BFFBA0DF60051488878E8D45875CCFD0 /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C2EE0C845F5A3E7EE3EB736658517C4A /* Bond.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Bond.xcconfig; sourceTree = "<group>"; };
-		C8E8F0C5EC97E8E68E84BE3132E26B90 /* UIBarItem+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIBarItem+Bond.swift"; path = "Bond/Extensions/iOS/UIBarItem+Bond.swift"; sourceTree = "<group>"; };
-		CDDAEBEFBB931CF96A665DFFF183C051 /* MBCircularProgressBarLayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarLayer.h; path = Pod/Classes/MBCircularProgressBarLayer.h; sourceTree = "<group>"; };
-		CE001FDF7FA78B35F43512F031BC603C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBD7125179B49D2F178BF9F2FB7DFD43 /* IGLDropDownMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "IGLDropDownMenu-prefix.pch"; sourceTree = "<group>"; };
+		BC64E6124454FC5C54EBC3F90C054C59 /* FastDTW_x.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FastDTW_x.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BEC3EB2F0293D1A85CDFA1A5E8206CA7 /* EuclideanDistance.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = EuclideanDistance.cpp; path = "FastDTW-x/Classes/Util/EuclideanDistance.cpp"; sourceTree = "<group>"; };
+		C387EB46679D4CBC1078D473675B6BD1 /* Buffer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Buffer.swift; path = Bond/Core/Buffer.swift; sourceTree = "<group>"; };
+		C590AF9A9984CF8FCA2209BDDDF1A6EC /* MBCircularProgressBarLayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarLayer.m; path = Pod/Classes/MBCircularProgressBarLayer.m; sourceTree = "<group>"; };
+		CA0ECF25087180B97776C67632B7B2A7 /* TimeSeries.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = TimeSeries.h; path = "FastDTW-x/Classes/TimeSeries/TimeSeries.h"; sourceTree = "<group>"; };
+		CBFEBDE4BCD8B43B91B6D5FEDE94BD51 /* TimeSeries.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = TimeSeries.cpp; path = "FastDTW-x/Classes/TimeSeries/TimeSeries.cpp"; sourceTree = "<group>"; };
 		CE07C51563A8537190C45BF7B84469E6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		D9DB3879985746B2AEC18CB0A61F0A01 /* DisposableType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DisposableType.swift; path = Bond/Core/DisposableType.swift; sourceTree = "<group>"; };
-		E4E0E837407B53749D2689F4EDC52F2F /* IGLDropDownMenu.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IGLDropDownMenu.m; path = IGLDropDownMenu/IGLDropDownMenu.m; sourceTree = "<group>"; };
-		E842D17F098268BAC7497C4A2F7FF4E2 /* Bond-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Bond-umbrella.h"; sourceTree = "<group>"; };
-		E95403B1E3572B0FD6E6A2253741D386 /* UITableView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Bond.swift"; path = "Bond/Extensions/iOS/UITableView+Bond.swift"; sourceTree = "<group>"; };
-		EBE7058FE10A45B2B3A7F5D4942D2104 /* MBCircularProgressBarView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MBCircularProgressBarView.m; path = Pod/Classes/MBCircularProgressBarView.m; sourceTree = "<group>"; };
-		EC6862A0B8974022CD2E0F2249306996 /* ObservableArray.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableArray.swift; path = Bond/Core/ObservableArray.swift; sourceTree = "<group>"; };
-		ECD25C1D054356BE55A351DDD5ADA24C /* UISegmentedControl+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISegmentedControl+Bond.swift"; path = "Bond/Extensions/iOS/UISegmentedControl+Bond.swift"; sourceTree = "<group>"; };
-		EE7A32E56BBA0CFC75D709C985726A34 /* CALayer+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "CALayer+Bond.swift"; path = "Bond/Extensions/Shared/CALayer+Bond.swift"; sourceTree = "<group>"; };
-		EFE937ED8455F53D3AE372989C4462B9 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F2733EFB6CF090DA9D79153BD954CD03 /* MBCircularProgressBar.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MBCircularProgressBar.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CE3FF88834E28AD2C0FDC2D99F33BF5F /* MBCircularProgressBarView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MBCircularProgressBarView.h; path = Pod/Classes/MBCircularProgressBarView.h; sourceTree = "<group>"; };
+		CF07F6B668FF04AD78374BD716BFBCF5 /* FDAssert.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = FDAssert.h; path = "FastDTW-x/Classes/FDAssert.h"; sourceTree = "<group>"; };
+		CF99CB6F786D7B28F94840F5F3281494 /* UINavigationBar+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Bond.swift"; path = "Bond/Extensions/iOS/UINavigationBar+Bond.swift"; sourceTree = "<group>"; };
+		D3680D6D7FAB33219EE6BA9AE7854C46 /* Bond.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Bond.modulemap; sourceTree = "<group>"; };
+		D662E114181C4591522B8FBD3DCFD537 /* NSNotificationCenter+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "NSNotificationCenter+Bond.swift"; path = "Bond/Extensions/Shared/NSNotificationCenter+Bond.swift"; sourceTree = "<group>"; };
+		E24B50134EC6CF95360BDA44C2CEDA9E /* FullWindow.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = FullWindow.cpp; path = "FastDTW-x/Classes/Dtw/FullWindow.cpp"; sourceTree = "<group>"; };
+		E33A93294EF3D710F4F1CEF5F52D40F0 /* IGLDropDownItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownItem.h; path = IGLDropDownMenu/IGLDropDownItem.h; sourceTree = "<group>"; };
+		E698CB3FC558C43072F654BFEAA5AA61 /* ObservableArrayEvent.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ObservableArrayEvent.swift; path = Bond/Core/ObservableArrayEvent.swift; sourceTree = "<group>"; };
+		E6AF833A06E51C83B66993DBB01B4B11 /* FastDTW-x.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "FastDTW-x.modulemap"; sourceTree = "<group>"; };
+		EB3697BEF31C5741FBBF9BDA46A38238 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EB82BB3386866B500053CBDF5DA35651 /* EventProducer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventProducer.swift; path = Bond/Core/EventProducer.swift; sourceTree = "<group>"; };
+		EEDED419016BACFC4781D6EC2EA6352C /* IGLDropDownMenu.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownMenu.h; path = IGLDropDownMenu/IGLDropDownMenu.h; sourceTree = "<group>"; };
+		F1E88CC809305014528267233498A6E5 /* MemoryResidentMatrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = MemoryResidentMatrix.cpp; path = "FastDTW-x/Classes/Dtw/MemoryResidentMatrix.cpp"; sourceTree = "<group>"; };
+		F4D280E6927AADBFDD8959C97AC3BD84 /* UISlider+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISlider+Bond.swift"; path = "Bond/Extensions/iOS/UISlider+Bond.swift"; sourceTree = "<group>"; };
 		F6024E026CA4CEDD47FAB2E5825DF5DF /* Pods-GymBuddy-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-GymBuddy-resources.sh"; sourceTree = "<group>"; };
-		F9CF40FBB3ED5DDBB25F3A0B54A90451 /* IGLDropDownItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IGLDropDownItem.h; path = IGLDropDownMenu/IGLDropDownItem.h; sourceTree = "<group>"; };
-		FA01D388FD517DC0DD39113E79019443 /* EventProducerType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EventProducerType.swift; path = Bond/Core/EventProducerType.swift; sourceTree = "<group>"; };
-		FB0C4C42E94B19D2E9007991A6378502 /* UIView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Bond.swift"; path = "Bond/Extensions/iOS/UIView+Bond.swift"; sourceTree = "<group>"; };
-		FB54A3818F01579B37C8F2F6665B02D8 /* UISlider+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UISlider+Bond.swift"; path = "Bond/Extensions/iOS/UISlider+Bond.swift"; sourceTree = "<group>"; };
-		FDAD2DF9CF24A97EF1D34D55E65FB53B /* UINavigationBar+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UINavigationBar+Bond.swift"; path = "Bond/Extensions/iOS/UINavigationBar+Bond.swift"; sourceTree = "<group>"; };
+		F7273D4FFD9A9CBF14FA0797F30BADDD /* ManhattanDistance.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = ManhattanDistance.h; path = "FastDTW-x/Classes/Util/ManhattanDistance.h"; sourceTree = "<group>"; };
+		FA15F09A00CDEA8D95ACD052376589C5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB814DDCF98322C76C2E36337BC74ABB /* CostMatrix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = CostMatrix.cpp; path = "FastDTW-x/Classes/Dtw/CostMatrix.cpp"; sourceTree = "<group>"; };
+		FBB9D6BDD6CC48907970892B2C7E2614 /* FastDTW.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = FastDTW.h; path = "FastDTW-x/Classes/Dtw/FastDTW.h"; sourceTree = "<group>"; };
+		FBFD2150223E12510327A0CE02FA6023 /* UITableView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UITableView+Bond.swift"; path = "Bond/Extensions/iOS/UITableView+Bond.swift"; sourceTree = "<group>"; };
+		FCC1C13708FF46E64772FB8040616CC9 /* UIView+Bond.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIView+Bond.swift"; path = "Bond/Extensions/iOS/UIView+Bond.swift"; sourceTree = "<group>"; };
+		FDEC92EEBE7B7CA9EEECCCEB2F253FB7 /* DTW.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; includeInIndex = 1; name = DTW.h; path = "FastDTW-x/Classes/Dtw/DTW.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		22A8BABB37BC950074C5E6E673358D48 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3D8AD791B35FC0D3460783E6492E0936 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		48388185FE9685DD9A87437BA0D0A877 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -211,10 +300,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		7441E1DD43C06BB7999B450D44465FEB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				401A681D9DAC689DADB1420AADE40CA5 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7F38E7E8427EB97D15E0870D471F6DCE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AAC7FAA68E48CE08114A0C29B4277E22 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76855FB81E9712F3768E2E9B95797B3C /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -238,18 +343,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		07B14FB2B1818F2A8148BB872AB89262 /* Support Files */ = {
+		07567F2604B20FCB440A240677AC55D2 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				EFE937ED8455F53D3AE372989C4462B9 /* Info.plist */,
-				B56FD48A4004FF7AC27E38E2A2DD12E1 /* MBCircularProgressBar.modulemap */,
-				3DDF4BED97E90684666CF759143CDD43 /* MBCircularProgressBar.xcconfig */,
-				5B584E88A436485360A4091D6EF36B63 /* MBCircularProgressBar-dummy.m */,
-				2B7BC1771522BE1D312F2658891CC294 /* MBCircularProgressBar-prefix.pch */,
-				7E13D9FA2AAF0F4E3873D1722FA48FA5 /* MBCircularProgressBar-umbrella.h */,
+				819286AB823BC16ACD11EF62F27DCF04 /* Bond */,
+				4A74CB293072DCFA2B431C676ADB6F1D /* FastDTW-x */,
+				8E5A1BCEDD074D878320655DBB4E2F21 /* IGLDropDownMenu */,
+				2CCBB05640369838A1A9568193A1C6D3 /* MBCircularProgressBar */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/MBCircularProgressBar";
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		122DA2E5084A4393C29BE363C764795C /* Frameworks */ = {
@@ -260,18 +362,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2F1A42F0090B01598C2E1DDC960CFFEB /* Support Files */ = {
+		2CCBB05640369838A1A9568193A1C6D3 /* MBCircularProgressBar */ = {
 			isa = PBXGroup;
 			children = (
-				47B0FF2F4379A2E14145E17D906E3502 /* IGLDropDownMenu.modulemap */,
-				0DE887371C8A04BAF1A9BD65DC88A658 /* IGLDropDownMenu.xcconfig */,
-				4C6CBB356D782F91CE06440B310CFA47 /* IGLDropDownMenu-dummy.m */,
-				B0BB6E00408E6F4682FB52DA9C7F4A15 /* IGLDropDownMenu-prefix.pch */,
-				B0DAE240749112548D34DF17D58E9B56 /* IGLDropDownMenu-umbrella.h */,
-				CE001FDF7FA78B35F43512F031BC603C /* Info.plist */,
+				0FAB66EA26F47DD5BB8B669B9D7C673A /* MBCircularProgressBarLayer.h */,
+				C590AF9A9984CF8FCA2209BDDDF1A6EC /* MBCircularProgressBarLayer.m */,
+				CE3FF88834E28AD2C0FDC2D99F33BF5F /* MBCircularProgressBarView.h */,
+				AA7A861395CD536ADC6E96AB4D7B6EBF /* MBCircularProgressBarView.m */,
+				90B8C73DEFB17F7BD510C06E1D8C3293 /* Support Files */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/IGLDropDownMenu";
+			path = MBCircularProgressBar;
 			sourceTree = "<group>";
 		};
 		36720E87E0EDA3E572351C3F162B0BC2 /* Targets Support Files */ = {
@@ -300,30 +400,107 @@
 			path = "Target Support Files/Pods-GymBuddy";
 			sourceTree = "<group>";
 		};
-		6FE90F86E2C9DCC3AE187FD2A690B3F6 /* Support Files */ = {
+		4A341701C2771E5FE90E79B48883C539 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A1BEED76B276CF8082DDB50AE1201AB1 /* Bond.modulemap */,
-				C2EE0C845F5A3E7EE3EB736658517C4A /* Bond.xcconfig */,
-				6F72B1680CAA9A2ED44264425B6CC7EB /* Bond-dummy.m */,
-				B8BCA17E4F86FC5BA5D39E4FA13E9446 /* Bond-prefix.pch */,
-				E842D17F098268BAC7497C4A2F7FF4E2 /* Bond-umbrella.h */,
-				0F68B63282F189A65D7F5EE21F45F7D6 /* Info.plist */,
+				D3680D6D7FAB33219EE6BA9AE7854C46 /* Bond.modulemap */,
+				17B1E421A2584C2978D826F1099A19DF /* Bond.xcconfig */,
+				A273A17F4B50D112EB68BB75D88900DE /* Bond-dummy.m */,
+				6ACAA2E2615C47A929408ABCEB42D1DA /* Bond-prefix.pch */,
+				21EC387815C1167DDDD9757DEBDA88F2 /* Bond-umbrella.h */,
+				EB3697BEF31C5741FBBF9BDA46A38238 /* Info.plist */,
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Bond";
 			sourceTree = "<group>";
 		};
-		7247F469604F2ADA8F1B8621C37FC048 /* IGLDropDownMenu */ = {
+		4A74CB293072DCFA2B431C676ADB6F1D /* FastDTW-x */ = {
 			isa = PBXGroup;
 			children = (
-				F9CF40FBB3ED5DDBB25F3A0B54A90451 /* IGLDropDownItem.h */,
-				BA77DA90F74F6C3D6285E1FB371C4A36 /* IGLDropDownItem.m */,
-				A18F6EFCBF06259663698C48D46E5580 /* IGLDropDownMenu.h */,
-				E4E0E837407B53749D2689F4EDC52F2F /* IGLDropDownMenu.m */,
-				2F1A42F0090B01598C2E1DDC960CFFEB /* Support Files */,
+				80643816A94572C0066574EA13B32059 /* BinaryDistance.cpp */,
+				190102AA8CFDDB43A22FD4DB9BAF0E23 /* BinaryDistance.h */,
+				A200B16528611E4E956EAF414CF25E3C /* ColMajorCell.cpp */,
+				179DD6EC604D704962366C77B70F6E72 /* ColMajorCell.h */,
+				FB814DDCF98322C76C2E36337BC74ABB /* CostMatrix.cpp */,
+				4856B8E3422D8D1418F8B0DF9B5CE73F /* CostMatrix.h */,
+				382C49032A162D043F149539C93EF73D /* DTW.cpp */,
+				FDEC92EEBE7B7CA9EEECCCEB2F253FB7 /* DTW.h */,
+				BEC3EB2F0293D1A85CDFA1A5E8206CA7 /* EuclideanDistance.cpp */,
+				7C33EBFA214FAE625AF233379F44EC2D /* EuclideanDistance.h */,
+				B4D0EFBEF8D2A14F352894E4D7FBF97E /* ExpandedResWindow.cpp */,
+				23F4F2C62E63333D13513309B8203098 /* ExpandedResWindow.h */,
+				34E8DC248F0B13D88A4AF6698CF7D0FF /* FastDTW.cpp */,
+				FBB9D6BDD6CC48907970892B2C7E2614 /* FastDTW.h */,
+				CF07F6B668FF04AD78374BD716BFBCF5 /* FDAssert.h */,
+				5E6DDD2432FA660BF901050CEAD7BE9E /* FDMath.h */,
+				17DDBB4F7CF630F8D386968233DE55D6 /* Foundation.h */,
+				E24B50134EC6CF95360BDA44C2CEDA9E /* FullWindow.cpp */,
+				0FB7917B71E9447F825EAEAC0DE769C2 /* FullWindow.h */,
+				9264D65EE37184B3C8CEAD5B2302D239 /* JavaTypes.h */,
+				B4A647FC07102A22694A7FDCAE0772D3 /* LinearWindow.cpp */,
+				9A5676A84EFCFE65C51944051DC53648 /* LinearWindow.h */,
+				602EE46FFCDE637525445405ACA39340 /* ManhattanDistance.cpp */,
+				F7273D4FFD9A9CBF14FA0797F30BADDD /* ManhattanDistance.h */,
+				F1E88CC809305014528267233498A6E5 /* MemoryResidentMatrix.cpp */,
+				2377F56792DC3E37F09EB068F20701D3 /* MemoryResidentMatrix.h */,
+				002C2A5D525673629B9BABE75D14D5B9 /* PAA.cpp */,
+				A6AA0305D9E4708038A7C78B372DBED1 /* PAA.h */,
+				5D98786F25A15AA99D7A37E359416DC7 /* PartialWindowMatrix.cpp */,
+				1C80E69C394A560F55F9963F6264AAFE /* PartialWindowMatrix.h */,
+				92E99451CF918D2005E4D3810C1EB5F2 /* SearchWindow.cpp */,
+				A8FF2EE47CA5059CDE425967D3E7CEA9 /* SearchWindow.h */,
+				CBFEBDE4BCD8B43B91B6D5FEDE94BD51 /* TimeSeries.cpp */,
+				CA0ECF25087180B97776C67632B7B2A7 /* TimeSeries.h */,
+				4583294472E9F74AB45C64D08DDBEC61 /* TimeSeriesPoint.cpp */,
+				225098A4FC8FB4C56FFE3C9A6A3B8EC5 /* TimeSeriesPoint.h */,
+				2BC086DD374B9F3634C7D4C171C76C27 /* TimeWarpInfo.cpp */,
+				7C6281D45454342F2A35E78988C480C6 /* TimeWarpInfo.h */,
+				0CFC679F15F692B12A3409E12ABE1824 /* WarpPath.cpp */,
+				826151F33C7A3676F7D59A6E491544D3 /* WarpPath.h */,
+				7C95F7E3D6B18362CD2822CA4298E589 /* Support Files */,
 			);
-			path = IGLDropDownMenu;
+			path = "FastDTW-x";
+			sourceTree = "<group>";
+		};
+		74505132D37AC31418AA9903A254A18D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A7FC5E641A018CCA2682CAA904C9EAEE /* IGLDropDownMenu.modulemap */,
+				A566DC2E4D663B3F06B9E9AFD5075469 /* IGLDropDownMenu.xcconfig */,
+				08DDEC72525F321EAFAA08C86DA3994B /* IGLDropDownMenu-dummy.m */,
+				BBD7125179B49D2F178BF9F2FB7DFD43 /* IGLDropDownMenu-prefix.pch */,
+				7018709D11737C952A6F50DC3058313A /* IGLDropDownMenu-umbrella.h */,
+				65A8149ABE411865BE83CCFEFADC13B4 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/IGLDropDownMenu";
+			sourceTree = "<group>";
+		};
+		7BDD1A652A387DB86357A21392B6C86B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				767E2A533F34EE0B4BD59ECE9282FDA8 /* Bond.framework */,
+				BC64E6124454FC5C54EBC3F90C054C59 /* FastDTW_x.framework */,
+				2714CF078330CDD259EE57EA01F481BD /* IGLDropDownMenu.framework */,
+				ACC48B9A426A3A7AAC9BF72546ADCF00 /* MBCircularProgressBar.bundle */,
+				368F7B831A716FEE115448F82E909252 /* MBCircularProgressBar.framework */,
+				0375FECFD07333E3B122B17534947300 /* Pods_GymBuddy.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7C95F7E3D6B18362CD2822CA4298E589 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				E6AF833A06E51C83B66993DBB01B4B11 /* FastDTW-x.modulemap */,
+				964ADD6271264C8B17138C6A68519D66 /* FastDTW-x.xcconfig */,
+				38D2641E2178EF5EED5D248384DA0269 /* FastDTW-x-dummy.m */,
+				08094721439161D54C34294D5B3B0948 /* FastDTW-x-prefix.pch */,
+				2754A7FCFED1954CE110E81E021259BD /* FastDTW-x-umbrella.h */,
+				FA15F09A00CDEA8D95ACD052376589C5 /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FastDTW-x";
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -331,93 +508,85 @@
 			children = (
 				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
 				122DA2E5084A4393C29BE363C764795C /* Frameworks */,
-				A99D0DC22269503E5BE3674EBFD2FA4F /* Pods */,
-				C375A28703D65DF1DAC5071842E9E5B2 /* Products */,
+				07567F2604B20FCB440A240677AC55D2 /* Pods */,
+				7BDD1A652A387DB86357A21392B6C86B /* Products */,
 				36720E87E0EDA3E572351C3F162B0BC2 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		A99D0DC22269503E5BE3674EBFD2FA4F /* Pods */ = {
+		819286AB823BC16ACD11EF62F27DCF04 /* Bond */ = {
 			isa = PBXGroup;
 			children = (
-				E5E52DE0AB7B86299AB4EF1E590DB4E4 /* Bond */,
-				7247F469604F2ADA8F1B8621C37FC048 /* IGLDropDownMenu */,
-				F74205C73C0D927C14FE769B825AC5BB /* MBCircularProgressBar */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		C375A28703D65DF1DAC5071842E9E5B2 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A8EAF960A8B475E77913BC1C0A3289BF /* Bond.framework */,
-				39A024D4320E8586D67B922177816353 /* IGLDropDownMenu.framework */,
-				2E8AAC8F9E75E796C97E761FEC11F06A /* MBCircularProgressBar.bundle */,
-				F2733EFB6CF090DA9D79153BD954CD03 /* MBCircularProgressBar.framework */,
-				BFFBA0DF60051488878E8D45875CCFD0 /* Pods_GymBuddy.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		E5E52DE0AB7B86299AB4EF1E590DB4E4 /* Bond */ = {
-			isa = PBXGroup;
-			children = (
-				175B6E79C8F8902F27A3C4845816ED74 /* BindableType.swift */,
-				4F4F88494441FED536D5CBCF867A8B64 /* Bond.h */,
-				B4C07BC0AC5F7B7A14D55F2D82D3B81A /* Buffer.swift */,
-				EE7A32E56BBA0CFC75D709C985726A34 /* CALayer+Bond.swift */,
-				91B12ED8CFA6EF7164142BD65651C663 /* Disposable.swift */,
-				D9DB3879985746B2AEC18CB0A61F0A01 /* DisposableType.swift */,
-				8AE0EB38CAE632AD5ADE0D280D161F03 /* EventProducer.swift */,
-				FA01D388FD517DC0DD39113E79019443 /* EventProducerType.swift */,
-				3379C8695907B47087CD8FFF46265D07 /* MutableObservable.swift */,
-				6FCF6BBED73EDFAC94F9129F5AD540D8 /* NSIndexSet+Bond.swift */,
-				923FA04DA148C9DF66CE132104C04FB7 /* NSLayoutConstraint+Bond.swift */,
-				9A8D4DA2491672B84712E4A33708F076 /* NSLock+Bond.swift */,
-				2514C34328D95155B17FE8619926B392 /* NSNotificationCenter+Bond.swift */,
-				2B53A2AAC4D4C5EC8DE5D3C421F0811F /* NSObject+Bond.swift */,
-				04677ECF794D4D2CF83BF6D422B1A345 /* Observable.swift */,
-				EC6862A0B8974022CD2E0F2249306996 /* ObservableArray.swift */,
-				0DBB79BA0B4D50458F00B8DF2E3B077C /* ObservableArrayEvent.swift */,
-				43CF9F5031F2E4306C2D0C97CFEF18E5 /* Operators.swift */,
-				B90356202524D1031556F7B33952EC0A /* OptionalType.swift */,
-				1DAB706EDEEA8FD127D478E3290631D9 /* Queue.swift */,
-				A12B8B0DFDCDD3EDCB3F5629D06EABD1 /* Reference.swift */,
-				5FC437F6DF0A882DACAD19A950E5E0F5 /* SimpleDiff.swift */,
-				788D1DFF7932D0DAB86676A1EE607A29 /* UIActivityIndicatorView+Bond.swift */,
-				C8E8F0C5EC97E8E68E84BE3132E26B90 /* UIBarItem+Bond.swift */,
-				29F457198B06AA73045F59D94FD7DF3F /* UIButton+Bond.swift */,
-				235BEB955BCEDAA2F0C1820A9F2401CB /* UICollectionView+Bond.swift */,
-				73FBB055A6E96CCA900DEF6D17E33F30 /* UIControl+Bond.swift */,
-				449417AB3AA5324A97C08BA4A9C14598 /* UIDatePicker+Bond.swift */,
-				289A9127F7EE1FD0C4099EC719B769C8 /* UIImageView+Bond.swift */,
-				8DA5F81C61FA9AD07E7CFCB423EDA681 /* UILabel+Bond.swift */,
-				FDAD2DF9CF24A97EF1D34D55E65FB53B /* UINavigationBar+Bond.swift */,
-				2501A2FFCE6066CB40FAAE74724EB1ED /* UINavigationItem+Bond.swift */,
-				286243D603ADE4D7D260CD0D853D678D /* UIProgressView+Bond.swift */,
-				AF437527781E9F510A76AF3A947FDAF0 /* UIRefreshControl+Bond.swift */,
-				ECD25C1D054356BE55A351DDD5ADA24C /* UISegmentedControl+Bond.swift */,
-				FB54A3818F01579B37C8F2F6665B02D8 /* UISlider+Bond.swift */,
-				28D5DCBBF730EE76F02882328217837C /* UISwitch+Bond.swift */,
-				E95403B1E3572B0FD6E6A2253741D386 /* UITableView+Bond.swift */,
-				BF0CE0AAAB081EDA39C03A5563AEB669 /* UITextField+Bond.swift */,
-				68873DE144ED0AE2E29555BEED2B1AE0 /* UITextView+Bond.swift */,
-				FB0C4C42E94B19D2E9007991A6378502 /* UIView+Bond.swift */,
-				6FE90F86E2C9DCC3AE187FD2A690B3F6 /* Support Files */,
+				4108934ADCED5135536367521F0E2F77 /* BindableType.swift */,
+				30EEE0D8D39D1F616893339BE7506D70 /* Bond.h */,
+				C387EB46679D4CBC1078D473675B6BD1 /* Buffer.swift */,
+				A5E556E860F17D11075475A1C623F053 /* CALayer+Bond.swift */,
+				7BAC7C5C3D7BDF799097F96D7107603B /* Disposable.swift */,
+				419A7B0F9D114EB46BFF53FDA0020608 /* DisposableType.swift */,
+				EB82BB3386866B500053CBDF5DA35651 /* EventProducer.swift */,
+				7F89A4821FF58EA038DC7F7AE9D2E87E /* EventProducerType.swift */,
+				74E6E6161546C314F15F599DF2A1AF68 /* MutableObservable.swift */,
+				1E2FAB4FE800430CF848BD0CAE08AD62 /* NSIndexSet+Bond.swift */,
+				ABACB20C84FB2092F50E9D20F46B3280 /* NSLayoutConstraint+Bond.swift */,
+				721B9BAEA2F0DAA36D3FE1BA06A8E452 /* NSLock+Bond.swift */,
+				D662E114181C4591522B8FBD3DCFD537 /* NSNotificationCenter+Bond.swift */,
+				65188227CDEF53F498EA080D8B06E28E /* NSObject+Bond.swift */,
+				93A56CF32B57A18EB62EC6C529C595F4 /* Observable.swift */,
+				23C83F7CA43DF3A4C573FDE669003AF4 /* ObservableArray.swift */,
+				E698CB3FC558C43072F654BFEAA5AA61 /* ObservableArrayEvent.swift */,
+				82F88E20DD53C3B9891970F894043E95 /* Operators.swift */,
+				56C1B4F3415B25B76D50CD3FE4D2BBF2 /* OptionalType.swift */,
+				0BC1A32B6B02D32CBECAEFDB21BAA25F /* Queue.swift */,
+				2B46C68CA00CFBED401577497C63D2D7 /* Reference.swift */,
+				3D45FA0F74B45A5D47F5A5F538A51998 /* SimpleDiff.swift */,
+				4E6310F4BC6BBD6958459DD9D2A659B9 /* UIActivityIndicatorView+Bond.swift */,
+				65577F1170535DF00FC5E8CFAF0C3596 /* UIBarItem+Bond.swift */,
+				A0A1DA762CB1CE3466EE052DCED8803F /* UIButton+Bond.swift */,
+				14289FCB285988B22FB7D7E59819F249 /* UICollectionView+Bond.swift */,
+				604BBEF2C4F43133A73A43E652EBF7DA /* UIControl+Bond.swift */,
+				1C5A4C5544E682BB2E6584A3188F1664 /* UIDatePicker+Bond.swift */,
+				9F133470E68D7019C273E45CC2A7EA5D /* UIImageView+Bond.swift */,
+				8AC8DF476C5DFD0B53C6348E3D906D2B /* UILabel+Bond.swift */,
+				CF99CB6F786D7B28F94840F5F3281494 /* UINavigationBar+Bond.swift */,
+				4829909806E9A7EA3D4A9EDFC3034CC0 /* UINavigationItem+Bond.swift */,
+				876C95800ED0E64E51A470275FF5AF3C /* UIProgressView+Bond.swift */,
+				3E47C8625A2866DD2F46710754BE3500 /* UIRefreshControl+Bond.swift */,
+				7AD51D0A0C983B27C107748D8B42DBB1 /* UISegmentedControl+Bond.swift */,
+				F4D280E6927AADBFDD8959C97AC3BD84 /* UISlider+Bond.swift */,
+				B125D20813E86DF443C09267FF11AF48 /* UISwitch+Bond.swift */,
+				FBFD2150223E12510327A0CE02FA6023 /* UITableView+Bond.swift */,
+				3A1348433F6F396896B0AF5080B58F1C /* UITextField+Bond.swift */,
+				20663C6327918A46764E3A83DB723253 /* UITextView+Bond.swift */,
+				FCC1C13708FF46E64772FB8040616CC9 /* UIView+Bond.swift */,
+				4A341701C2771E5FE90E79B48883C539 /* Support Files */,
 			);
 			path = Bond;
 			sourceTree = "<group>";
 		};
-		F74205C73C0D927C14FE769B825AC5BB /* MBCircularProgressBar */ = {
+		8E5A1BCEDD074D878320655DBB4E2F21 /* IGLDropDownMenu */ = {
 			isa = PBXGroup;
 			children = (
-				CDDAEBEFBB931CF96A665DFFF183C051 /* MBCircularProgressBarLayer.h */,
-				082230673E3C7D48539A46DCF18A02F0 /* MBCircularProgressBarLayer.m */,
-				4447059775F99D639CFE26C50C7057EA /* MBCircularProgressBarView.h */,
-				EBE7058FE10A45B2B3A7F5D4942D2104 /* MBCircularProgressBarView.m */,
-				07B14FB2B1818F2A8148BB872AB89262 /* Support Files */,
+				E33A93294EF3D710F4F1CEF5F52D40F0 /* IGLDropDownItem.h */,
+				05A5CA177A56AFBB111CDA3D1C11FB3B /* IGLDropDownItem.m */,
+				EEDED419016BACFC4781D6EC2EA6352C /* IGLDropDownMenu.h */,
+				68C979399891EDBD2F66A65F5CB1C919 /* IGLDropDownMenu.m */,
+				74505132D37AC31418AA9903A254A18D /* Support Files */,
 			);
-			path = MBCircularProgressBar;
+			path = IGLDropDownMenu;
+			sourceTree = "<group>";
+		};
+		90B8C73DEFB17F7BD510C06E1D8C3293 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				9B2F3842DE5C020D3FB801AB78429E20 /* Info.plist */,
+				431E94ED810435C7CD9CF8615E596490 /* MBCircularProgressBar.modulemap */,
+				ABA5938DC60F6596EEBDA9A5332461F1 /* MBCircularProgressBar.xcconfig */,
+				9A960B8C26BD87ED9DF29D46632F96AD /* MBCircularProgressBar-dummy.m */,
+				00318A665F1C1D0A7E0F2ABCB8A47A2B /* MBCircularProgressBar-prefix.pch */,
+				2FACC6A47BF0B003544023FD5D0E74A4 /* MBCircularProgressBar-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBCircularProgressBar";
 			sourceTree = "<group>";
 		};
 		FF2AEA74965EED5FE2760906784C788C /* iOS */ = {
@@ -443,6 +612,36 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		81B5E3F67AFFB89402842F4F852764B6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8E9D8B50A6779E4B0E32BE78B2BB4FF /* BinaryDistance.h in Headers */,
+				7A3D08E425E6FD71DBC19F38187E6CF7 /* ColMajorCell.h in Headers */,
+				AD938C4AB1DEC7567FB61259A5085E63 /* CostMatrix.h in Headers */,
+				662E8AB07CDD482F76B106FE5D7402B6 /* DTW.h in Headers */,
+				B03C3381077AFC7674053A7AB878A06E /* EuclideanDistance.h in Headers */,
+				82336FA5B4A6B1DED7C945C58AE75034 /* ExpandedResWindow.h in Headers */,
+				B1686D9D863087FB2D24B79D3FCE71BD /* FastDTW-x-umbrella.h in Headers */,
+				ABEB5958117A03C209EAB0B1A423AF22 /* FastDTW.h in Headers */,
+				BE69A05E11332D3F4B0C5C619E0FE587 /* FDAssert.h in Headers */,
+				CD4B74D402350E6B2743E1DA27E6DA69 /* FDMath.h in Headers */,
+				79B119FCF3073136B7434ADBFF849AC9 /* Foundation.h in Headers */,
+				AD29268DFA8F6B3193139F1FE6A306FE /* FullWindow.h in Headers */,
+				7DD4C78FC85EDD8669C3B31D5781D408 /* JavaTypes.h in Headers */,
+				D78CDBBB69F650BB9C4573FF69AC492B /* LinearWindow.h in Headers */,
+				25FE4BE50DD391B8AE885A3DD663B97C /* ManhattanDistance.h in Headers */,
+				F227D78EAE58571E3E9C9EDA10991AA6 /* MemoryResidentMatrix.h in Headers */,
+				881E88C878159703CE7BB01D9D688B72 /* PAA.h in Headers */,
+				CC46E2B94B84A1F90C70B4739F5F3CE9 /* PartialWindowMatrix.h in Headers */,
+				9BB906BFA51CC470B4ED224CD62B0FEF /* SearchWindow.h in Headers */,
+				C72F73ADA999C1C9294E189DB0845420 /* TimeSeries.h in Headers */,
+				F52E6D34F54C15F785967ABD66D0E53C /* TimeSeriesPoint.h in Headers */,
+				5ECB56536B00578686F92581B4C9CA45 /* TimeWarpInfo.h in Headers */,
+				C98F262E10F460EB5B0986987520FA49 /* WarpPath.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		A3DE35D220D12B4864312E4098900C25 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -452,11 +651,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C05F512BDCD0ACDF03A00DC46873569B /* Headers */ = {
+		ACF905B3FE711686453ACC5A98A5A99B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A49D14DE7493B873F5B16A1BE91A6855 /* Pods-GymBuddy-umbrella.h in Headers */,
+				F873369BEB1E2E8069B14579F4F88E56 /* Pods-GymBuddy-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -473,6 +672,44 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		2FAAC008910DC3FF9401662FB686E2F9 /* FastDTW-x */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ED98CCEF8BB40AC868265A6AA566A0A8 /* Build configuration list for PBXNativeTarget "FastDTW-x" */;
+			buildPhases = (
+				164157F3200DFBD7E7BA115817224F80 /* Sources */,
+				7441E1DD43C06BB7999B450D44465FEB /* Frameworks */,
+				81B5E3F67AFFB89402842F4F852764B6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "FastDTW-x";
+			productName = "FastDTW-x";
+			productReference = BC64E6124454FC5C54EBC3F90C054C59 /* FastDTW_x.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4634B76C9DBD38AE6FD62C4D51463475 /* Pods-GymBuddy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 73DC8996E9F10ED98D323B6E3BA5853F /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */;
+			buildPhases = (
+				63754535091BC3E770DC6D27028D14BA /* Sources */,
+				AAC7FAA68E48CE08114A0C29B4277E22 /* Frameworks */,
+				ACF905B3FE711686453ACC5A98A5A99B /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9498BE1790898A23432A30FC7F0F5032 /* PBXTargetDependency */,
+				D9D53D783EB3EB03C7AD7B52DC53857D /* PBXTargetDependency */,
+				781CBCD66D82A59F211B9DA667F8B773 /* PBXTargetDependency */,
+				4A28139796B1E9BB044A832713EA69DF /* PBXTargetDependency */,
+			);
+			name = "Pods-GymBuddy";
+			productName = "Pods-GymBuddy";
+			productReference = 0375FECFD07333E3B122B17534947300 /* Pods_GymBuddy.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CD11BE46F279134F35997A7780A531BA /* Build configuration list for PBXNativeTarget "IGLDropDownMenu" */;
@@ -487,7 +724,7 @@
 			);
 			name = IGLDropDownMenu;
 			productName = IGLDropDownMenu;
-			productReference = 39A024D4320E8586D67B922177816353 /* IGLDropDownMenu.framework */;
+			productReference = 2714CF078330CDD259EE57EA01F481BD /* IGLDropDownMenu.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		80076C510C29F960587E43C0597ECBD5 /* Bond */ = {
@@ -504,7 +741,7 @@
 			);
 			name = Bond;
 			productName = Bond;
-			productReference = A8EAF960A8B475E77913BC1C0A3289BF /* Bond.framework */;
+			productReference = 767E2A533F34EE0B4BD59ECE9282FDA8 /* Bond.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		860A9179BCFD9F1C616D8653DB2B4F91 /* MBCircularProgressBar */ = {
@@ -523,7 +760,7 @@
 			);
 			name = MBCircularProgressBar;
 			productName = MBCircularProgressBar;
-			productReference = F2733EFB6CF090DA9D79153BD954CD03 /* MBCircularProgressBar.framework */;
+			productReference = 368F7B831A716FEE115448F82E909252 /* MBCircularProgressBar.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		8FC4B2785BB68892651401B8A26A15AD /* MBCircularProgressBar-MBCircularProgressBar */ = {
@@ -540,28 +777,8 @@
 			);
 			name = "MBCircularProgressBar-MBCircularProgressBar";
 			productName = "MBCircularProgressBar-MBCircularProgressBar";
-			productReference = 2E8AAC8F9E75E796C97E761FEC11F06A /* MBCircularProgressBar.bundle */;
+			productReference = ACC48B9A426A3A7AAC9BF72546ADCF00 /* MBCircularProgressBar.bundle */;
 			productType = "com.apple.product-type.bundle";
-		};
-		9F4D8C424B9C2F553E98A5BA030F717F /* Pods-GymBuddy */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C1770A0D7A2B1C37B3908524003E995E /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */;
-			buildPhases = (
-				31E1FB910329E179AB3A90D3A8910DE1 /* Sources */,
-				22A8BABB37BC950074C5E6E673358D48 /* Frameworks */,
-				C05F512BDCD0ACDF03A00DC46873569B /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				055B853E2C6569A29E685FB16339F674 /* PBXTargetDependency */,
-				233FC595821B16B03361CD64464AD49D /* PBXTargetDependency */,
-				4DCBA361B403875DACF069066170D169 /* PBXTargetDependency */,
-			);
-			name = "Pods-GymBuddy";
-			productName = "Pods-GymBuddy";
-			productReference = BFFBA0DF60051488878E8D45875CCFD0 /* Pods_GymBuddy.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -580,15 +797,16 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = C375A28703D65DF1DAC5071842E9E5B2 /* Products */;
+			productRefGroup = 7BDD1A652A387DB86357A21392B6C86B /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				80076C510C29F960587E43C0597ECBD5 /* Bond */,
+				2FAAC008910DC3FF9401662FB686E2F9 /* FastDTW-x */,
 				5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */,
 				860A9179BCFD9F1C616D8653DB2B4F91 /* MBCircularProgressBar */,
 				8FC4B2785BB68892651401B8A26A15AD /* MBCircularProgressBar-MBCircularProgressBar */,
-				9F4D8C424B9C2F553E98A5BA030F717F /* Pods-GymBuddy */,
+				4634B76C9DBD38AE6FD62C4D51463475 /* Pods-GymBuddy */,
 			);
 		};
 /* End PBXProject section */
@@ -622,11 +840,29 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		31E1FB910329E179AB3A90D3A8910DE1 /* Sources */ = {
+		164157F3200DFBD7E7BA115817224F80 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF8B4ABD99134A1353BBC6F096B3781E /* Pods-GymBuddy-dummy.m in Sources */,
+				A66D5FA88D499F5C3D3B480C10D5D8A2 /* BinaryDistance.cpp in Sources */,
+				81CAEE0262BAC6FAE7B4DC263272C059 /* ColMajorCell.cpp in Sources */,
+				F5DC153D4A5E12CC848BE7E699A09FAB /* CostMatrix.cpp in Sources */,
+				FDE6CEF2D1DD3A94CA46F6501552F25F /* DTW.cpp in Sources */,
+				6C2732C7A2046C6B9550A302FA451C2E /* EuclideanDistance.cpp in Sources */,
+				DEA3FC0A2B5FBC71A82161C681CAE228 /* ExpandedResWindow.cpp in Sources */,
+				4E363CF802D3B7085FF55013AEC365BF /* FastDTW-x-dummy.m in Sources */,
+				0E4D550F0CC10A977A04FE98684E4525 /* FastDTW.cpp in Sources */,
+				5F6B9E5D267E335EF7711E3A34158785 /* FullWindow.cpp in Sources */,
+				ACF760EDF629D7EB6E794FB146228060 /* LinearWindow.cpp in Sources */,
+				5122E71E905BDCAFB00CCD7775B1FE0B /* ManhattanDistance.cpp in Sources */,
+				F6468353277AA7F153C956C196C2DFFE /* MemoryResidentMatrix.cpp in Sources */,
+				DAFAC4B83DA234162683A5207F0300D7 /* PAA.cpp in Sources */,
+				E2DD01E0818EC4FFCE2FBA18CE396EAC /* PartialWindowMatrix.cpp in Sources */,
+				115896E8318855FB53E589A38D9F6D9E /* SearchWindow.cpp in Sources */,
+				4ED9E5441C60A6F0586903203BAB8336 /* TimeSeries.cpp in Sources */,
+				E0273D4282FA76CF3AE3C3D0C2B12C27 /* TimeSeriesPoint.cpp in Sources */,
+				4E85FB313C81D326E4E3FA412F6396B7 /* TimeWarpInfo.cpp in Sources */,
+				81C663821BEEBFF1356C5AEB5B1C0630 /* WarpPath.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -637,6 +873,14 @@
 				9C63DAD099DD1F653B71AE03C0720AB3 /* IGLDropDownItem.m in Sources */,
 				F4F40FA5A473271E12127E0DF2A63881 /* IGLDropDownMenu-dummy.m in Sources */,
 				11DE4F2986BD9AED729A57E4159A2F66 /* IGLDropDownMenu.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63754535091BC3E770DC6D27028D14BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF9FD77D4476D40BE658A2EC5F9E988E /* Pods-GymBuddy-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -698,23 +942,17 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		055B853E2C6569A29E685FB16339F674 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Bond;
-			target = 80076C510C29F960587E43C0597ECBD5 /* Bond */;
-			targetProxy = 1588A79ACC8BA6EC8622F1786CC77919 /* PBXContainerItemProxy */;
-		};
-		233FC595821B16B03361CD64464AD49D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = IGLDropDownMenu;
-			target = 5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */;
-			targetProxy = 2D562E84AD3E3BBE38E050B6F047B38A /* PBXContainerItemProxy */;
-		};
-		4DCBA361B403875DACF069066170D169 /* PBXTargetDependency */ = {
+		4A28139796B1E9BB044A832713EA69DF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = MBCircularProgressBar;
 			target = 860A9179BCFD9F1C616D8653DB2B4F91 /* MBCircularProgressBar */;
-			targetProxy = 627570EDCA5D5103EF2D10A9ADE02FBB /* PBXContainerItemProxy */;
+			targetProxy = C41FFEFA0F04E07F75DC0B4B235FDD36 /* PBXContainerItemProxy */;
+		};
+		781CBCD66D82A59F211B9DA667F8B773 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = IGLDropDownMenu;
+			target = 5D38700903AE3E9C8224AE34BD3B2DC6 /* IGLDropDownMenu */;
+			targetProxy = 0A4E8ABA9CDE0E5B0A2E5CD942BB927A /* PBXContainerItemProxy */;
 		};
 		91C55659061E9F3551A2E1576571AA74 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -722,12 +960,24 @@
 			target = 8FC4B2785BB68892651401B8A26A15AD /* MBCircularProgressBar-MBCircularProgressBar */;
 			targetProxy = EBC59F00882F35808CD4B15930E9008E /* PBXContainerItemProxy */;
 		};
+		9498BE1790898A23432A30FC7F0F5032 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Bond;
+			target = 80076C510C29F960587E43C0597ECBD5 /* Bond */;
+			targetProxy = DA1B0CF30620DCDD42C5683405CB200E /* PBXContainerItemProxy */;
+		};
+		D9D53D783EB3EB03C7AD7B52DC53857D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "FastDTW-x";
+			target = 2FAAC008910DC3FF9401662FB686E2F9 /* FastDTW-x */;
+			targetProxy = 81027043C6456B74AFC00D586AE225CB /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		15866B7067557FBD315953760BA8B3D5 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2EE0C845F5A3E7EE3EB736658517C4A /* Bond.xcconfig */;
+			baseConfigurationReference = 17B1E421A2584C2978D826F1099A19DF /* Bond.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -752,9 +1002,40 @@
 			};
 			name = Release;
 		};
+		1AEFECD2EED017B8E7768FF5AEFCA04D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GymBuddy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		2455F15BB7F638D41BDA225B723E1AED /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DDF4BED97E90684666CF759143CDD43 /* MBCircularProgressBar.xcconfig */;
+			baseConfigurationReference = ABA5938DC60F6596EEBDA9A5332461F1 /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -779,9 +1060,39 @@
 			};
 			name = Debug;
 		};
+		496C5FAE3F705AD70F68084D31E125C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-GymBuddy/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = Pods_GymBuddy;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		518D7EEFEAC1F765E4F483F7B1B125A4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DE887371C8A04BAF1A9BD65DC88A658 /* IGLDropDownMenu.xcconfig */;
+			baseConfigurationReference = A566DC2E4D663B3F06B9E9AFD5075469 /* IGLDropDownMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -808,7 +1119,7 @@
 		};
 		6A3FCA7ECB0DF14216ECAA345C5CDF67 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DDF4BED97E90684666CF759143CDD43 /* MBCircularProgressBar.xcconfig */;
+			baseConfigurationReference = ABA5938DC60F6596EEBDA9A5332461F1 /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = MBCircularProgressBar;
@@ -817,6 +1128,33 @@
 				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
+		};
+		73062FB7336175828E79E84980A3D2C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 964ADD6271264C8B17138C6A68519D66 /* FastDTW-x.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/FastDTW-x/FastDTW-x-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FastDTW-x/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/FastDTW-x/FastDTW-x.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = FastDTW_x;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
 		};
 		8D1534490D941DCA47C62AC4314182AF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -857,39 +1195,9 @@
 			};
 			name = Debug;
 		};
-		95E24F92F9B0FFE8B6BD09A5F232D9E0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7E228FE65C9D58D06BA42502E5E456CA /* Pods-GymBuddy.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GymBuddy/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_GymBuddy;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		96F63023BBAC0B57A4CB815AF17FA623 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C2EE0C845F5A3E7EE3EB736658517C4A /* Bond.xcconfig */;
+			baseConfigurationReference = 17B1E421A2584C2978D826F1099A19DF /* Bond.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -917,7 +1225,7 @@
 		};
 		A4AB4D0F954941052ADE779B709BF51D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DDF4BED97E90684666CF759143CDD43 /* MBCircularProgressBar.xcconfig */;
+			baseConfigurationReference = ABA5938DC60F6596EEBDA9A5332461F1 /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = MBCircularProgressBar;
@@ -927,9 +1235,9 @@
 			};
 			name = Debug;
 		};
-		ADB6963D939A86D8436CC18360CF9156 /* Debug */ = {
+		AD6F8DC001497FD286927253F4F6DC21 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6714671234B95ADD0687834A12ACEC09 /* Pods-GymBuddy.debug.xcconfig */;
+			baseConfigurationReference = 964ADD6271264C8B17138C6A68519D66 /* FastDTW-x.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -938,25 +1246,21 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-GymBuddy/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/FastDTW-x/FastDTW-x-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FastDTW-x/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-GymBuddy/Pods-GymBuddy.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_GymBuddy;
+				MODULEMAP_FILE = "Target Support Files/FastDTW-x/FastDTW-x.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = FastDTW_x;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		C5A18280E9321A9268D1C80B7DA43967 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -994,7 +1298,7 @@
 		};
 		D9D9E60514E6EF1C8241D05D75E31156 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DDF4BED97E90684666CF759143CDD43 /* MBCircularProgressBar.xcconfig */;
+			baseConfigurationReference = ABA5938DC60F6596EEBDA9A5332461F1 /* MBCircularProgressBar.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1021,7 +1325,7 @@
 		};
 		E68A62AC290B8691FBFC64A9F7E2E888 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0DE887371C8A04BAF1A9BD65DC88A658 /* IGLDropDownMenu.xcconfig */;
+			baseConfigurationReference = A566DC2E4D663B3F06B9E9AFD5075469 /* IGLDropDownMenu.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -1067,20 +1371,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		73DC8996E9F10ED98D323B6E3BA5853F /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1AEFECD2EED017B8E7768FF5AEFCA04D /* Debug */,
+				496C5FAE3F705AD70F68084D31E125C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		9292B5CEC4480FF9860A000BCCC4EA9D /* Build configuration list for PBXNativeTarget "MBCircularProgressBar" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2455F15BB7F638D41BDA225B723E1AED /* Debug */,
 				D9D9E60514E6EF1C8241D05D75E31156 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C1770A0D7A2B1C37B3908524003E995E /* Build configuration list for PBXNativeTarget "Pods-GymBuddy" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADB6963D939A86D8436CC18360CF9156 /* Debug */,
-				95E24F92F9B0FFE8B6BD09A5F232D9E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -1099,6 +1403,15 @@
 			buildConfigurations = (
 				A4AB4D0F954941052ADE779B709BF51D /* Debug */,
 				6A3FCA7ECB0DF14216ECAA345C5CDF67 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ED98CCEF8BB40AC868265A6AA566A0A8 /* Build configuration list for PBXNativeTarget "FastDTW-x" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				73062FB7336175828E79E84980A3D2C7 /* Debug */,
+				AD6F8DC001497FD286927253F4F6DC21 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
