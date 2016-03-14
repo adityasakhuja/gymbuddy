@@ -35,7 +35,7 @@ extension Array {
     }
 }
 
-var status = Status(fatigue: 1, reps: 0, speed: 0, correctness: 100, weight: 3, exercise: 0, setLimit: 3, repLimit: 15)
+var status = Status(fatigue: 1, reps: 0, speed: 0, correctness: 100, weight: 3, exercise: 0, repLimit: 15, setLimit: 3)
 var rest = Rest(time: 0, reps: 10)
 var emgDataGlobal: [[Double]] = []
 var accXGlobal: [Double] = []

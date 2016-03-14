@@ -27,7 +27,7 @@ class WeightViewController: UIViewController {
         var setCount = status.setLimit.value
         var exerciseIndex = status.exercise.value
         var exerciseSelected = exercises[exerciseIndex]
-        exerciseInstructions = "Let's start with " + repsCount + " reps of " + exerciseSelected + " for a total of " + setCount + " sets."
+        exerciseInstructions.text = "Let's start with \(repsCount) reps of  \(exerciseSelected) for a total of \(setCount)  sets."
     }
     
     

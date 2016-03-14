@@ -76,6 +76,9 @@ class StatusViewController: UIViewController {
             // Reset timer
             timer = 0
             
+            //Reset reps
+            status.reps.value = 0
+            
             // Update system state
             resting = false
         }
@@ -154,7 +157,7 @@ class StatusViewController: UIViewController {
         }
         
         status.reps
-            .map {"\($0) Reps"}
+            .map {"\(status.repLimit.value-$0) Reps left"}
             .bindTo(repsLabel.bnd_text)
         
         status.speed.observe { value in
