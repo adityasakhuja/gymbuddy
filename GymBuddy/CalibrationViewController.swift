@@ -11,7 +11,7 @@ import Bond
 
 class CalibrationViewController: UIViewController {
     
-    var orientation: [[Double]] = []
+    var orientation: [TLMQuaternion] = []
     var currentPose: TLMPose!
     
     @IBOutlet weak var topLabel: UILabel!
@@ -48,14 +48,8 @@ class CalibrationViewController: UIViewController {
         let eventData = notification.userInfo as! Dictionary<NSString, TLMOrientationEvent>
         let orientationEvent = eventData[kTLMKeyOrientationEvent]!
         
-        let angles = TLMEulerAngles(quaternion: orientationEvent.quaternion)
-        
-        let pitch = CGFloat(angles.pitch.radians)
-        let yaw = CGFloat(angles.yaw.radians)
-        let roll = CGFloat(angles.roll.radians)
-        
-        // Append global orientation array
-        orientation.append([Double(pitch), Double(yaw), Double(roll)])
+        // Append local orientation array
+        orientation.append(orientationEvent.quaternion)
     }
     
     func didChangePose(notification: NSNotification) {
@@ -66,7 +60,7 @@ class CalibrationViewController: UIViewController {
             
             switch (currentPose.type) {
             case .Fist:
-                centerGlobal = orientation.last!
+                centerGlobal = TLMQuaternionInvert(orientation.last!)
                 let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
                 let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ProfileViewController") as UIViewController
                 let window = UIApplication.sharedApplication().windows[0] as UIWindow;

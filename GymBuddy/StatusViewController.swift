@@ -81,6 +81,21 @@ class StatusViewController: UIViewController {
         }
         else
         {
+//            // Print center value
+//            print("CENTER VALUE:")
+//            NSLog("%@", centerGlobal)
+//            // Print the first unadjusted orientation
+//            print("First orientation:")
+//            NSLog("%@", orientationGlobal[0])
+//            // Adjust orientation array
+            var orientationNew: [Float] = []
+            for orientation in orientationGlobal
+            {
+                orientationNew.append(orientation.w)
+            }
+            // Print new orientation array
+            NSLog("%@", orientationNew)
+            
             // Initialise RestController
             let _ = RestController()
             
@@ -274,22 +289,25 @@ class StatusViewController: UIViewController {
     }
     
     func didRecieveOrientationEvent(notification: NSNotification) {
-        let eventData = notification.userInfo as! Dictionary<NSString, TLMOrientationEvent>
-        let orientationEvent = eventData[kTLMKeyOrientationEvent]!
-        
-        let angles = TLMEulerAngles(quaternion: orientationEvent.quaternion)
-        
-        let pitch = CGFloat(angles.pitch.radians)
-        let yaw = CGFloat(angles.yaw.radians)
-        let roll = CGFloat(angles.roll.radians)
-        
-        // Append global orientation array
-        orientationGlobal.append([Double(pitch), Double(yaw), Double(roll)])
-        
-        let rotationAndPerspectiveTransform:CATransform3D = CATransform3DConcat(CATransform3DConcat(CATransform3DRotate (CATransform3DIdentity, pitch, -1.0, 0.0, 0.0), CATransform3DRotate(CATransform3DIdentity, yaw, 0.0, 1.0, 0.0)), CATransform3DRotate(CATransform3DIdentity, roll, 0.0, 0.0, -1.0))
-        
-        // Apply the rotation and perspective transform to helloLabel.
-        helloLabel.layer.transform = rotationAndPerspectiveTransform
+        if !resting
+        {
+            let eventData = notification.userInfo as! Dictionary<NSString, TLMOrientationEvent>
+            let orientationEvent = eventData[kTLMKeyOrientationEvent]!
+            
+            let angles = TLMEulerAngles(quaternion: orientationEvent.quaternion)
+            
+            let pitch = CGFloat(angles.pitch.radians)
+            let yaw = CGFloat(angles.yaw.radians)
+            let roll = CGFloat(angles.roll.radians)
+            
+            // Append global orientation array
+            orientationGlobal.append(TLMQuaternionMultiply(orientationEvent.quaternion, centerGlobal))
+            
+            let rotationAndPerspectiveTransform:CATransform3D = CATransform3DConcat(CATransform3DConcat(CATransform3DRotate (CATransform3DIdentity, pitch, -1.0, 0.0, 0.0), CATransform3DRotate(CATransform3DIdentity, yaw, 0.0, 1.0, 0.0)), CATransform3DRotate(CATransform3DIdentity, roll, 0.0, 0.0, -1.0))
+            
+            // Apply the rotation and perspective transform to helloLabel.
+            helloLabel.layer.transform = rotationAndPerspectiveTransform
+        }
     }
     
     func timerDidFire()

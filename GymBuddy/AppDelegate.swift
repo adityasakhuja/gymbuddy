@@ -42,8 +42,8 @@ var accXGlobal: [Double] = []
 var accYGlobal: [Double] = []
 var accZGlobal: [Double] = []
 var fatigueGlobal: [Int] = []
-var orientationGlobal: [[Double]] = []
-var centerGlobal: [Double] = []
+var orientationGlobal: [TLMQuaternion] = []
+var centerGlobal: TLMQuaternion = TLMQuaternion()
 var syncedGlobal = false
 
 func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]

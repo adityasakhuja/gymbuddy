@@ -19,10 +19,16 @@ class RestController: NSObject {
     
     func calculateNextReps()
     {
-        let fatigues = fatigueGlobal// Get previous fatigues array [Int]
+        var fatigues = fatigueGlobal// Get previous fatigues array [Int]
         let repsPrev = status.reps.value// Get previous reps
         let weightPrev = status.weight.value// Get previous weight
         let restPrev = rest.time.value
+        
+        // Failsafe for when fatigueGlobal is empty
+        if fatigues.isEmpty
+        {
+            fatigues = [3]
+        }
         
         print("input: fatigues: \(fatigues),\t reps: \(repsPrev),\t Weight: \(weightPrev),\t rest: \(restPrev)")
         
