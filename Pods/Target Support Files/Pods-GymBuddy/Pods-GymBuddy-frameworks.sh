@@ -88,10 +88,12 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-GymBuddy/FastDTW_x.framework"
   install_framework "Pods-GymBuddy/IGLDropDownMenu.framework"
   install_framework "Pods-GymBuddy/MBCircularProgressBar.framework"
+  install_framework "Pods-GymBuddy/SwiftGifOrigin.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-GymBuddy/Bond.framework"
   install_framework "Pods-GymBuddy/FastDTW_x.framework"
   install_framework "Pods-GymBuddy/IGLDropDownMenu.framework"
   install_framework "Pods-GymBuddy/MBCircularProgressBar.framework"
+  install_framework "Pods-GymBuddy/SwiftGifOrigin.framework"
 fi

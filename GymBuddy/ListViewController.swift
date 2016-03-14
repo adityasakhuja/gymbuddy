@@ -40,4 +40,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
         window.rootViewController = vc;
         
     }
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
+    }
 }

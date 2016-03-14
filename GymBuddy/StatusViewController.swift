@@ -130,7 +130,7 @@ class StatusViewController: UIViewController {
             nextSetLabel.hidden = false
             
             // Change the Button
-            endButton.backgroundColor = UIColor.blueColor()
+            endButton.backgroundColor = UIColor.blackColor()
             endButton.setTitle("Continue", forState: .Normal)
             
             // Update system state
@@ -373,5 +373,8 @@ class StatusViewController: UIViewController {
             timerLabel.text = "00:00"
             timerLabel.textColor = UIColor.redColor()
         }
+    }
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
     }
 }

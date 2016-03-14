@@ -8,5 +8,6 @@ target 'GymBuddy' do
     pod 'Bond'
     pod 'MBCircularProgressBar'
     pod 'FastDTW-x'
+    pod 'SwiftGifOrigin', '~> 1.5'
 end
 

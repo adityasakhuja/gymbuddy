@@ -118,5 +118,7 @@ class ProfileViewController: UIViewController, IGLDropDownMenuDelegate {
         view.removeGestureRecognizer(tap)
     }
     
-    
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
+    }
 }

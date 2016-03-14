@@ -3,17 +3,20 @@ PODS:
   - FastDTW-x (0.3.2)
   - IGLDropDownMenu (1.5.0)
   - MBCircularProgressBar (0.3.4)
+  - SwiftGifOrigin (1.5.2)
 
 DEPENDENCIES:
   - Bond
   - FastDTW-x
   - IGLDropDownMenu
   - MBCircularProgressBar
+  - SwiftGifOrigin (~> 1.5)
 
 SPEC CHECKSUMS:
   Bond: ebe2364b18130690083cbceff036420b21494ae4
   FastDTW-x: ee9853deea47af52e9c7652aeec315b2c99e96cf
   IGLDropDownMenu: 1ce06c17b4846f784e2b610f90bd741ab2037f2c
   MBCircularProgressBar: ff3b8e2f441214d9ee122a24ba0d4d00cc7de881
+  SwiftGifOrigin: a7671a6a68a2769e118c7da5bcc7c480798907b5
 
 COCOAPODS: 0.39.0

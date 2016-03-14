@@ -29,6 +29,8 @@
 		A5DC27631C936CE7000793A6 /* RestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27621C936CE7000793A6 /* RestController.swift */; };
 		A5DC27671C947B6F000793A6 /* WeightViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27661C947B6F000793A6 /* WeightViewController.swift */; };
 		A5DC27691C949294000793A6 /* CalibrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27681C949294000793A6 /* CalibrationViewController.swift */; };
+		F252D01B1C971C470013418E /* sync.gif in Resources */ = {isa = PBXBuildFile; fileRef = F252D01A1C971C470013418E /* sync.gif */; };
+		F252D01D1C97390E0013418E /* callibrate.gif in Resources */ = {isa = PBXBuildFile; fileRef = F252D01C1C97390E0013418E /* callibrate.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +61,8 @@
 		A5DC27661C947B6F000793A6 /* WeightViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeightViewController.swift; sourceTree = "<group>"; };
 		A5DC27681C949294000793A6 /* CalibrationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalibrationViewController.swift; sourceTree = "<group>"; };
 		B66B6C827A10F3EADB24E26A /* Pods_GymBuddy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GymBuddy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F252D01A1C971C470013418E /* sync.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = sync.gif; path = Images/sync.gif; sourceTree = "<group>"; };
+		F252D01C1C97390E0013418E /* callibrate.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = callibrate.gif; path = Images/callibrate.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 		A50B186E1C9044D600ADD607 = {
 			isa = PBXGroup;
 			children = (
+				F252D01C1C97390E0013418E /* callibrate.gif */,
+				F252D01A1C971C470013418E /* sync.gif */,
 				A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */,
 				A50B18991C9058AA00ADD607 /* CoreBluetooth.framework */,
 				A50B188F1C90486E00ADD607 /* MyoKit.framework */,
@@ -176,7 +182,7 @@
 				TargetAttributes = {
 					A50B18761C9044D600ADD607 = {
 						CreatedOnToolsVersion = 7.2;
-						DevelopmentTeam = 7GV329N359;
+						DevelopmentTeam = BTN4ZN8MMQ;
 					};
 				};
 			};
@@ -203,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F252D01D1C97390E0013418E /* callibrate.gif in Resources */,
+				F252D01B1C971C470013418E /* sync.gif in Resources */,
 				A50B18881C9044D600ADD607 /* LaunchScreen.storyboard in Resources */,
 				A50B18851C9044D600ADD607 /* Assets.xcassets in Resources */,
 				A50B18801C9044D600ADD607 /* Main.storyboard in Resources */,
@@ -400,7 +408,7 @@
 				);
 				INFOPLIST_FILE = GymBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DT.GymBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = DT.GymBuddy1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GymBuddy/GymBuddy-Bridging-Header.h";
@@ -423,7 +431,7 @@
 				);
 				INFOPLIST_FILE = GymBuddy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = DT.GymBuddy;
+				PRODUCT_BUNDLE_IDENTIFIER = DT.GymBuddy1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "GymBuddy/GymBuddy-Bridging-Header.h";

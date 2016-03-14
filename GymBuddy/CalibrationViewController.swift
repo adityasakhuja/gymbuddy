@@ -8,6 +8,7 @@
 
 import Foundation
 import Bond
+import SwiftGifOrigin
 
 class CalibrationViewController: UIViewController {
     
@@ -16,6 +17,7 @@ class CalibrationViewController: UIViewController {
     
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var middleLabel: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,12 +33,22 @@ class CalibrationViewController: UIViewController {
         // Posted whenever Myo loses its calibration (when Myo is taken off, or moved enough on the user's arm)
         notifer.addObserver(self, selector: "didLoseArm:", name: TLMMyoDidReceiveArmUnsyncEventNotification, object: nil)
         TLMHub.sharedHub().lockingPolicy = .None
+
+        var syncGif: UIImage!
         
         if syncedGlobal
         {
             topLabel.text = "Your Myo is now synced!"
             middleLabel.text = "Now you need to calibrate your Myo. To do this, follow the graphic below:"
+            syncGif = UIImage.gifWithName("callibrate")
         }
+        else {
+            syncGif = UIImage.gifWithName("sync")
+        }
+        
+        let gesture = UIImageView(image: syncGif)
+        self.view.addSubview(gesture)
+        gesture.frame = CGRectMake(self.view.frame.size.width/2 - 150, self.view.frame.size.height/2 , 300, 300)
         
     }
     
@@ -80,5 +92,8 @@ class CalibrationViewController: UIViewController {
         topLabel.text = "Your Myo is now unsynced! =("
         middleLabel.text = "You need to sync your Myo again. To do this, follow the graphic below:"
         syncedGlobal = false
+    }
+    override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {
+        return UIInterfaceOrientationMask.Portrait
     }
 }
