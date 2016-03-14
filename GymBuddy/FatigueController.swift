@@ -11,12 +11,21 @@ import Foundation
 class FatigueController: NSObject {
     
     var meanFs: [Double] = []
+    var timerMain = NSTimer()
     var timerFreq = NSTimer()
     var timerClass = NSTimer()
     
     override init()
     {
         super.init()
+        
+        // Wait 1 seconds to get enough EMG values
+        timerMain = NSTimer(timeInterval: 0.5, target: self, selector: "begin", userInfo: nil, repeats: false)
+        NSRunLoop.currentRunLoop().addTimer(timerFreq, forMode: NSRunLoopCommonModes)
+    }
+    
+    func begin()
+    {
         // Calculate mean frequency every 0.5 seconds
         timerFreq = NSTimer(timeInterval: 0.5, target: self, selector: "calculateMeanFrequency", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timerFreq, forMode: NSRunLoopCommonModes)

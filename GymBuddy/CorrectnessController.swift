@@ -8,6 +8,11 @@
 
 import Foundation
 
+infix operator ^^ { }
+func ^^ (radix: Int, power: Int) -> Int {
+    return Int(pow(Double(radix), Double(power)))
+}
+
 class CorrectnessController: NSObject {
     
     var timerCount = NSTimer()
@@ -21,6 +26,42 @@ class CorrectnessController: NSObject {
         // Calculate number of reps every 0.5 s
         timerCount = NSTimer(timeInterval: 1, target: self, selector: "calculateRepsNum", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timerCount, forMode: NSRunLoopCommonModes)
+    }
+    
+    func DTW()
+    {
+        let x = [1, 1, 2, 3, 2, 0]
+        let y = [0, 1, 1, 2, 3, 2, 1]
+        var distances = [[Int]](count: y.count, repeatedValue: [Int](count: x.count, repeatedValue: 0))
+        for(var i=0; i<y.count; i++)
+        {
+            for(var j=0; j<x.count; j++)
+            {
+                distances[i][j] = (x[j]-y[i])^^2
+            }
+        }
+        
+        
+        var accumulatedCost = [[Int]](count: y.count, repeatedValue: [Int](count: x.count, repeatedValue: 0))
+        accumulatedCost[0][0] = distances[0][0]
+        
+        for(var i=1; i<x.count; i++)
+        {
+            accumulatedCost[0][i] = distances[0][i] + accumulatedCost[0][i-1]
+        }
+        
+        for(var i=1; i<y.count; i++)
+        {
+            accumulatedCost[i][0] = distances[i][0] + accumulatedCost[i-1][0]
+        }
+        
+        for(var i=1; i<y.count; i++)
+        {
+            for(var j=1; j<x.count; j++)
+            {
+                accumulatedCost[i][j] = min(accumulatedCost[i-1][j-1], accumulatedCost[i-1][j], accumulatedCost[i][j-1]) + distances[i][j]
+            }
+        }
     }
     
     func calculateRepsNum()

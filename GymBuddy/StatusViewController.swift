@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import Bond
 import MBCircularProgressBar
+import CoreData
 
 class StatusViewController: UIViewController {
     
@@ -109,6 +110,36 @@ class StatusViewController: UIViewController {
             }
             // Print new orientation array
             NSLog("%@", orientationNew)
+            
+            // Store data in CoreData
+            var exerciseDatas = [NSManagedObject]()
+            //1
+            let appDelegate =
+            UIApplication.sharedApplication().delegate as! AppDelegate
+            
+            let managedContext = appDelegate.managedObjectContext
+            
+            //2
+            let entity =  NSEntityDescription.entityForName("ExerciseData",
+                inManagedObjectContext:managedContext)
+            
+            let exerciseData = NSManagedObject(entity: entity!,
+                insertIntoManagedObjectContext: managedContext)
+            
+            //3
+            exerciseData.setValue(fatigueGlobal.map {"\($0)"}.joinWithSeparator("-"), forKey: "fatigues")
+            exerciseData.setValue(status.reps.value, forKey: "reps")
+            exerciseData.setValue(status.weight.value, forKey: "weights")
+            exerciseData.setValue(status.exercise.value, forKey: "exercise")
+            
+            //4
+            do {
+                try managedContext.save()
+                //5
+                exerciseDatas.append(exerciseData)
+            } catch let error as NSError  {
+                print("Could not save \(error), \(error.userInfo)")
+            }
             
             // Initialise RestController
             let _ = RestController()
@@ -277,7 +308,7 @@ class StatusViewController: UIViewController {
         let emgData = emgEvent.rawData as! [Double]
         
         // Store EMG data globally
-        emgDataGlobal = shiftPushArray(emgDataGlobal, element: emgData, maxSize: 100)
+        emgDataGlobal = shiftPushArray(emgDataGlobal, element: emgData, maxSize: 128)
         
         emg1.text = "\(Int(emgData[0]))"
         emg2.text = "\(Int(emgData[1]))"
