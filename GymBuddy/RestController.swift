@@ -50,7 +50,50 @@ class RestController: NSObject {
             exerciseHistorical.append((data.valueForKey("exercise") as? Int)!)
         }
         
+        initExercise() // suggest the first exercise of the day
         calculateNextReps()
+    }
+    
+    func initExercise(){
+        //CONSTANTS
+        let maxWeightThreshold = 12
+        let commonReps = 8
+        
+        var ExerFreq: [Int: Int] = [:]
+        var ExerFreqIndex: [Int: String] = [:]
+        var i = 0
+        for b in exerciseHistorical {
+            ExerFreq[b] = (ExerFreq[b] ?? 0) + 1
+            ExerFreqIndex[b] = (ExerFreqIndex[b] ?? "") + String(i) + ","
+            i += 1
+        }
+        
+        let ExerFreq_sorted = ExerFreq.sort({$0.1 > $1.1})
+        var (initExercise, maxFreq) = ExerFreq_sorted[0]
+        var maxHistWeight = 0
+        let temp_s = ExerFreqIndex[initExercise]!
+        let histIndex = temp_s.substringToIndex(temp_s.endIndex.predecessor()).componentsSeparatedByString(",")
+        for i in histIndex{
+            if(maxHistWeight<weightsHistorical[Int(i)!]){
+                maxHistWeight=weightsHistorical[Int(i)!]
+            }
+        }
+        
+        var initWeight = maxHistWeight
+        let indWeight = weightsHistorical.indexOf(initWeight)!
+        let histReps = repsHistorical[indWeight]
+        if(initWeight >= maxWeightThreshold){
+           initWeight = initWeight - 2
+        }else{
+           initWeight = initWeight - 1
+        }
+        var initReps = commonReps
+        if(histReps < commonReps){
+            initReps = histReps
+        }
+        
+        // return value: initWeight, initReps, initExercise
+        print(initWeight,initReps, initExercise)
     }
     
     func calculateNextReps()
