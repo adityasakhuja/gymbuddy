@@ -9,6 +9,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>FastDTW-x.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>IGLDropDownMenu.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,6 +37,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>2FAAC008910DC3FF9401662FB686E2F9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4634B76C9DBD38AE6FD62C4D51463475</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5D38700903AE3E9C8224AE34BD3B2DC6</key>
 		<dict>
 			<key>primary</key>
@@ -48,11 +63,6 @@
 			<true/>
 		</dict>
 		<key>8FC4B2785BB68892651401B8A26A15AD</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>9F4D8C424B9C2F553E98A5BA030F717F</key>
 		<dict>
 			<key>primary</key>
 			<true/>

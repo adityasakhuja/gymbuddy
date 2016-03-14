@@ -7,5 +7,6 @@ target 'GymBuddy' do
 	pod 'IGLDropDownMenu'
     pod 'Bond'
     pod 'MBCircularProgressBar'
+    pod 'FastDTW-x'
 end
 

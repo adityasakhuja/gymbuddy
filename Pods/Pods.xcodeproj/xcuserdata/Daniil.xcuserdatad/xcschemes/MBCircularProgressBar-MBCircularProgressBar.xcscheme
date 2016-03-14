@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '59125FEEE8FE3FDB9BB52F79'
+               BlueprintIdentifier = 'E62C09A05F4CA119B0E31038'
                BlueprintName = 'MBCircularProgressBar-MBCircularProgressBar'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'MBCircularProgressBar.bundle'>

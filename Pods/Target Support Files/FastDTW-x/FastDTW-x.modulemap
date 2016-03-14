@@ -1,0 +1,6 @@
+framework module FastDTW_x {
+  umbrella header "FastDTW-x-umbrella.h"
+
+  export *
+  module * { export * }
+}
