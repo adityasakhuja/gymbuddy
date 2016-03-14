@@ -14,8 +14,10 @@ class ViewController: UIViewController {
     var connected = false
 
     @IBAction func connectButton(sender: AnyObject) {
-        let controller = TLMSettingsViewController.settingsInNavigationController()
-        presentViewController(controller, animated: true, completion: nil)
+        //let controller = TLMSettingsViewController.settingsInNavigationController()
+        //presentViewController(controller, animated: true, completion: nil)
+        print("Looking for MYO.............")
+        TLMHub.sharedHub().attachToAdjacent()
     }
     
     override func viewDidLoad() {
@@ -37,6 +39,10 @@ class ViewController: UIViewController {
         // Show a list of exercises
         print("Connected")
         connected = true
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("CalibrationViewController") as UIViewController
+        let window = UIApplication.sharedApplication().windows[0] as UIWindow;
+        window.rootViewController = vc;
     }
     
     func didDisconnectDevice(notification: NSNotification) {
