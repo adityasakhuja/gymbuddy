@@ -23,13 +23,10 @@ class WeightViewController: UIViewController {
     var exercises: [String] = ["Forearm curl", "Bicep curl", "Bench press"]
     
     @IBAction func instructUser() {
-        var repsCount = status.repLimit.value
-        var setCount = status.setLimit.value
-        var exerciseIndex = status.exercise.value
-        var exerciseSelected = exercises[exerciseIndex]
-        exerciseInstructions.text = "Let's start with \(repsCount) reps of  \(exerciseSelected) for a total of \(setCount)  sets."
+        let exerciseIndex = status.exercise.value
+        let exerciseSelected = exercises[exerciseIndex]
+        exerciseInstructions.text = "Let's start with \(status.repLimit.value) reps of  \(exerciseSelected) for a total of \(status.setLimit.value)  sets."
     }
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

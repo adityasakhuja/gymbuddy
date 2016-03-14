@@ -505,6 +505,12 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Set Count" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsE-Xs-fNh">
+                                <rect key="frame" x="139" y="93" width="136" height="40"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -533,6 +539,7 @@
                         <outlet property="repsLabel" destination="1e3-t9-Ucy" id="Ypa-cg-HhE"/>
                         <outlet property="repsNextLabel" destination="s10-sa-DLQ" id="Xmy-eN-82r"/>
                         <outlet property="restLabel" destination="2hz-iW-5v3" id="feZ-oN-mJw"/>
+                        <outlet property="setLabel" destination="bsE-Xs-fNh" id="7vb-xL-zdP"/>
                         <outlet property="speedLabelC" destination="jaz-fV-GEC" id="NOn-co-9s1"/>
                         <outlet property="speedText" destination="pP2-u6-Vab" id="7J1-7r-iDM"/>
                         <outlet property="timerLabel" destination="VDP-V5-2ea" id="aIK-LR-5TW"/>

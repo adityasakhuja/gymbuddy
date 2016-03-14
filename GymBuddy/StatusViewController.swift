@@ -27,6 +27,7 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var speedLabelC: MBCircularProgressBarView!
     @IBOutlet weak var fatigueLabelC: MBCircularProgressBarView!
     
+    @IBOutlet weak var setLabel: UILabel!
     @IBOutlet weak var endButton: UIButton!
     
     // Resting labels
@@ -57,6 +58,7 @@ class StatusViewController: UIViewController {
             //Show status labels
             fatigueText.hidden = false
             repsLabel.hidden = false
+            setLabel.hidden = false
             correctnessLabel.hidden = false
             correctnessText.hidden = false
             speedText.hidden = false
@@ -79,6 +81,15 @@ class StatusViewController: UIViewController {
             //Reset reps
             status.reps.value = 0
             
+            //Increment set
+            if (status.sets.value < status.setLimit.value) {
+                status.sets.value++
+            } else {
+                status.sets.value = 0
+                let alertController = UIAlertController(title: "Sets Complete", message: "You have successfully completed the required sets for this exercise. Please select the next exercise.", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (alertAction) -> Void in self.pickExercise() }))
+                presentViewController(alertController, animated: true, completion: nil)
+            }
             // Update system state
             resting = false
         }
@@ -105,6 +116,7 @@ class StatusViewController: UIViewController {
             //Hide status labels
             fatigueText.hidden = true
             repsLabel.hidden = true
+            setLabel.hidden = true
             correctnessLabel.hidden = true
             correctnessText.hidden = true
             speedText.hidden = true
@@ -126,6 +138,13 @@ class StatusViewController: UIViewController {
         }
     }
     
+    @IBAction func pickExercise() {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ListViewController") as UIViewController
+        let window = UIApplication.sharedApplication().windows[0] as UIWindow;
+        window.rootViewController = vc;
+
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -159,6 +178,10 @@ class StatusViewController: UIViewController {
         status.reps
             .map {"\(status.repLimit.value-$0) Reps left"}
             .bindTo(repsLabel.bnd_text)
+        
+        status.sets
+            .map {"\($0) of \(status.setLimit.value) Sets completed"}
+            .bindTo(setLabel.bnd_text)
         
         status.speed.observe { value in
             var val = 0

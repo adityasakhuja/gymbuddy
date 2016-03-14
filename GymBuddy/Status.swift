@@ -12,6 +12,7 @@ import Bond
 class Status: NSObject {
     var fatigue:Observable<Int> = Observable((0))
     var reps:Observable<Int> = Observable((0))
+    var sets:Observable<Int> = Observable((0))
     var speed:Observable<Int> = Observable((0))
     var correctness:Observable<Int> = Observable((0))
     var weight:Observable<Int> = Observable((0))
@@ -19,9 +20,10 @@ class Status: NSObject {
     var repLimit: Observable<Int> = Observable((0))
     var setLimit: Observable<Int> = Observable((0))
     
-    init(fatigue: Int, reps: Int, speed: Int, correctness: Int, weight: Int, exercise: Int, repLimit: Int, setLimit: Int) {
+    init(fatigue: Int, reps: Int, sets: Int, speed: Int, correctness: Int, weight: Int, exercise: Int, repLimit: Int, setLimit: Int) {
         self.fatigue.value = fatigue
         self.reps.value = reps
+        self.sets.value = sets
         self.speed.value = speed
         self.correctness.value = correctness
         self.weight.value = weight
