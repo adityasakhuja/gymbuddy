@@ -183,10 +183,13 @@ class RestController: NSObject {
                         status_rep = 8
                         rest_time += 30
                     }else{
-                        if(fatigue_init < tiredness_threshold){
+                        if(fatigue_init >= tiredness_threshold){
                             status_rep -= 1
                         }else{
                             status_rep -= 1
+                            if(rest_time < 180){
+                                rest_time = 180
+                            }
                             rest_time += 30
                         }
                     }
