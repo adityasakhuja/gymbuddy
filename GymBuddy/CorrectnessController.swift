@@ -30,66 +30,66 @@ class CorrectnessController: NSObject {
     
     func calculateCorrectness()
     {
-        let orientations = orientationGlobal
-        orientationGlobal = []
-        print(orientations)
-        
-        //NSLog("%@", orientations)
-//        var costs: [Int] = []
-//        let repsArr = splitByReps()
-//        for rep in repsArr
-//        {
-//            costs.append(DTW((ideal.exerciseList["bicepsCurl"]?.orientations)!, y: rep.map {Int($0*100)}))
-//        }
-        print("here")
+        var costs: [Int] = []
+        let repsArr = splitByReps()
+        for rep in repsArr
+        {
+            costs.append(DTW((ideal.exerciseList["bicepsCurl"]?.orientations)!, y: rep.map {Int($0*100)}))
+        }
+        print(costs)
     }
     
     func splitByReps() -> [ArraySlice<Float>]
     {
         let orientations = orientationGlobal
-        orientationGlobal = []
+        orientationGlobal.removeAll()
         
         var repsArr: [ArraySlice<Float>] = []
         
         let (points, isMax) = findTurningPoints(orientations)
         for(var i=0; i<points.count-2; i++)
         {
-            if !isMax[i] && isMax[i+1] && !isMax[i+2]
+            if isMax[i] && !isMax[i+1] && isMax[i+2]
             {
                 repsArr.append(orientations[points[i]...points[i+2]])
                 i++
             }
         }
-        
         return repsArr
     }
     
     func findTurningPoints(inputOrig: [Float]) -> ([Int], [Bool])
     {
-        var input = inputOrig
-        for(var i=10; i<input.count; i++)
+        var input = [Float](count: inputOrig.count, repeatedValue: 0)
+        for(var i=0; i<inputOrig.count; i++)
         {
-            // Waveform smoothing
-            input[i] = calcMA(inputOrig[i-10...i])
+            input[i] = inputOrig[i]
         }
         
         var points: [Int] = []
         var isMax: [Bool] = []
-        
-        for(var i=5; i<input.count-5; i++)
+        let frame = 10
+        for(var i=frame; i<input.count-frame; i++)
         {
-            if(input[i]>input[i-5] && input[i]>input[i+5])
+            if(input[i]>input[i-frame] && input[i]>input[i+frame] && (input[i]-input[i-frame])>0.01)
             {
-                points.append(i)
+                let turn = input[i-frame...i+frame]
+                let maxVal = turn.maxElement()
+                let maxInd = turn.indexOf(maxVal!)
+                points.append(maxInd!)
                 isMax.append(true)
+                i += frame
             }
-            else if(input[i]<input[i-5] && input[i]<input[i+5])
+            else if(input[i]<input[i-frame] && input[i]<input[i+frame] && (input[i-frame] - input[i])>0.01)
             {
-                points.append(i)
+                let turn = input[i-frame...i+frame]
+                let minVal = turn.minElement()
+                let minInd = turn.indexOf(minVal!)
+                points.append(minInd!)
                 isMax.append(false)
+                i += frame
             }
         }
-        
         return (points, isMax)
     }
     
@@ -128,13 +128,6 @@ class CorrectnessController: NSObject {
         let (path, cost) = pathCost(x, y: y, accumulatedCost: accumulatedCost, distances: distances)
         
         return cost
-        
-//        for point in path{
-//            print("\(point[0]) \(x[point[0]]) : \(point[1]) \(y[point[1]])")
-//        }
-//        
-//        print(path)
-//        print("\(cost)")
     }
     
     func pathCost(x: [Int], y: [Int], accumulatedCost: [[Int]], distances: [[Int]]) -> ([[Int]], Int)
