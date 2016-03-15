@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
@@ -26,22 +26,6 @@
                                     <constraint firstAttribute="width" secondItem="wx8-80-KbD" secondAttribute="height" multiplier="207:121" id="OcT-dS-GiF"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74n-SI-vtj">
-                                <rect key="frame" x="107" y="518" width="200" height="75"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="75" id="2aM-hI-Idf"/>
-                                    <constraint firstAttribute="width" constant="200" id="foC-Rd-clf"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
-                                <color key="tintColor" red="0.031372549020000001" green="0.2156862745" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Connect Myo">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="connectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f6-Ce-fnA"/>
-                                </connections>
-                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Get Gains. Smarter." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpx-DC-Gom">
                                 <rect key="frame" x="90" y="278" width="234" height="44"/>
                                 <constraints>
@@ -60,6 +44,22 @@
                                 <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <size key="shadowOffset" width="0.0" height="0.0"/>
                             </label>
+                            <button opaque="NO" alpha="0.80000000000000004" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="74n-SI-vtj">
+                                <rect key="frame" x="107" y="518" width="200" height="75"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="2aM-hI-Idf"/>
+                                    <constraint firstAttribute="width" constant="200" id="foC-Rd-clf"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="tintColor" red="0.031372549020000001" green="0.2156862745" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Connect Myo">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="connectButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3f6-Ce-fnA"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0078431372549019607" green="0.28235294117647058" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -109,15 +109,33 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" alpha="0.80000001192092896" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3fR-4b-Hih">
+                                <rect key="frame" x="107" y="641" width="200" height="75"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="3fR-4b-Hih" secondAttribute="height" multiplier="8:3" id="BLE-HX-OLy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="20"/>
+                                <color key="tintColor" red="0.031372549020000001" green="0.2156862745" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Calibrate">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="calibratePressed:" destination="96C-o1-qMu" eventType="touchUpInside" id="hbJ-d2-5SW"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.031372549020000001" green="0.2156862745" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="trailing" secondItem="zUI-S7-Tjn" secondAttribute="trailingMargin" id="0uS-BD-oei"/>
+                            <constraint firstItem="rdE-DE-fLk" firstAttribute="top" secondItem="3fR-4b-Hih" secondAttribute="bottom" constant="20" id="3fO-Uh-EA2"/>
                             <constraint firstItem="WPh-De-jbt" firstAttribute="leading" secondItem="zUI-S7-Tjn" secondAttribute="leadingMargin" id="4mA-rA-mvX"/>
                             <constraint firstItem="WPh-De-jbt" firstAttribute="top" secondItem="Ibb-TU-HBr" secondAttribute="bottom" constant="22" id="9SI-YW-zyt"/>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="leading" secondItem="zUI-S7-Tjn" secondAttribute="leadingMargin" id="A47-OX-lDe"/>
+                            <constraint firstItem="3fR-4b-Hih" firstAttribute="leading" secondItem="zUI-S7-Tjn" secondAttribute="leadingMargin" constant="87" id="PDf-4w-s90"/>
                             <constraint firstItem="WPh-De-jbt" firstAttribute="centerX" secondItem="zUI-S7-Tjn" secondAttribute="centerX" id="TGr-Gm-W26"/>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="top" secondItem="WPh-De-jbt" secondAttribute="bottom" constant="15" id="Xlz-aZ-le5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3fR-4b-Hih" secondAttribute="trailing" constant="87" id="fSz-aJ-ohW"/>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="centerX" secondItem="WPh-De-jbt" secondAttribute="centerX" id="g68-4I-Mf8"/>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="width" secondItem="WPh-De-jbt" secondAttribute="width" id="gHV-ik-KAi"/>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="centerX" secondItem="zUI-S7-Tjn" secondAttribute="centerX" id="pEr-Mj-ChR"/>
@@ -279,7 +297,7 @@
                                         <rect key="frame" x="0.0" y="28" width="414" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ZHS-7l-82w" id="7FK-uR-oJU">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
