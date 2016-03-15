@@ -26,7 +26,7 @@ class WeightViewController: UIViewController {
     
     @IBOutlet weak var exerciseInstructions: UILabel!
     
-    var exercises: [String] = ["Forearm curl", "Bicep curl", "Bench press"]
+    var exercises: [String] = ["Forearm curl", "Bicep curl"]
     
     @IBAction func instructUser() {
         let exerciseIndex = status.exercise.value
