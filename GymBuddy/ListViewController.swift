@@ -13,7 +13,7 @@ class ListViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     
     @IBOutlet weak var tableView: UITableView!
-    var items: [String] = ["Forearm curl", "Bicep curl", "Bench press"]
+    var items: [String] = ["Forearm curl", "Bicep curl"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
