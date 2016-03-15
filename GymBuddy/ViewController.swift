@@ -13,22 +13,22 @@ import SwiftSpinner
 class ViewController: UIViewController {
     
     var connected = false
-    var isSaved = false
+    //var isSaved = false
 
     @IBAction func connectButton(sender: AnyObject) {
-        if let savedMyo = NSKeyedUnarchiver.unarchiveObjectWithFile(Myo.ArchiveURL.path!) as! Myo?
-        {
-            isSaved = true
-            SwiftSpinner.show("Connecting...")
-            let myo = savedMyo.myo
-            TLMHub.sharedHub().attachByIdentifier(myo)
-        }
-        else
-        {
+//        if let savedMyo = NSKeyedUnarchiver.unarchiveObjectWithFile(Myo.ArchiveURL.path!) as! Myo?
+//        {
+//            isSaved = true
+//            SwiftSpinner.show("Connecting...")
+//            let myo = savedMyo.myo
+//            TLMHub.sharedHub().attachByIdentifier(myo)
+//        }
+//        else
+//        {
             let controller = TLMSettingsViewController.settingsInNavigationController()
             presentViewController(controller, animated: true, completion: nil)
             //TLMHub.sharedHub().attachToAdjacent()
-        }
+        //}
     }
     
     override func viewDidLoad() {
@@ -50,13 +50,13 @@ class ViewController: UIViewController {
         // Show a list of exercises
         print("Connected")
         connected = true
-        if isSaved
-        {
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-            let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("CalibrationViewController") as UIViewController
-            let window = UIApplication.sharedApplication().windows[0] as UIWindow;
-            window.rootViewController = vc;
-        }
+//        if isSaved
+//        {
+//            let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+//            let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("CalibrationViewController") as UIViewController
+//            let window = UIApplication.sharedApplication().windows[0] as UIWindow;
+//            window.rootViewController = vc;
+//        }
     }
     
     func didDisconnectDevice(notification: NSNotification) {

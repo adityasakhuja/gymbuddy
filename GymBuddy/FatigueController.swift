@@ -22,6 +22,43 @@ class FatigueController: NSObject {
         // Wait 1 seconds to get enough EMG values
         timerMain = NSTimer(timeInterval: 0.5, target: self, selector: "begin", userInfo: nil, repeats: false)
         NSRunLoop.currentRunLoop().addTimer(timerMain, forMode: NSRunLoopCommonModes)
+        
+        
+        //  Create a data set
+        let data = DataSet(dataType: .Classification, inputDimension: 2, outputDimension: 1)
+        do {
+            try data.addDataPoint(input: [0.0, 1.0], output:1)
+            try data.addDataPoint(input: [0.0, 0.9], output:1)
+            try data.addDataPoint(input: [0.1, 1.0], output:1)
+            try data.addDataPoint(input: [1.0, 0.0], output:0)
+            try data.addDataPoint(input: [1.0, 0.1], output:0)
+            try data.addDataPoint(input: [0.9, 0.0], output:0)
+        }
+        catch {
+            print("Invalid data set created")
+        }
+        
+        //  Create an SVM classifier and train
+        let svm = SVMModel(problemType: .C_SVM_Classification, kernelSettings:
+            KernelParameters(type: .RadialBasisFunction, degree: 0, gamma: 0.5, coef0: 0.0))
+        svm.train(data)
+        
+        //  Create a test dataset
+        let testData = DataSet(dataType: .Classification, inputDimension: 2, outputDimension: 1)
+        do {
+            try testData.addTestDataPoint(input: [0.0, 0.1])    //  Expect 1
+            try testData.addTestDataPoint(input: [0.1, 0.0])    //  Expect 0
+            try testData.addTestDataPoint(input: [1.0, 0.9])    //  Expect 0
+            try testData.addTestDataPoint(input: [0.9, 1.0])    //  Expect 1
+            try testData.addTestDataPoint(input: [0.5, 0.4])    //  Expect 0
+            try testData.addTestDataPoint(input: [0.5, 0.6])    //  Expect 1
+        }
+        catch {
+            print("Invalid data set created")
+        }
+        
+        //  Predict on the test data
+        svm.predictValues(testData)
     }
     
     func begin()

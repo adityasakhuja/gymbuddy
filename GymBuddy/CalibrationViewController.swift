@@ -14,7 +14,7 @@ class CalibrationViewController: UIViewController {
     
     var orientation: [TLMQuaternion] = []
     var currentPose: TLMPose!
-    var isSaved = false
+    //var isSaved = false
     
     @IBOutlet weak var topLabel: UILabel!
     @IBOutlet weak var middleLabel: UILabel!
@@ -23,10 +23,10 @@ class CalibrationViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if let _ = NSKeyedUnarchiver.unarchiveObjectWithFile(Myo.ArchiveURL.path!) as! Myo?
-        {
-            isSaved = true
-        }
+//        if let _ = NSKeyedUnarchiver.unarchiveObjectWithFile(Myo.ArchiveURL.path!) as! Myo?
+//        {
+//            isSaved = true
+//        }
         
         // Myo notifications
         let notifer = NSNotificationCenter.defaultCenter()
@@ -69,12 +69,12 @@ class CalibrationViewController: UIViewController {
         // Append local orientation array
         orientation.append(orientationEvent.quaternion)
         
-        if !isSaved
-        {
-            isSaved = true
-            let myo = Myo(myo: orientationEvent.myo!.identifier)
-            let _ = NSKeyedArchiver.archiveRootObject(myo, toFile: Myo.ArchiveURL.path!)
-        }
+//        if !isSaved
+//        {
+//            isSaved = true
+//            let myo = Myo(myo: orientationEvent.myo!.identifier)
+//            let _ = NSKeyedArchiver.archiveRootObject(myo, toFile: Myo.ArchiveURL.path!)
+//        }
     }
     
     func didChangePose(notification: NSNotification) {

@@ -19,6 +19,9 @@
 		A50B189C1C9058E200ADD607 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */; };
 		A50B189E1C90878000ADD607 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A50B189D1C90878000ADD607 /* ListViewController.swift */; };
 		A5715A841C977CEB0020095A /* Myo.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715A831C977CEB0020095A /* Myo.swift */; };
+		A5715A881C9853040020095A /* DataSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715A851C9853040020095A /* DataSet.swift */; };
+		A5715A891C9853040020095A /* Kernel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715A861C9853040020095A /* Kernel.swift */; };
+		A5715A8A1C9853040020095A /* SVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5715A871C9853040020095A /* SVM.swift */; };
 		A5DC273F1C90C612000793A6 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC273E1C90C612000793A6 /* ProfileViewController.swift */; };
 		A5DC27411C90D606000793A6 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27401C90D606000793A6 /* User.swift */; };
 		A5DC27451C90EE3F000793A6 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5DC27441C90EE3F000793A6 /* StatusViewController.swift */; };
@@ -51,6 +54,9 @@
 		A50B189B1C9058E200ADD607 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A50B189D1C90878000ADD607 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
 		A5715A831C977CEB0020095A /* Myo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Myo.swift; sourceTree = "<group>"; };
+		A5715A851C9853040020095A /* DataSet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataSet.swift; sourceTree = "<group>"; };
+		A5715A861C9853040020095A /* Kernel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Kernel.swift; sourceTree = "<group>"; };
+		A5715A871C9853040020095A /* SVM.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SVM.swift; sourceTree = "<group>"; };
 		A5DC273E1C90C612000793A6 /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		A5DC27401C90D606000793A6 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A5DC27441C90EE3F000793A6 /* StatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
@@ -125,6 +131,9 @@
 		A50B18791C9044D600ADD607 /* GymBuddy */ = {
 			isa = PBXGroup;
 			children = (
+				A5715A851C9853040020095A /* DataSet.swift */,
+				A5715A861C9853040020095A /* Kernel.swift */,
+				A5715A871C9853040020095A /* SVM.swift */,
 				A50B187A1C9044D600ADD607 /* AppDelegate.swift */,
 				A50B187C1C9044D600ADD607 /* ViewController.swift */,
 				A50B187E1C9044D600ADD607 /* Main.storyboard */,
@@ -278,13 +287,16 @@
 				A5DC27591C91FB08000793A6 /* CorrectnessController.swift in Sources */,
 				A5DC275F1C931F13000793A6 /* Ideal.swift in Sources */,
 				A5DC27451C90EE3F000793A6 /* StatusViewController.swift in Sources */,
+				A5715A881C9853040020095A /* DataSet.swift in Sources */,
 				A5DC27631C936CE7000793A6 /* RestController.swift in Sources */,
 				A5DC27611C936B41000793A6 /* Rest.swift in Sources */,
+				A5715A891C9853040020095A /* Kernel.swift in Sources */,
 				A5DC273F1C90C612000793A6 /* ProfileViewController.swift in Sources */,
 				A5DC27571C91FA03000793A6 /* FatigueController.swift in Sources */,
 				A5DC27691C949294000793A6 /* CalibrationViewController.swift in Sources */,
 				A50B187D1C9044D600ADD607 /* ViewController.swift in Sources */,
 				A5715A841C977CEB0020095A /* Myo.swift in Sources */,
+				A5715A8A1C9853040020095A /* SVM.swift in Sources */,
 				A50B18831C9044D600ADD607 /* GymBuddy.xcdatamodeld in Sources */,
 				A5DC27551C91EB88000793A6 /* Status.swift in Sources */,
 				A50B189E1C90878000ADD607 /* ListViewController.swift in Sources */,
