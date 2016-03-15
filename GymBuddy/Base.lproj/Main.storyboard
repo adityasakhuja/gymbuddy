@@ -100,7 +100,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you need to sync your Myo. To do this, follow the graphic below, and hold the gesture until vibration stops:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-SJ-FbU">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Now you need to calibrate your Myo. To do this, follow the graphic below:" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nHf-SJ-FbU">
                                 <rect key="frame" x="20" y="94" width="374" height="137"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="nHf-SJ-FbU" secondAttribute="height" multiplier="374:137" id="XFs-XG-lo2"/>
@@ -124,14 +124,23 @@
                                     <action selector="calibratePressed:" destination="96C-o1-qMu" eventType="touchUpInside" id="hbJ-d2-5SW"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calibrate3" translatesAutoresizingMaskIntoConstraints="NO" id="JY2-8I-k8z">
+                                <rect key="frame" x="57" y="261" width="300" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="FTA-iR-I9n"/>
+                                    <constraint firstAttribute="width" constant="300" id="Ja2-A1-tz8"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.031372549020000001" green="0.2156862745" blue="0.36470588240000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="trailing" secondItem="zUI-S7-Tjn" secondAttribute="trailingMargin" id="0uS-BD-oei"/>
+                            <constraint firstItem="JY2-8I-k8z" firstAttribute="top" secondItem="nHf-SJ-FbU" secondAttribute="bottom" constant="30" id="3ZK-WJ-dGb"/>
                             <constraint firstItem="rdE-DE-fLk" firstAttribute="top" secondItem="3fR-4b-Hih" secondAttribute="bottom" constant="20" id="3fO-Uh-EA2"/>
                             <constraint firstItem="WPh-De-jbt" firstAttribute="leading" secondItem="zUI-S7-Tjn" secondAttribute="leadingMargin" id="4mA-rA-mvX"/>
                             <constraint firstItem="WPh-De-jbt" firstAttribute="top" secondItem="Ibb-TU-HBr" secondAttribute="bottom" constant="22" id="9SI-YW-zyt"/>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="leading" secondItem="zUI-S7-Tjn" secondAttribute="leadingMargin" id="A47-OX-lDe"/>
+                            <constraint firstItem="JY2-8I-k8z" firstAttribute="leading" secondItem="zUI-S7-Tjn" secondAttribute="leadingMargin" constant="37" id="Jwd-Rz-JVb"/>
                             <constraint firstItem="3fR-4b-Hih" firstAttribute="leading" secondItem="zUI-S7-Tjn" secondAttribute="leadingMargin" constant="87" id="PDf-4w-s90"/>
                             <constraint firstItem="WPh-De-jbt" firstAttribute="centerX" secondItem="zUI-S7-Tjn" secondAttribute="centerX" id="TGr-Gm-W26"/>
                             <constraint firstItem="nHf-SJ-FbU" firstAttribute="top" secondItem="WPh-De-jbt" secondAttribute="bottom" constant="15" id="Xlz-aZ-le5"/>
@@ -731,6 +740,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="calibrate3" width="1000" height="1000"/>
         <image name="gymbuddy" width="550" height="362"/>
     </resources>
 </document>

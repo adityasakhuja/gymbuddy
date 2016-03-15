@@ -47,11 +47,11 @@ class CalibrationViewController: UIViewController {
 //        notifer.addObserver(self, selector: "didLoseArm:", name: TLMMyoDidReceiveArmUnsyncEventNotification, object: nil)
 //        TLMHub.sharedHub().lockingPolicy = .None
 
-        var syncGif: UIImage!
-        
-        topLabel.text = "Your Myo is now connected!"
-        middleLabel.text = "Now you need to calibrate your Myo. To do this, follow the graphic below:"
-        syncGif = UIImage.gifWithName("callibrate")
+//        var syncGif: UIImage!
+//        
+//        topLabel.text = "Your Myo is now connected!"
+//        middleLabel.text = "Now you need to calibrate your Myo. To do this, follow the graphic below:"
+//        syncGif = UIImage.gifWithName("callibrate")
         
         
 //        if syncedGlobal
@@ -64,9 +64,9 @@ class CalibrationViewController: UIViewController {
 //            syncGif = UIImage.gifWithName("sync")
 //        }
         
-        let gesture = UIImageView(image: syncGif)
-        self.view.addSubview(gesture)
-        gesture.frame = CGRectMake(self.view.frame.size.width/2 - 150, self.view.frame.size.height/2-100 , 300, 300)
+//        let gesture = UIImageView(image: syncGif)
+//        self.view.addSubview(gesture)
+//        gesture.frame = CGRectMake(self.view.frame.size.width/2 - 150, self.view.frame.size.height/2-100 , 300, 300)
         
     }
     
