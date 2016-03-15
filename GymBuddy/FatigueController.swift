@@ -194,15 +194,19 @@ class FatigueController: NSObject {
         let testData = DataSet(dataType: .Classification, inputDimension: 9, outputDimension: 1)
         
         do {
+            /**************************************************************************/
+            /**************************************************************************/
             // CHANGE VARIABLE ASSIGNMENTS ????
             let age = user.age
             let height = user.height
             let sex = user.sex
             let dumbbellWeight = status.weight
             let fitnessActivity = status.exercise
+            /**************************************************************************/
+            /**************************************************************************/
             
             for i in 1...8 {
-                try testData.addTestDaPoint(input: [mav_rate[i-1], rms_rate[i-1], mnf_rate[i-1], mdf_rate[i-1], age, height, sex, weight, exercise])
+                try testData.addDataPoint(input: [mav_rate[i-1], rms_rate[i-1], mnf_rate[i-1], mdf_rate[i-1], age, height, sex, weight, exercise])
             }
         }
         catch {
@@ -217,8 +221,8 @@ class FatigueController: NSObject {
         
         do {
             for i in 1...8 {
-                try classLabel = testDaa.getClass(i-1)
-                fatiueIndex.append(Double(classLabel))
+                try classLabel = testData.getClass(i-1)
+                fatigueIndex.append(Double(classLabel))
             }
         }
         catch {
