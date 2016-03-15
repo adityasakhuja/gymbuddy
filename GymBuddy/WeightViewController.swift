@@ -10,6 +10,12 @@ import Foundation
 
 class WeightViewController: UIViewController {
     
+    @IBAction func beginButtonPressed(sender: AnyObject) {
+        let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("StatusViewController") as UIViewController
+        let window = UIApplication.sharedApplication().windows[0] as UIWindow;
+        window.rootViewController = vc;
+    }
     @IBOutlet weak var slider: UISlider!
     @IBAction func sliderValueChanged(sender: AnyObject) {
         let weight = Int(slider.value)
