@@ -35,7 +35,7 @@ class FatigueController: NSObject {
     
     // create classifier for linear SVM
     
-    let svm = SVMModel(problemType: .C_SVM_Classification, kernelSettings: KernelParameters(type: .Linear, degree: 0, gamma: 0.5, coef0: 0.0))
+    let svm = SVMModel(problemType: .C_SVM_Classification, kernelSettings: KernelParameters(type: .Linear, degree: 0, gamma: 0.11, coef0: 0.0))
     
     
     // declare variables for timer

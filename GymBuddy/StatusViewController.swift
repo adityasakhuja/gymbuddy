@@ -359,6 +359,7 @@ class StatusViewController: UIViewController {
             
             // Append global orientation array
             orientationGlobal.append(TLMQuaternionMultiply(orientationEvent.quaternion, centerGlobal).w)
+            orientationRepsGlobal.append(TLMQuaternionMultiply(orientationEvent.quaternion, centerGlobal).w)
             
             let rotationAndPerspectiveTransform:CATransform3D = CATransform3DConcat(CATransform3DConcat(CATransform3DRotate (CATransform3DIdentity, pitch, -1.0, 0.0, 0.0), CATransform3DRotate(CATransform3DIdentity, yaw, 0.0, 1.0, 0.0)), CATransform3DRotate(CATransform3DIdentity, roll, 0.0, 0.0, -1.0))
             

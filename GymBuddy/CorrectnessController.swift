@@ -16,16 +16,21 @@ func ^^ (radix: Int, power: Int) -> Int {
 class CorrectnessController: NSObject {
     
     var timerCount = NSTimer()
+    var correctnessCount = NSTimer()
     let ideal = Ideal()
-    var reps = 0
+    var reps: [Int] = []
     var repsNumCount = 0
     
     override init()
     {
         super.init()
         // Calculate number of reps every 0.5 s
-        timerCount = NSTimer(timeInterval: 5, target: self, selector: "calculateCorrectness", userInfo: nil, repeats: true)
+        timerCount = NSTimer(timeInterval: 0.5, target: self, selector: "calculateRepsNum", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timerCount, forMode: NSRunLoopCommonModes)
+        
+        // Calculate orientation correctness every 5 s
+        correctnessCount = NSTimer(timeInterval: 5, target: self, selector: "calculateCorrectness", userInfo: nil, repeats: true)
+        NSRunLoop.currentRunLoop().addTimer(correctnessCount, forMode: NSRunLoopCommonModes)
     }
     
     func calculateCorrectness()
@@ -183,27 +188,24 @@ class CorrectnessController: NSObject {
     
     func calculateRepsNum()
     {
-        repsNumCount++
-        var accX = accXGlobal
+        var orientations = orientationRepsGlobal
+        orientationRepsGlobal.removeAll()
         var repsNum = 0
         
-        // Detect reps
-        for(var i=1; i<accX.count; i++)
+        for i in 1...orientations.count-1
         {
-            // Waveform smoothing
-            accX[i] = calcMA([accX[i], accX[i-1]])
-            if(accX[i-1] >= 0.00 && accX[i] < 0.00)
+            if(orientations[i-1] >= 0.8 && orientations[i] < 0.8)
             {
                 repsNum++
             }
         }
+        
         status.reps.value += repsNum
         
-        reps += repsNum
-        if repsNumCount % 5 == 0
+        reps = shiftPush(reps, element: repsNum, maxSize: 10)
+        if reps.count > 9
         {
-            checkSpeed(reps*12)
-            reps = 0
+            checkSpeed(reps.reduce(0, combine: +)*12)
         }
     }
     

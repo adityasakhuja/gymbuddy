@@ -43,10 +43,27 @@ var accYGlobal: [Double] = []
 var accZGlobal: [Double] = []
 var fatigueGlobal: [Int] = []
 var orientationGlobal: [Float] = []
+var orientationRepsGlobal: [Float] = []
 var centerGlobal: TLMQuaternion = TLMQuaternion()
 var syncedGlobal = false
 
 func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]
+{
+    var _arr = arr
+    if _arr.count < maxSize
+    {
+        _arr.append(element)
+    }
+    else
+    {
+        _arr.removeFirst()
+        _arr.append(element)
+    }
+    
+    return _arr
+}
+
+func shiftPush(arr: [Int], element: Int, maxSize: Int) -> [Int]
 {
     var _arr = arr
     if _arr.count < maxSize
