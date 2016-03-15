@@ -11,23 +11,31 @@
 import Foundation
 import Accelerate
 
-
+let lengthOfArray: Int = 128
 class FatigueController: NSObject {
 
 /***************************************************** Variables Declaration *****************************************************/
     
     // declare variables for feature extraction
     
-    var power = [[Double]](count: lengthOfArray-1, repeatedValue: [Double](count: 8, repeatedValue: 0))
+    var power = [[Double]](count: (lengthOfArray-1), repeatedValue: [Double](count: 8, repeatedValue: 0))
     var meanAvgVal: [[Double]] = []
     var rootMeanSqr: [[Double]] = []
     var meanFreq: [[Double]] = []
     var medFreq: [[Double]] = []
     
+    var mav_rate: [Double] = []                             // rate of change of mean average value MAV
+    var rms_rate: [Double] = []                               // rate of change of root mean square RMS
+    var mnf_rate: [Double] = []                                  // rate of change of mean frequency MNF
+    var mdf_rate: [Double] = []                                   // rate of change of meian frequency MDF
+    
+    var age: Int = 0
+    var height: Int = 0
+    var sex: Int = 0
     
     // create classifier for linear SVM
     
-    let svm = SVMModel(problemType: .C_SVM_Classification, kernelSettings: KernelParameters(type: .RadialBasisFunction, degree: 0, gamma: 0.5, coef0: 0.0))
+    let svm = SVMModel(problemType: .C_SVM_Classification, kernelSettings: KernelParameters(type: .Linear, degree: 0, gamma: 0.5, coef0: 0.0))
     
     
     // declare variables for timer
@@ -44,8 +52,15 @@ class FatigueController: NSObject {
         
         super.init()
         
+        if let savedUser = NSKeyedUnarchiver.unarchiveObjectWithFile(User.ArchiveURL.path!) as! User?
+        {
+            age = savedUser.age
+            height = savedUser.heightU
+            sex = savedUser.sex
+        }
+        
         // Wait 1 seconds to get enough EMG values
-        timerMain = NSTimer(timeInterval: 0.5, target: self, selector: "begin", userInfo: nil, repeats: false)
+        timerMain = NSTimer(timeInterval: 2, target: self, selector: "begin", userInfo: nil, repeats: false)
         NSRunLoop.currentRunLoop().addTimer(timerMain, forMode: NSRunLoopCommonModes)
         
         
@@ -127,7 +142,7 @@ class FatigueController: NSObject {
         
         // Calculate MAV, RMS, MNF, MDF every 0.64 seconds (128 samples)
         
-        timerFreq = NSTimer(timeInterval: 0.64, target: self, selector: "parametersCalculation", userInfo: nil, repeats: true)
+        timerFreq = NSTimer(timeInterval: 0.65, target: self, selector: "parametersCalculation", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timerFreq, forMode: NSRunLoopCommonModes)
         
         // Perform classification every 30 seconds (47 samples of MAV, RMS, MNF, MDF)
@@ -166,10 +181,10 @@ class FatigueController: NSObject {
     
     func featuresExtraction() {
         
-        let mav_rate = calRateOfChange(meanAvgVal)                              // rate of change of mean average value MAV
-        let rms_rate = calRateOfChange(rootMeanSqr)                             // rate of change of root mean square RMS
-        let mnf_rate = calRateOfChange(meanFreq)                                // rate of change of mean frequency MNF
-        let mdf_rate = calRateOfChange(medFreq)                                 // rate of change of meian frequency MDF
+        mav_rate = calRateOfChange(meanAvgVal)                              // rate of change of mean average value MAV
+        rms_rate = calRateOfChange(rootMeanSqr)                             // rate of change of root mean square RMS
+        mnf_rate = calRateOfChange(meanFreq)                                // rate of change of mean frequency MNF
+        mdf_rate = calRateOfChange(medFreq)                                 // rate of change of meian frequency MDF
         
         //let user_age = [Int](count: 8, repeatedValue: User.age)                 // age of user
         //let user_height = [Int](count: 8, repeatedValue: User.heightU)          // height of user
@@ -197,16 +212,13 @@ class FatigueController: NSObject {
             /**************************************************************************/
             /**************************************************************************/
             // CHANGE VARIABLE ASSIGNMENTS ????
-            let age = user.age
-            let height = user.height
-            let sex = user.sex
-            let dumbbellWeight = status.weight
-            let fitnessActivity = status.exercise
+            let dumbbellWeight = status.weight.value
+            let fitnessActivity = status.exercise.value
             /**************************************************************************/
             /**************************************************************************/
             
             for i in 1...8 {
-                try testData.addDataPoint(input: [mav_rate[i-1], rms_rate[i-1], mnf_rate[i-1], mdf_rate[i-1], age, height, sex, weight, exercise])
+                try testData.addTestDataPoint(input: [mav_rate[i-1], rms_rate[i-1], mnf_rate[i-1], mdf_rate[i-1], Double(age), Double(height), Double(sex), Double(dumbbellWeight), Double(fitnessActivity)])
             }
         }
         catch {
@@ -232,6 +244,18 @@ class FatigueController: NSObject {
         
         // Update fatigue index
         status.fatigue.value = Int(mean(fatigueIndex))
+        
+        // DEBUG
+//        print(mav_rate)
+//        print(rms_rate)
+//        print(mnf_rate)
+//        print(mdf_rate)
+//        print(age)
+//        print(height)
+//        print(sex)
+//        print(status.weight.value)
+//        print(status.exercise.value)
+        print(Int(mean(fatigueIndex)))
         
         // Pass index to Recommendation module
         fatigueGlobal.append(status.fatigue.value)

@@ -36,7 +36,14 @@ class CorrectnessController: NSObject {
         {
             costs.append(DTW((ideal.exerciseList["bicepsCurl"]?.orientations)!, y: rep.map {Int($0*100)}))
         }
-        print(costs)
+        
+        if !costs.isEmpty
+        {
+            status.correctness.value = max(100-Int(costs.last!/500), 0)
+            print(costs)
+            print(status.correctness.value)
+        }
+        //print()
     }
     
     func splitByReps() -> [ArraySlice<Float>]
