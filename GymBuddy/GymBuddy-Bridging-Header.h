@@ -5,3 +5,4 @@
 #import <IGLDropDownMenu/IGLDropDownMenu.h>
 #import <MyoKit/MyoKit.h>
 #import <MBCircularProgressBar/MBCircularProgressBarView.h>
+#import <MSSimpleGauge/MSSimpleGauge.h>

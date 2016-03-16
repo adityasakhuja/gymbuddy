@@ -2,7 +2,9 @@ PODS:
   - Bond (4.3.0)
   - FastDTW-x (0.3.2)
   - IGLDropDownMenu (1.5.0)
+  - KRSVM (1.0.0)
   - MBCircularProgressBar (0.3.4)
+  - MSSimpleGauge (0.5)
   - SwiftGifOrigin (1.5.2)
   - SwiftSpinner (0.8.0)
 
@@ -10,7 +12,9 @@ DEPENDENCIES:
   - Bond
   - FastDTW-x
   - IGLDropDownMenu
+  - KRSVM
   - MBCircularProgressBar
+  - MSSimpleGauge
   - SwiftGifOrigin (~> 1.5)
   - SwiftSpinner
 
@@ -18,7 +22,9 @@ SPEC CHECKSUMS:
   Bond: ebe2364b18130690083cbceff036420b21494ae4
   FastDTW-x: ee9853deea47af52e9c7652aeec315b2c99e96cf
   IGLDropDownMenu: 1ce06c17b4846f784e2b610f90bd741ab2037f2c
+  KRSVM: 153ee8e4826640fa3f41dc10f26dec38ff21673e
   MBCircularProgressBar: ff3b8e2f441214d9ee122a24ba0d4d00cc7de881
+  MSSimpleGauge: e5f7bf2561f1338055fcd321c5469b0d6c689d14
   SwiftGifOrigin: a7671a6a68a2769e118c7da5bcc7c480798907b5
   SwiftSpinner: 11c2c5ec7443d92f3026d3067ca8a91d4adef13f
 

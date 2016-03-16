@@ -11,6 +11,7 @@ import UIKit
 import Bond
 import MBCircularProgressBar
 import CoreData
+import MSSimpleGauge
 
 class StatusViewController: UIViewController {
     
@@ -18,15 +19,17 @@ class StatusViewController: UIViewController {
     var emgEnabled = false
     var resting = false
     
+    // Gauges
+    var fatigueGauge = MSRangeGauge()
+    var speedGauge = MSRangeGauge()
+    var correctnessGauge = MSSimpleGauge()
+    
     // Status labels
     @IBOutlet weak var fatigueText: UILabel!
     @IBOutlet weak var repsLabel: UILabel!
     @IBOutlet weak var speedText: UILabel!
-    @IBOutlet weak var correctnessLabel: UILabel!
     @IBOutlet weak var correctnessText: UILabel!
     @IBOutlet weak var timerLabel: UILabel!
-    @IBOutlet weak var speedLabelC: MBCircularProgressBarView!
-    @IBOutlet weak var fatigueLabelC: MBCircularProgressBarView!
     
     @IBOutlet weak var setLabel: UILabel!
     @IBOutlet weak var endButton: UIButton!
@@ -37,21 +40,9 @@ class StatusViewController: UIViewController {
     @IBOutlet weak var restLabel: UILabel!
     @IBOutlet weak var nextSetLabel: UILabel!
     
-    // Debugging labels
-    @IBOutlet weak var connectedLabel: UILabel!
-    @IBOutlet weak var aMagLabel: UILabel!
-    @IBOutlet weak var aXLabel: UILabel!
-    @IBOutlet weak var aYLabel: UILabel!
-    @IBOutlet weak var aZLabel: UILabel!
-    @IBOutlet weak var emg1: UILabel!
-    @IBOutlet weak var emg2: UILabel!
-    @IBOutlet weak var emg3: UILabel!
-    @IBOutlet weak var emg4: UILabel!
-    @IBOutlet weak var emg5: UILabel!
-    @IBOutlet weak var emg6: UILabel!
-    @IBOutlet weak var emg7: UILabel!
-    @IBOutlet weak var emg8: UILabel!
-    @IBOutlet weak var helloLabel: UILabel!
+    // Initialise the controllers
+    let fC = FatigueController()
+    let cC = CorrectnessController()
     
     @IBAction func endButtonPressed(sender: AnyObject) {
         if resting
@@ -60,11 +51,11 @@ class StatusViewController: UIViewController {
             fatigueText.hidden = false
             repsLabel.hidden = false
             setLabel.hidden = false
-            correctnessLabel.hidden = false
             correctnessText.hidden = false
             speedText.hidden = false
-            speedLabelC.hidden = false
-            fatigueLabelC.hidden = false
+            fatigueGauge.hidden = false
+            speedGauge.hidden = false
+            correctnessGauge.hidden = false
             
             // Hide resting labels
             repsNextLabel.hidden = true
@@ -82,17 +73,11 @@ class StatusViewController: UIViewController {
             //Reset reps
             status.reps.value = 0
             
-            //Increment set
-            if (status.sets.value < status.setLimit.value) {
-                status.sets.value++
-            } else {
-                status.sets.value = 0
-                let alertController = UIAlertController(title: "Sets Complete", message: "You have successfully completed the required sets for this exercise. Please select the next exercise.", preferredStyle: .Alert)
-                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (alertAction) -> Void in self.pickExercise() }))
-                presentViewController(alertController, animated: true, completion: nil)
-            }
             // Update system state
             resting = false
+            
+            // Resume controllers
+            cC.resume()
         }
         else
         {
@@ -110,6 +95,9 @@ class StatusViewController: UIViewController {
 //            }
 //            // Print new orientation array
 //            NSLog("%@", orientationNew)
+            
+            // Stop the controllers
+            cC.stop()
             
             // Store data in CoreData
             var exerciseDatas = [NSManagedObject]()
@@ -141,28 +129,39 @@ class StatusViewController: UIViewController {
                 print("Could not save \(error), \(error.userInfo)")
             }
             
-            // Initialise RestController
-            let _ = RestController()
-            
             //Hide status labels
             fatigueText.hidden = true
             repsLabel.hidden = true
             setLabel.hidden = true
-            correctnessLabel.hidden = true
             correctnessText.hidden = true
             speedText.hidden = true
-            speedLabelC.hidden = true
-            fatigueLabelC.hidden = true
+            fatigueGauge.hidden = true
+            speedGauge.hidden = true
+            correctnessGauge.hidden = true
             
-            // Show resting labels
-            repsNextLabel.hidden = false
-            weightsLabel.hidden = false
-            restLabel.hidden = false
-            nextSetLabel.hidden = false
-            
-            // Change the Button
-            endButton.backgroundColor = UIColor.blackColor()
-            endButton.setTitle("Continue", forState: .Normal)
+            //Increment set
+            if (status.sets.value < status.setLimit.value) {
+                status.sets.value++
+                // Show resting labels
+                repsNextLabel.hidden = false
+                weightsLabel.hidden = false
+                restLabel.hidden = false
+                nextSetLabel.hidden = false
+                
+                // Change the Button
+                endButton.backgroundColor = UIColor.blackColor()
+                endButton.setTitle("Continue", forState: .Normal)
+            } else {
+                status.sets.value = 1
+                status.repLimit.value = 0
+                endButton.hidden = true
+                timerLabel.hidden = true
+                let alertController = UIAlertController(title: "Sets Complete", message: "You have successfully completed the required sets for this exercise. Please select the next exercise.", preferredStyle: .Alert)
+                alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (alertAction) -> Void in self.pickExercise() }))
+                presentViewController(alertController, animated: true, completion: nil)
+            }
+            // Initialise RestController
+            let _ = RestController()
             
             // Update system state
             resting = true
@@ -180,26 +179,80 @@ class StatusViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // Initialise the controllers
-        let _ = FatigueController()
-        let _ = CorrectnessController()
+        // Initialise the gauges
+        speedGauge=MSRangeGauge( frame: CGRectMake(self.view.frame.size.width/2-30, 260, 200, 175) )
+        speedGauge.minValue = 0
+        speedGauge.maxValue = 80
+        speedGauge.upperRangeValue = 50;
+        speedGauge.lowerRangeValue = 30;
+        //bigGauge.fillArcFillColor = UIColor.redColor()
+        speedGauge.backgroundColor = UIColor.clearColor()
+        //bigGauge.backgroundArcFillColor = UIColor.redColor()
+        //bigGauge.fillArcStrokeColor = UIColor.clearColor()
+        //bigGauge.backgroundArcStrokeColor = UIColor.clearColor()
+        speedGauge.rangeFillColor = UIColor.greenColor()
+        speedGauge.backgroundGradient = nil
+        
+        speedGauge.startAngle = 0
+        speedGauge.endAngle = 180
+        speedGauge.value = 40
+        
+        self.view.addSubview(speedGauge)
+        
+        fatigueGauge=MSRangeGauge( frame: CGRectMake(self.view.frame.size.width/2-30, 120, 200, 175) )
+        fatigueGauge.minValue = 0
+        fatigueGauge.maxValue = 100
+        fatigueGauge.upperRangeValue = 70;
+        fatigueGauge.lowerRangeValue = 30;
+        //bigGauge.fillArcFillColor = UIColor.redColor()
+        fatigueGauge.backgroundColor = UIColor.clearColor()
+        //bigGauge.backgroundArcFillColor = UIColor.redColor()
+        //bigGauge.fillArcStrokeColor = UIColor.clearColor()
+        //bigGauge.backgroundArcStrokeColor = UIColor.clearColor()
+        fatigueGauge.rangeFillColor = UIColor.greenColor()
+        fatigueGauge.backgroundGradient = nil
+        
+        fatigueGauge.startAngle = 0
+        fatigueGauge.endAngle = 180
+        fatigueGauge.value = 50
+        
+        self.view.addSubview(fatigueGauge)
+        
+        correctnessGauge=MSSimpleGauge( frame: CGRectMake(self.view.frame.size.width/2-30, 400, 200, 175) )
+        correctnessGauge.minValue = 0
+        correctnessGauge.maxValue = 100
+        correctnessGauge.fillArcFillColor = UIColor.greenColor()
+        correctnessGauge.backgroundColor = UIColor.clearColor()
+        //correctnessGauge.backgroundArcFillColor = UIColor.grayColor()
+        correctnessGauge.fillArcStrokeColor = UIColor.clearColor()
+        correctnessGauge.backgroundArcStrokeColor = UIColor.clearColor()
+        correctnessGauge.backgroundGradient = nil
+        
+        correctnessGauge.startAngle = 0
+        correctnessGauge.endAngle = 180
+        correctnessGauge.value = 80
+        
+        self.view.addSubview(correctnessGauge)
         
         // Bind labels to Status model
         status.fatigue.observe { value in
-            if value < 3 || value == 4
-            {
-                self.fatigueLabelC.progressColor = UIColor.yellowColor()
-            }
-            else if value == 3
-            {
-                self.fatigueLabelC.progressColor = UIColor.greenColor()
-            }
-            else
-            {
-                self.fatigueLabelC.progressColor = UIColor.redColor()
+            var val = 0
+            switch value {
+            case 1:
+                val = 0
+            case 2:
+                val = 25
+            case 3:
+                val = 50
+            case 4:
+                val = 75
+            case 5:
+                val = 100
+            default:
+                break
             }
             
-            self.fatigueLabelC.value = CGFloat(value)
+            self.fatigueGauge.value = Float(val)
         }
         
         rest.time.observe { value in
@@ -211,36 +264,46 @@ class StatusViewController: UIViewController {
             .bindTo(repsLabel.bnd_text)
         
         status.sets
-            .map {"\($0) of \(status.setLimit.value) Sets completed"}
+            .map {"\($0-1) of \(status.setLimit.value) Sets completed"}
             .bindTo(setLabel.bnd_text)
         
         status.speed.observe { value in
             var val = 0
-            if value < 0
-            {
-                self.speedLabelC.progressColor = UIColor.greenColor()
-                self.speedLabelC.emptyLineColor = UIColor.redColor()
-            }
-            else
-            {
-                self.speedLabelC.progressColor = UIColor.redColor()
-                self.speedLabelC.emptyLineColor = UIColor.greenColor()
-            }
             
             if value > 40
             {
                 val = 40
             }
+            else if value < -40
+            {
+                val = -40
+            }
             else
             {
                 val = value
             }
-            self.speedLabelC.value = CGFloat(val)
+            
+            val += 40
+            
+            self.speedGauge.value = Float(val)
         }
         
-        status.correctness
-            .map {"\($0)"}
-            .bindTo(correctnessLabel.bnd_text)
+        status.correctness.observe { value in
+            if value < 50
+            {
+                self.correctnessGauge.fillArcFillColor = UIColor.redColor()
+            }
+            else if value < 80
+            {
+                self.correctnessGauge.fillArcFillColor = UIColor.yellowColor()
+            }
+            else
+            {
+                self.correctnessGauge.fillArcFillColor = UIColor.greenColor()
+            }
+            
+            self.correctnessGauge.value = Float(value)
+        }
         
         // Bind labels to rest
         status.weight
@@ -291,15 +354,10 @@ class StatusViewController: UIViewController {
             armEvent.myo!.setStreamEmg(.Enabled)
             emgEnabled = true
         }
-        
-        connectedLabel.text = "Synced"
-        connectedLabel.backgroundColor = UIColor.blueColor()
     }
     
     func didLoseArm(notification: NSNotification) {
         print("Perform the Sync Gesture")
-        connectedLabel.text = "Unsynced"
-        connectedLabel.backgroundColor = UIColor.redColor()
     }
     
     func didRecieveEmgEvent(notification: NSNotification) {
@@ -309,34 +367,20 @@ class StatusViewController: UIViewController {
         
         // Store EMG data globally
         emgDataGlobal = shiftPushArray(emgDataGlobal, element: emgData, maxSize: 128)
-        
-        emg1.text = "\(Int(emgData[0]))"
-        emg2.text = "\(Int(emgData[1]))"
-        emg3.text = "\(Int(emgData[2]))"
-        emg4.text = "\(Int(emgData[3]))"
-        emg5.text = "\(Int(emgData[4]))"
-        emg6.text = "\(Int(emgData[5]))"
-        emg7.text = "\(Int(emgData[6]))"
-        emg8.text = "\(Int(emgData[7]))"
     }
     
     func didRecieveAccelerationEvent(notification: NSNotification) {
         let eventData = notification.userInfo as! Dictionary<NSString, TLMAccelerometerEvent>
         let accelerometerEvent = eventData[kTLMKeyAccelerometerEvent]!
         
-        let mag = TLMVector3Length(accelerometerEvent.vector)
-        let xVal = accelerometerEvent.vector.x
-        let yVal = accelerometerEvent.vector.y
-        let zVal = accelerometerEvent.vector.z
-        
-        accXGlobal = shiftPush(accXGlobal, element: Double(xVal), maxSize: 50)
-        accYGlobal = shiftPush(accYGlobal, element: Double(yVal), maxSize: 50)
-        accZGlobal = shiftPush(accZGlobal, element: Double(zVal), maxSize: 50)
-        
-        aMagLabel.text = "Mag: \(mag)"
-        aXLabel.text = "X: \(xVal)"
-        aYLabel.text = "Y: \(yVal)"
-        aZLabel.text = "Z: \(zVal)"
+//        let mag = TLMVector3Length(accelerometerEvent.vector)
+//        let xVal = accelerometerEvent.vector.x
+//        let yVal = accelerometerEvent.vector.y
+//        let zVal = accelerometerEvent.vector.z
+//        
+//        accXGlobal = shiftPush(accXGlobal, element: Double(xVal), maxSize: 50)
+//        accYGlobal = shiftPush(accYGlobal, element: Double(yVal), maxSize: 50)
+//        accZGlobal = shiftPush(accZGlobal, element: Double(zVal), maxSize: 50)
         
         if !emgEnabled
         {
@@ -351,20 +395,9 @@ class StatusViewController: UIViewController {
             let eventData = notification.userInfo as! Dictionary<NSString, TLMOrientationEvent>
             let orientationEvent = eventData[kTLMKeyOrientationEvent]!
             
-            let angles = TLMEulerAngles(quaternion: orientationEvent.quaternion)
-            
-            let pitch = CGFloat(angles.pitch.radians)
-            let yaw = CGFloat(angles.yaw.radians)
-            let roll = CGFloat(angles.roll.radians)
-            
             // Append global orientation array
             orientationGlobal.append(TLMQuaternionMultiply(orientationEvent.quaternion, centerGlobal).w)
             orientationRepsGlobal.append(TLMQuaternionMultiply(orientationEvent.quaternion, centerGlobal).w)
-            
-            let rotationAndPerspectiveTransform:CATransform3D = CATransform3DConcat(CATransform3DConcat(CATransform3DRotate (CATransform3DIdentity, pitch, -1.0, 0.0, 0.0), CATransform3DRotate(CATransform3DIdentity, yaw, 0.0, 1.0, 0.0)), CATransform3DRotate(CATransform3DIdentity, roll, 0.0, 0.0, -1.0))
-            
-            // Apply the rotation and perspective transform to helloLabel.
-            helloLabel.layer.transform = rotationAndPerspectiveTransform
         }
     }
     

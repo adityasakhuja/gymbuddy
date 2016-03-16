@@ -19,12 +19,22 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>KRSVM.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>MBCircularProgressBar-MBCircularProgressBar.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>MBCircularProgressBar.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>MSSimpleGauge.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -52,6 +62,21 @@
 			<key>primary</key>
 			<true/>
 		</dict>
+		<key>3AD61A28DEA4CD2BF3C8418A10FA9ECC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>4027DCBE30AFB48378794AEE187247D6</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5AF74CD1B5AB5DF7807DD3B6394CA972</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>5D38700903AE3E9C8224AE34BD3B2DC6</key>
 		<dict>
 			<key>primary</key>
@@ -72,17 +97,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9A4EBF3B5D0F733E41B8AFEE5E5F2437</key>
+		<key>977A9119E5DDFE4E1FE91FC679531C82</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>9C89CAD32F2DC8760D6420C7D901FBD6</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F2BB0AAD9993091FD4BB34BE43A0B99A</key>
+		<key>996EC1E47651D08F2E0C6F09FF3283BF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

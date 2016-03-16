@@ -3,8 +3,8 @@ CLANG_CXX_LIBRARY = libstdc++
 EMBEDDED_CONTENT_CONTAINS_SWIFT = YES
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Bond.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/FastDTW_x.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/IGLDropDownMenu.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/MBCircularProgressBar.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SwiftGifOrigin.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SwiftSpinner.framework/Headers"
-OTHER_LDFLAGS = $(inherited) -framework "Bond" -framework "FastDTW_x" -framework "IGLDropDownMenu" -framework "MBCircularProgressBar" -framework "SwiftGifOrigin" -framework "SwiftSpinner"
+OTHER_CFLAGS = $(inherited) -iquote "$CONFIGURATION_BUILD_DIR/Bond.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/FastDTW_x.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/IGLDropDownMenu.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/KRSVM.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/MBCircularProgressBar.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/MSSimpleGauge.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SwiftGifOrigin.framework/Headers" -iquote "$CONFIGURATION_BUILD_DIR/SwiftSpinner.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "Bond" -framework "FastDTW_x" -framework "IGLDropDownMenu" -framework "KRSVM" -framework "MBCircularProgressBar" -framework "MSSimpleGauge" -framework "SwiftGifOrigin" -framework "SwiftSpinner"
 OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
 PODS_FRAMEWORK_BUILD_PATH = $(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-GymBuddy
 PODS_ROOT = ${SRCROOT}/Pods

@@ -232,4 +232,21 @@ class CorrectnessController: NSObject {
         }
         return total/Float(lastN.count)
     }
+    
+    func stop()
+    {
+        timerCount.invalidate()
+        correctnessCount.invalidate()
+    }
+    
+    func resume()
+    {
+        // Calculate number of reps every 0.5 s
+        timerCount = NSTimer(timeInterval: 0.5, target: self, selector: "calculateRepsNum", userInfo: nil, repeats: true)
+        NSRunLoop.currentRunLoop().addTimer(timerCount, forMode: NSRunLoopCommonModes)
+        
+        // Calculate orientation correctness every 5 s
+        correctnessCount = NSTimer(timeInterval: 5, target: self, selector: "calculateCorrectness", userInfo: nil, repeats: true)
+        NSRunLoop.currentRunLoop().addTimer(correctnessCount, forMode: NSRunLoopCommonModes)
+    }
 }

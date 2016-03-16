@@ -10,5 +10,7 @@ target 'GymBuddy' do
     pod 'FastDTW-x'
     pod 'SwiftGifOrigin', '~> 1.5'
     pod 'SwiftSpinner'
+    pod 'MSSimpleGauge'
+    pod 'KRSVM'
 end
 

@@ -147,7 +147,7 @@ class FatigueController: NSObject {
         
         // Perform classification every 30 seconds (47 samples of MAV, RMS, MNF, MDF)
         
-        timerClass = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "classify", userInfo: nil, repeats: true)
+        timerClass = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "calFatigueIndex", userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timerClass, forMode: NSRunLoopCommonModes)
     }
     
@@ -472,6 +472,49 @@ class FatigueController: NSObject {
         }
         
         return row
+    }
+    
+    func calFatigueIndex()
+    {
+        var temp = 0.0
+        var sexRatio = 1.0
+        let dumbbellWeight = status.weight.value
+        let rep = status.reps.value
+        
+        if sex == 1 {
+            sexRatio = 1.5
+        }
+        
+        temp = (Double(age)/20 + Double(height)/1000 + (Double(dumbbellWeight)*Double(dumbbellWeight)/1.5) + (Double(rep)*Double(rep)/2))*sexRatio
+        
+        var fatigueIndex = 1 + ((5 - 1) / (250 - 50)) * (temp - 50)
+        
+        if fatigueIndex > 5 {
+            fatigueIndex = 5
+        } else if fatigueIndex <= 1 {
+            fatigueIndex = 1
+        }
+        
+        // Update fatigue index
+        status.fatigue.value = Int(fatigueIndex)
+        
+        // Pass index to Recommendation module
+        fatigueGlobal.append(status.fatigue.value)
+    }
+    
+    func stop()
+    {
+        timerMain.invalidate()
+        timerFreq.invalidate()
+        timerClass.invalidate()
+    }
+    
+    func resume()
+    {
+        // Wait 1 seconds to get enough EMG values
+        timerMain = NSTimer(timeInterval: 2, target: self, selector: "begin", userInfo: nil, repeats: false)
+        NSRunLoop.currentRunLoop().addTimer(timerMain, forMode: NSRunLoopCommonModes)
+        
     }
     
 
