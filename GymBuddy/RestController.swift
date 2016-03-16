@@ -50,50 +50,116 @@ class RestController: NSObject {
             exerciseHistorical.append((data.valueForKey("exercise") as? Int)!)
         }
         
-        initExercise() // suggest the first exercise of the day
-        calculateNextReps()
+        //initExercise() // suggest the first exercise of the day
+        //calculateNextReps()
     }
     
     func initExercise(){
         //CONSTANTS
+        if exerciseHistorical.isEmpty
+        {
+            print(5, 15, 1)
+            status.weight.value = 5
+            status.repLimit.value = 15
+            status.exercise.value = 1
+        }
+        else
+        {
+            let maxWeightThreshold = 12
+            let commonReps = 15
+            
+            var ExerFreq: [Int: Int] = [:]
+            var ExerFreqIndex: [Int: String] = [:]
+            var i = 0
+            for b in exerciseHistorical {
+                ExerFreq[b] = (ExerFreq[b] ?? 0) + 1
+                ExerFreqIndex[b] = (ExerFreqIndex[b] ?? "") + String(i) + ","
+                i += 1
+            }
+            
+            let ExerFreq_sorted = ExerFreq.sort({$0.1 > $1.1})
+            var (initExercise, maxFreq) = ExerFreq_sorted[0]
+            var maxHistWeight = 0
+            let temp_s = ExerFreqIndex[initExercise]!
+            let histIndex = temp_s.substringToIndex(temp_s.endIndex.predecessor()).componentsSeparatedByString(",")
+            for i in histIndex{
+                if(maxHistWeight<weightsHistorical[Int(i)!]){
+                    maxHistWeight=weightsHistorical[Int(i)!]
+                }
+            }
+            
+            var initWeight = maxHistWeight
+            let indWeight = weightsHistorical.indexOf(initWeight)!
+            let histReps = repsHistorical[indWeight]
+            if(initWeight >= maxWeightThreshold){
+                initWeight = initWeight - 2
+            }else{
+                initWeight = initWeight - 1
+            }
+            var initReps = commonReps
+            if(histReps < commonReps){
+                initReps = histReps
+            }
+            
+            // return value: initWeight, initReps, initExercise
+            print(initWeight,initReps, initExercise)
+            status.weight.value = initWeight
+            status.repLimit.value = initReps
+            status.exercise.value = initExercise
+        }
+    }
+    
+    func nextExercise(){
         let maxWeightThreshold = 12
-        let commonReps = 8
+        let commonReps = 15
+        var nextExercise = 0
+        var nextWeight = 5
+        var nextReps = commonReps
         
-        var ExerFreq: [Int: Int] = [:]
-        var ExerFreqIndex: [Int: String] = [:]
-        var i = 0
-        for b in exerciseHistorical {
-            ExerFreq[b] = (ExerFreq[b] ?? 0) + 1
-            ExerFreqIndex[b] = (ExerFreqIndex[b] ?? "") + String(i) + ","
-            i += 1
+        if status.exercise.value == 0
+        {
+            nextExercise = 1
         }
         
-        let ExerFreq_sorted = ExerFreq.sort({$0.1 > $1.1})
-        var (initExercise, maxFreq) = ExerFreq_sorted[0]
-        var maxHistWeight = 0
-        let temp_s = ExerFreqIndex[initExercise]!
-        let histIndex = temp_s.substringToIndex(temp_s.endIndex.predecessor()).componentsSeparatedByString(",")
-        for i in histIndex{
-            if(maxHistWeight<weightsHistorical[Int(i)!]){
-                maxHistWeight=weightsHistorical[Int(i)!]
+        if exerciseHistorical.contains(nextExercise)
+        {
+            var ExerFreq: [Int: Int] = [:]
+            var ExerFreqIndex: [Int: String] = [:]
+            var i = 0
+            for b in exerciseHistorical {
+                ExerFreq[b] = (ExerFreq[b] ?? 0) + 1
+                ExerFreqIndex[b] = (ExerFreqIndex[b] ?? "") + String(i) + ","
+                i += 1
+            }
+            
+            let ExerFreq_sorted = ExerFreq.sort({$0.1 > $1.1})
+            var (initExercise, maxFreq) = ExerFreq_sorted[0]
+            initExercise = nextExercise
+            var maxHistWeight = 0
+            let temp_s = ExerFreqIndex[initExercise]!
+            let histIndex = temp_s.substringToIndex(temp_s.endIndex.predecessor()).componentsSeparatedByString(",")
+            for i in histIndex{
+                if(maxHistWeight<weightsHistorical[Int(i)!]){
+                    maxHistWeight=weightsHistorical[Int(i)!]
+                }
+            }
+            
+            nextWeight = maxHistWeight
+            let indWeight = weightsHistorical.indexOf(nextWeight)!
+            let histReps = repsHistorical[indWeight]
+            if(nextWeight >= maxWeightThreshold){
+                nextWeight -= 2
+            }else{
+                nextWeight -= 1
+            }
+            if(histReps < commonReps){
+                nextReps = histReps
             }
         }
         
-        var initWeight = maxHistWeight
-        let indWeight = weightsHistorical.indexOf(initWeight)!
-        let histReps = repsHistorical[indWeight]
-        if(initWeight >= maxWeightThreshold){
-           initWeight = initWeight - 2
-        }else{
-           initWeight = initWeight - 1
-        }
-        var initReps = commonReps
-        if(histReps < commonReps){
-            initReps = histReps
-        }
-        
-        // return value: initWeight, initReps, initExercise
-        print(initWeight,initReps, initExercise)
+        status.weight.value = nextWeight
+        status.repLimit.value = nextReps
+        status.exercise.value = nextExercise
     }
     
     func calculateNextReps()

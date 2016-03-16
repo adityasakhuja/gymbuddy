@@ -35,7 +35,7 @@ extension Array {
     }
 }
 
-var status = Status(fatigue: 1, reps: 0, sets:  1, speed: 0, correctness: 100, weight: 3, exercise: 0, repLimit: 15, setLimit: 3)
+var status = Status(fatigue: 1, reps: 0, sets:  1, speed: 0, correctness: 100, weight: 5, exercise: 0, repLimit: 15, setLimit: 3)
 var rest = Rest(time: 0, reps: 10)
 var emgDataGlobal: [[Double]] = []
 var accXGlobal: [Double] = []
@@ -46,6 +46,7 @@ var orientationGlobal: [Float] = []
 var orientationRepsGlobal: [Float] = []
 var centerGlobal: TLMQuaternion = TLMQuaternion()
 var syncedGlobal = false
+var beganExercise = false
 
 func shiftPush(arr: [Double], element: Double, maxSize: Int) -> [Double]
 {

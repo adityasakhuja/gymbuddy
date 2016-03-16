@@ -39,14 +39,14 @@ class CorrectnessController: NSObject {
         let repsArr = splitByReps()
         for rep in repsArr
         {
-            costs.append(DTW((ideal.exerciseList["bicepsCurl"]?.orientations)!, y: rep.map {Int($0*100)}))
+            costs.append(DTW((ideal.exerciseList[status.exercise.value]?.orientations)!, y: rep.map {Int($0*100)}))
         }
         
         if !costs.isEmpty
         {
             status.correctness.value = max(100-Int(costs.last!/500), 0)
-            print(costs)
-            print(status.correctness.value)
+            //print(costs)
+            //print(status.correctness.value)
         }
         //print()
     }
@@ -67,6 +67,7 @@ class CorrectnessController: NSObject {
                 i++
             }
         }
+        //print(repsArr)
         return repsArr
     }
     
@@ -211,7 +212,7 @@ class CorrectnessController: NSObject {
     
     func checkSpeed(speed: Int)
     {
-        let speedDev = speed - (ideal.exerciseList["bicepsCurl"]?.speed)!
+        let speedDev = speed - (ideal.exerciseList[status.exercise.value]?.speed)!
         status.speed.value = speedDev
     }
     

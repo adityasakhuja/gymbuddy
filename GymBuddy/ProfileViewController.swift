@@ -18,7 +18,7 @@ class ProfileViewController: UIViewController, IGLDropDownMenuDelegate {
     
     var height: Int = 0
     var age: Int = 0
-    var sex: Int = 0
+    var sex: Int = -1
     
     var loaded = false
     
@@ -38,16 +38,39 @@ class ProfileViewController: UIViewController, IGLDropDownMenuDelegate {
     
     
     @IBAction func buttonPressed(sender: AnyObject) {
-        age = Int(ageText.text!)!
-        height = Int(heightText.text!)!
-        let user = User(age: age, heightU: height, sex: sex)
-        let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(user, toFile: User.ArchiveURL.path!)
-        if isSuccessfulSave {
-            let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-            let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ListViewController") as UIViewController
-            let window = UIApplication.sharedApplication().windows[0] as UIWindow;
-            window.rootViewController = vc;
+        if let text = ageText.text where text.isEmpty
+        {
+            showError("Please tell us your age!")
         }
+        else if let text = heightText.text where text.isEmpty
+        {
+            showError("Please tell us your height!")
+        }
+        else if sex == -1
+        {
+            showError("Please tell us your sex!")
+        }
+        else
+        {
+            age = Int(ageText.text!)!
+            height = Int(heightText.text!)!
+            let user = User(age: age, heightU: height, sex: sex)
+            let isSuccessfulSave = NSKeyedArchiver.archiveRootObject(user, toFile: User.ArchiveURL.path!)
+            if isSuccessfulSave {
+                let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
+                let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("InstructionViewController") as UIViewController
+                let window = UIApplication.sharedApplication().windows[0] as UIWindow;
+                window.rootViewController = vc;
+            }
+        }
+    }
+    
+    
+    func showError(msg: String)
+    {
+        let alertController = UIAlertController(title: "Error", message: msg, preferredStyle: .Alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (alertAction) -> Void in return 0 }))
+        presentViewController(alertController, animated: true, completion: nil)
     }
     
     
@@ -75,7 +98,7 @@ class ProfileViewController: UIViewController, IGLDropDownMenuDelegate {
         sexMenu.rotate = IGLDropDownMenuRotate.Random
         sexMenu.dropDownItems = dropdownItems as [AnyObject]
         sexMenu.paddingLeft = 15
-        sexMenu.frame = CGRectMake((self.view.frame.size.width/2) - 100, 300, 200, 45)
+        sexMenu.frame = CGRectMake((self.view.frame.size.width/2) - 100, 270, 200, 45)
         if loaded
         {
             sexMenu.menuText = "\(dataTitle[sex])"

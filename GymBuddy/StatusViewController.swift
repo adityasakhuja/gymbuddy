@@ -81,20 +81,6 @@ class StatusViewController: UIViewController {
         }
         else
         {
-//            // Print center value
-//            print("CENTER VALUE:")
-//            NSLog("%@", centerGlobal)
-//            // Print the first unadjusted orientation
-//            print("First orientation:")
-//            NSLog("%@", orientationGlobal[0])
-//            // Adjust orientation array
-//            var orientationNew: [Float] = []
-//            for orientation in orientationGlobal
-//            {
-//                orientationNew.append(orientation.w)
-//            }
-//            // Print new orientation array
-//            NSLog("%@", orientationNew)
             
             // Stop the controllers
             cC.stop()
@@ -156,12 +142,13 @@ class StatusViewController: UIViewController {
                 status.repLimit.value = 0
                 endButton.hidden = true
                 timerLabel.hidden = true
-                let alertController = UIAlertController(title: "Sets Complete", message: "You have successfully completed the required sets for this exercise. Please select the next exercise.", preferredStyle: .Alert)
+                let alertController = UIAlertController(title: "Sets Complete", message: "You have successfully completed the required sets for this exercise. Please continue with the next exercise.", preferredStyle: .Alert)
                 alertController.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (alertAction) -> Void in self.pickExercise() }))
                 presentViewController(alertController, animated: true, completion: nil)
             }
             // Initialise RestController
-            let _ = RestController()
+            let rc = RestController()
+            rc.calculateNextReps()
             
             // Update system state
             resting = true
@@ -170,7 +157,7 @@ class StatusViewController: UIViewController {
     
     @IBAction func pickExercise() {
         let mainStoryboard = UIStoryboard(name: "Main", bundle: NSBundle.mainBundle())
-        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("ListViewController") as UIViewController
+        let vc : UIViewController = mainStoryboard.instantiateViewControllerWithIdentifier("InstructionViewController") as UIViewController
         let window = UIApplication.sharedApplication().windows[0] as UIWindow;
         window.rootViewController = vc;
 
@@ -178,6 +165,9 @@ class StatusViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        beganExercise = true
+        status.reps.value = 0
         
         // Initialise the gauges
         speedGauge=MSRangeGauge( frame: CGRectMake(self.view.frame.size.width/2-30, 260, 200, 175) )

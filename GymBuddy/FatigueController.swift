@@ -255,7 +255,7 @@ class FatigueController: NSObject {
 //        print(sex)
 //        print(status.weight.value)
 //        print(status.exercise.value)
-        print(Int(mean(fatigueIndex)))
+        //print(Int(mean(fatigueIndex)))
         
         // Pass index to Recommendation module
         fatigueGlobal.append(status.fatigue.value)
