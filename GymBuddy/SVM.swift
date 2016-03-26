@@ -142,7 +142,7 @@ public class SVMModel
         for i in 0..<data.size {
             if let index = label.indexOf(data.classes![i]) {
                 //  label already found
-                count[index]++
+                count[index] += 1
             }
             else {
                 //  new label - add to list
@@ -191,7 +191,7 @@ public class SVMModel
             coefficients = [[]]
             for index in 0..<data.size {    //  Get the support vector points and save them
                 if (fabs(f.α[index]) > 0.0) {
-                    totalSupportVectors++
+                    totalSupportVectors += 1
                     supportVector.append(data.inputs[index])
                     coefficients[0].append(f.α[index])
                 }
@@ -283,8 +283,8 @@ public class SVMModel
                 for i in 0..<classificationData.numClasses {
                     for j in 0..<classificationData.classCount[i] {
                         if(nonZero[classificationData.classOffsets[i][j]]) {
-                            ++supportVectorCount[i]
-                            ++totalSupportVectors
+                            supportVectorCount[i] += 1
+                            totalSupportVectors += 1
                         }
                     }
                 }
@@ -322,7 +322,7 @@ public class SVMModel
                                 coefficients[i][q++] = functions[permutation].α[index + classificationData.classCount[i]]
                             }
                         }
-                        permutation++
+                        permutation += 1
                     }
                 }
             }
@@ -392,7 +392,7 @@ public class SVMModel
                 let entry = solver!.α[index]
                 if(abs(entry) > 0.0)
                 {
-                    ++numSupportVectors
+                    numSupportVectors += 1
                     if let output = data.singleOutput(index) {
                         if(output > 0.0) {
                             if(abs(entry) >= solver!.positiveUpperBound) {++numBaseSupportVectors}

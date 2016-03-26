@@ -8,12 +8,18 @@
 
 import UIKit
 import SwiftSpinner
-//import GLKit
+import CoreData
 
 class ViewController: UIViewController {
     
     var connected = false
     var isSaved = false
+    
+    // Historical data
+    let debug = false
+    var exerciseHistorical: [Int] = []
+    var speed: [[Int]] = []
+    var correctness: [[Int]] = []
 
     @IBAction func connectButton(sender: AnyObject) {
         if let savedMyo = NSKeyedUnarchiver.unarchiveObjectWithFile(Myo.ArchiveURL.path!) as! Myo?
@@ -33,6 +39,11 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if(debug)
+        {
+            getHistorical()
+        }
         
         let notifer = NSNotificationCenter.defaultCenter()
         // Data notifications are received through NSNotificationCenter.
@@ -86,6 +97,44 @@ class ViewController: UIViewController {
     
     func didLoseArm(notification: NSNotification) {
         syncedGlobal = false
+    }
+    
+    func getHistorical()
+    {
+        // Fetch data from CoreData
+        var exerciseDatas = [NSManagedObject]()
+        let appDelegate =
+        UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        let managedContext = appDelegate.managedObjectContext
+        
+        //2
+        let fetchRequest = NSFetchRequest(entityName: "ExerciseData")
+        
+        //3
+        do {
+            let results =
+            try managedContext.executeFetchRequest(fetchRequest)
+            exerciseDatas = results as! [NSManagedObject]
+        } catch let error as NSError {
+            print("Could not fetch \(error), \(error.userInfo)")
+        }
+        
+        // Save data to local arrays
+        for data in exerciseDatas
+        {
+            var arrString = data.valueForKey("speed") as? String
+            print(arrString)
+            var arr = arrString!.characters.split{$0 == "-"}.map(String.init).map {Int($0)!}
+            speed.append(arr)
+            arrString = data.valueForKey("correctness") as? String
+            arr = arrString!.characters.split{$0 == "-"}.map(String.init).map {Int($0)!}
+            correctness.append(arr)
+            exerciseHistorical.append((data.valueForKey("exercise") as? Int)!)
+        }
+        //print(exerciseHistorical)
+        //print(speed)
+        //print(correctness)
     }
     
     override func supportedInterfaceOrientations() -> UIInterfaceOrientationMask {

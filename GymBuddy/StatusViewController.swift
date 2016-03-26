@@ -18,6 +18,8 @@ class StatusViewController: UIViewController {
     var timer = 0
     var emgEnabled = false
     var resting = false
+    var speedScores: [Int] = []
+    var correctnessScores: [Int] = []
     
     // Gauges
     var fatigueGauge = MSRangeGauge()
@@ -102,6 +104,8 @@ class StatusViewController: UIViewController {
             
             //3
             exerciseData.setValue(fatigueGlobal.map {"\($0)"}.joinWithSeparator("-"), forKey: "fatigues")
+            exerciseData.setValue(speedScores.map {"\($0)"}.joinWithSeparator("-"), forKey: "speed")
+            exerciseData.setValue(correctnessScores.map {"\($0)"}.joinWithSeparator("-"), forKey: "correctness")
             exerciseData.setValue(status.reps.value, forKey: "reps")
             exerciseData.setValue(status.weight.value, forKey: "weights")
             exerciseData.setValue(status.exercise.value, forKey: "exercise")
@@ -259,6 +263,7 @@ class StatusViewController: UIViewController {
         
         status.speed.observe { value in
             var val = 0
+            self.speedScores.append(value)
             
             if value > 40
             {
@@ -279,6 +284,7 @@ class StatusViewController: UIViewController {
         }
         
         status.correctness.observe { value in
+            self.correctnessScores.append(value)
             if value < 50
             {
                 self.correctnessGauge.fillArcFillColor = UIColor.redColor()

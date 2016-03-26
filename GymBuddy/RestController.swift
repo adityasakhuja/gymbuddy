@@ -42,8 +42,8 @@ class RestController: NSObject {
         // Save data to local arrays
         for data in exerciseDatas
         {
-            let arrString = data.valueForKey("fatigues") as? String
-            let arr = arrString!.characters.split{$0 == "-"}.map(String.init).map {Int($0)!}
+            var arrString = data.valueForKey("fatigues") as? String
+            var arr = arrString!.characters.split{$0 == "-"}.map(String.init).map {Int($0)!}
             fatiguesHistorical.append(arr)
             weightsHistorical.append((data.valueForKey("weights") as? Int)!)
             repsHistorical.append((data.valueForKey("reps") as? Int)!)
