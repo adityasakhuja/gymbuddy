@@ -73,6 +73,7 @@ class CorrectnessController: NSObject {
     
     func findTurningPoints(inputOrig: [Float]) -> ([Int], [Bool])
     {
+        // This is probably a leftover from debugging, and needs to be removed
         var input = [Float](count: inputOrig.count, repeatedValue: 0)
         for(var i=0; i<inputOrig.count; i++)
         {

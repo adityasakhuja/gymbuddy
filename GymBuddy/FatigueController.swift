@@ -147,7 +147,7 @@ class FatigueController: NSObject {
         
         // Perform classification every 30 seconds (47 samples of MAV, RMS, MNF, MDF)
         
-        timerClass = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: "calFatigueIndex", userInfo: nil, repeats: true)
+        timerClass = NSTimer.scheduledTimerWithTimeInterval(30, target: self, selector: #selector(FatigueController.classify), userInfo: nil, repeats: true)
         NSRunLoop.currentRunLoop().addTimer(timerClass, forMode: NSRunLoopCommonModes)
     }
     
